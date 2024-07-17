@@ -10,7 +10,7 @@ export default () => {
     build: {
       rollupOptions: {
         input: {
-          app: './src/index.html',
+          app: './public/index.html',
         },
       },
       outDir: "dist",
