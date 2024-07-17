@@ -1,6 +1,6 @@
 {
   "homepage": ".",
-  "name": "lilisisopods-react",
+  "name": "lilisisopods",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
