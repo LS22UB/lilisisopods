@@ -20,7 +20,7 @@
       "noUnusedParameters": true,
       "noFallthroughCasesInSwitch": true
     },
-    "include": ["src", "code/mapsc.ts", "assets/mapscript.js", "pubpub/mapscript.js"]
+    "include": ["src"]
   }
   
   
