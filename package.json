@@ -17,9 +17,6 @@
     "react-scripts": "^5.0.1",
     "vite": "^5.3.4"
   },
-  "devDependencies": {
-    
-  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -31,5 +28,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.3.4"
   }
 }
