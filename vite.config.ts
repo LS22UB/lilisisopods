@@ -5,7 +5,7 @@ import react from "@vitejs/plugin-react";
 export default () => {
   const env = loadEnv("dev", process.cwd());
   return defineConfig({
-    base: `.`,
+    base: `./`,
     plugins: [react()],
     build: {
       outDir: "dist",
