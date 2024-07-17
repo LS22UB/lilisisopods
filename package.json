@@ -9,15 +9,16 @@
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "format": "prettier --write \"**/*.{ts,tsx,md,json,css,js}\"",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
+    "preview": "vite preview",
     "@vitejs/plugin-react": "^4.3.1",
     "gh-pages": "^6.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "^5.0.1",
     "vite": "^5.3.4"
+  },
+  "devDependencies": {
+    
   },
   "browserslist": {
     "production": [
