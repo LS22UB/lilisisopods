@@ -8,6 +8,11 @@ export default () => {
     base: `./`,
     plugins: [react()],
     build: {
+      rollupOptions: {
+        input: {
+          app: './src/index.html',
+        },
+      },
       outDir: "dist",
     },
     publicDir: 'public',
