@@ -3,7 +3,6 @@
   "name": "lilisisopods",
   "version": "0.1.0",
   "license": "CC-BY-4.0",
-  "type": "module",
   "dependencies": {},
   "scripts": {
     "start": "react-scripts start",
