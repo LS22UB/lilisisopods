@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write  # This gives the required permission to push to the repository
   pages: write
   id-token: write
 
