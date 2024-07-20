@@ -5,7 +5,7 @@
       "jsx": "react",
       "esModuleInterop": true,  
     },
-    "include": ["src"]
+    "include": ["public", "src"]
   }
   
   
