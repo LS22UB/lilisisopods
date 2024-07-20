@@ -3,11 +3,11 @@ name: Deploy React App to GitHub Pages
 on:
   push:
     branches:
-      - master
+      - master  # Change this to your default branch if it's not 'main'
   workflow_dispatch:
 
 permissions:
-  contents: write  # This gives the required permission to push to the repository
+  contents: write # This gives the required permission to push to the repository
   pages: write
   id-token: write
 
@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Set up Node.js
@@ -30,7 +30,7 @@ jobs:
       - name: Build the React app
         run: npm run build
 
-      - name: Upload build folder
+      - name: Upload build folder as artifact
         uses: actions/upload-artifact@v3
         with:
           name: build
@@ -39,7 +39,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs: build
-
     steps:
       - name: Download build folder
         uses: actions/download-artifact@v3
