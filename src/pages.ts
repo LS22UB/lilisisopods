@@ -1,5 +1,4 @@
-import { Home } from "./pages/Home";
-import { About } from "./pages/About";
+import { About, Home, Ligia, LigiaPallasii, FAQ } from "./pages/page-list";
 
 interface Base {
     name: string | undefined;
@@ -36,5 +35,33 @@ interface Base {
                 component: About,
             },
         ]
-    }
+    },
+    {
+      name: "Species",
+      folder: [
+          {
+              name: "Ligia",
+              title: "",
+              path: "/about",
+              component: About,
+          },
+      ]
+  }
+  ]
+
+
+  export const Pages: (Page | Folder)[] = [
+    {
+      name: "About",
+      title: "About",
+      path: "/about",
+      component: About,
+    },
+    {
+      name: "Home",
+      title: "Home",
+      path: "/",
+      component: Home,
+  },
+
   ]

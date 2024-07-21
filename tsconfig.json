@@ -5,6 +5,8 @@
       "jsx": "react",
       "esModuleInterop": true,
       "moduleResolution": "bundler",  
+      "allowImportingTsExtensions": true,
+      "noEmit": true,
     },
     "include": ["public", "src"]
   }

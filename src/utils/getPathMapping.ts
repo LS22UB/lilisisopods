@@ -1,4 +1,4 @@
-import { NavPages as pages } from "../pages";
+import { Pages as pages } from "../pages";
 
 export const getPathMapping = () => {
   return pages.reduce<{
