@@ -41,12 +41,23 @@ interface Base {
       folder: [
           {
               name: "Ligia",
-              title: "",
-              path: "/about",
-              component: About,
+              title: "Ligia",
+              path: "/ligia",
+              component: Ligia,
           },
       ]
-  }
+    },
+    {
+      name: "Questions",
+      folder: [
+          {
+              name: "FAQ",
+              title: "FAQ",
+              path: "/faq",
+              component: FAQ,
+          },
+      ]
+    }
   ]
 
 
@@ -58,10 +69,28 @@ interface Base {
       component: About,
     },
     {
+      name: "FAQ",
+      title: "FAQ",
+      path: "/faq",
+      component: FAQ,
+    },
+    {
       name: "Home",
       title: "Home",
       path: "/",
       component: Home,
-  },
+    },
+    {
+      name: "Ligia",
+      title: "Ligia",
+      path: "/ligia",
+      component: Ligia,
+    },
+    {
+      name: "Ligia pallasii",
+      title: "Ligia pallasii",
+      path: "/ligia-pallasii",
+      component: LigiaPallasii,
+    },
 
   ]
