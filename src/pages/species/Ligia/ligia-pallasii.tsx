@@ -6,6 +6,7 @@ export function LigiaPallasii() {
       <>
         <div className="row">
           <div className="col">
+            <p>Ligia pallasii</p>
             <h2>Under construction!</h2>
             <hr/>
           </div>
