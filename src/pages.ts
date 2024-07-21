@@ -31,7 +31,7 @@ interface Base {
             {
                 name: "About",
                 title: "About",
-                path: "/about/",
+                path: "/about",
                 component: About,
             },
         ]
@@ -42,7 +42,7 @@ interface Base {
           {
               name: "Ligia",
               title: "Ligia",
-              path: "species/ligia/",
+              path: "species/ligia",
               component: Ligia,
           },
       ]
@@ -53,7 +53,7 @@ interface Base {
           {
               name: "FAQ",
               title: "FAQ",
-              path: "/faq/",
+              path: "/faq",
               component: FAQ,
           },
       ]
@@ -65,13 +65,13 @@ interface Base {
     {
       name: "About",
       title: "About",
-      path: "/about/",
+      path: "/about",
       component: About,
     },
     {
       name: "FAQ",
       title: "FAQ",
-      path: "/faq/",
+      path: "/faq",
       component: FAQ,
     },
     {
@@ -83,19 +83,19 @@ interface Base {
     {
       name: "Shops",
       title: "Shops",
-      path: "/shops/",
+      path: "/shops",
       component: Shops,
     },
     {
       name: "Ligia",
       title: "Ligia",
-      path: "species/ligia/",
+      path: "species/ligia",
       component: Ligia,
     },
     {
       name: "Ligia pallasii",
       title: "Ligia pallasii",
-      path: "species/ligia/ligia-pallasii/",
+      path: "species/ligia/ligia-pallasii",
       component: LigiaPallasii,
     },
 
