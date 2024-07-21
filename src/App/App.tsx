@@ -12,7 +12,8 @@ import React from "react";
 const App = () => {
   
   const pathMapping = getPathMapping();
-  const currentPath = "/";
+  const currentPath =
+    window.location.pathname || "/";
 
   // Set Page Title
   const title =
