@@ -42,7 +42,7 @@ interface Base {
           {
               name: "Ligia",
               title: "Ligia",
-              path: "/ligia/",
+              path: "species/ligia/",
               component: Ligia,
           },
       ]
