@@ -67,7 +67,10 @@ const App = () => {
             />
           ),
         )}
-
+         <Route
+          path="/species/armadilidium-klugii/"
+          element={<Navigate to="/species/armadillidium/armadilidium-klugii" />}
+        />
         <Route
           path="*"
           element={<Navigate to="/" />}

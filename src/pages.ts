@@ -1,4 +1,4 @@
-import { About, Home, Ligia, LigiaPallasii, FAQ, Shops } from "./pages/page-list";
+import { About, Home, Ligia, LigiaPallasii, FAQ, Shops, ArmadillidiumKlugii } from "./pages/page-list";
 
 interface Base {
     name: string | undefined;
@@ -67,6 +67,12 @@ interface Base {
       title: "About",
       path: "/about",
       component: About,
+    },
+    {
+      name: "Armadillidium klugii",
+      title: "Armadillidium klugii",
+      path: "species/armadillidium/armadillidium-klugii",
+      component: ArmadillidiumKlugii,
     },
     {
       name: "FAQ",
