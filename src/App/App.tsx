@@ -1,11 +1,10 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import {BrowserRouter as Route, Routes} from "react-router-dom";
 import { Footer } from "../components/Footer";
 import { NotFound } from "../components/NotFound";
 import { Navbar } from "../components/Navbar";
 import { getPathMapping } from "../utils/getPathMapping";
-import { stringToSlug } from "../utils/stringToSlug";
 import { useEffect} from "react";
 import React from "react";
 
