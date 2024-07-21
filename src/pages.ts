@@ -71,7 +71,7 @@ interface Base {
     {
       name: "Armadillidium klugii",
       title: "Armadillidium klugii",
-      path: "species/armadillidium/armadillidium-klugii",
+      path: "/species/armadillidium/armadillidium-klugii",
       component: ArmadillidiumKlugii,
     },
     {
