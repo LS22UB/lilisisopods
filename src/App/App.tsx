@@ -1,6 +1,6 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Route, Routes } from "react-router-dom";
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import { Footer } from "../components/Footer";
 import { NotFound } from "../components/NotFound";
 import { Navbar } from "../components/Navbar";
@@ -12,10 +12,7 @@ import React from "react";
 const App = () => {
   
   const pathMapping = getPathMapping();
-  const currentPath =
-    window.location.pathname
-      .split(`${stringToSlug("Lilisisopods")}`)
-      .pop() || "/";
+  const currentPath = "/";
 
   // Set Page Title
   const title =
