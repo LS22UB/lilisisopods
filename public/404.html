@@ -41,6 +41,12 @@
               console.log("y"); 
               console.log(y); 
     </script>
+    <script>
+      if (window.location.hash.includes('?')) {
+    const routeWithoutHash = window.location.hash.replace('?', '#')
+    window.location.replace(routeWithoutHash)
+    }
+    </script>
   </head>
   <body>
 
