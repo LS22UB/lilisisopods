@@ -23,6 +23,7 @@
     -->
     <title>React App</title>
     <script type="text/javascript">
+      console.log("First script start")
       // Single Page Apps for GitHub Pages
       // MIT License
       // https://github.com/rafgraph/spa-github-pages
@@ -45,7 +46,9 @@
       }(window.location))
     </script>
     <script>
+      console.log("Second script start")
       if (window.location.hash.includes('?')) {
+        console.log("includes ? ")
     const routeWithoutHash = window.location.hash.replace('?', '#')
     window.location.replace(routeWithoutHash)
     }
