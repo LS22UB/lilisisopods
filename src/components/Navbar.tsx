@@ -6,7 +6,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link } from "react-router-dom";
 import { NavPages } from "../pages";
 
-export function Navbar(/* {isLightMode, setIsLightMode}:any */) {
+export function Navbar(/* {isLightMode, setIsLightMode}: any */) {
 
   /* const handleToggle = () => {
     setIsLightMode(!isLightMode);
@@ -26,7 +26,9 @@ export function Navbar(/* {isLightMode, setIsLightMode}:any */) {
             </NavDropdown.Item>
           );
         }
+        return null; // Ensure a value is returned even if subpage.path is not defined
       });
+
       return (
         <NavDropdown
           key={`page-${pageIndex}`}
@@ -34,7 +36,7 @@ export function Navbar(/* {isLightMode, setIsLightMode}:any */) {
           renderMenuOnMount={true}
           id="basic-nav-dropdown"
         >
-          {folderItems}
+          {folderItems.length > 0 ? folderItems : <NavDropdown.Item disabled>No items</NavDropdown.Item>}
         </NavDropdown>
       );
     } else if ("path" in item && item.path) {
@@ -44,19 +46,20 @@ export function Navbar(/* {isLightMode, setIsLightMode}:any */) {
         </Nav.Link>
       );
     }
+    return null; // Ensure a value is returned if neither condition matches
   });
 
   return (
-    <BootstrapNavbar className="navbar-custom" expand="lg" bg="bg-transparent" variant="light"/* bg={isLightMode ? "d" : "l"} variant={isLightMode ? "dark" : "light"}  */fixed="top">
+    <BootstrapNavbar className="navbar-custom" expand="lg" bg="bg-transparent" variant="light" /* bg={isLightMode ? "d" : "l"} variant={isLightMode ? "dark" : "light"} */ fixed="top">
       <Container>
         <BootstrapNavbar.Toggle aria-controls="basic-navbar-nav"/>
         <BootstrapNavbar.Collapse id="basic-navbar-nav">
-            <Nav className="left-aligned">
+          <Nav className="left-aligned">
             {/* <button id="theme-toggle" className="btn btn-outline-secondary ml-auto" onClick={handleToggle}>        
               {isLightMode ? '🌙' : '🔆' }
             </button> */}
             {pages}
-          </Nav> 
+          </Nav>
         </BootstrapNavbar.Collapse>
       </Container>
     </BootstrapNavbar>
