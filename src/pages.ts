@@ -23,7 +23,7 @@ interface Base {
     {
         name: "Home",
         title: "Home",
-        path: "/home",
+        path: "/",
         component: Home,
     },
     {
