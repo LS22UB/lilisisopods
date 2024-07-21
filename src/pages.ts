@@ -1,4 +1,4 @@
-import { About, Home, Ligia, LigiaPallasii, FAQ } from "./pages/page-list";
+import { About, Home, Ligia, LigiaPallasii, FAQ, Shops } from "./pages/page-list";
 
 interface Base {
     name: string | undefined;
@@ -31,7 +31,7 @@ interface Base {
             {
                 name: "About",
                 title: "About",
-                path: "/about",
+                path: "/about/",
                 component: About,
             },
         ]
@@ -42,7 +42,7 @@ interface Base {
           {
               name: "Ligia",
               title: "Ligia",
-              path: "/ligia",
+              path: "/ligia/",
               component: Ligia,
           },
       ]
@@ -53,7 +53,7 @@ interface Base {
           {
               name: "FAQ",
               title: "FAQ",
-              path: "/faq",
+              path: "/faq/",
               component: FAQ,
           },
       ]
@@ -65,13 +65,13 @@ interface Base {
     {
       name: "About",
       title: "About",
-      path: "/about",
+      path: "/about/",
       component: About,
     },
     {
       name: "FAQ",
       title: "FAQ",
-      path: "/faq",
+      path: "/faq/",
       component: FAQ,
     },
     {
@@ -81,15 +81,21 @@ interface Base {
       component: Home,
     },
     {
+      name: "Shops",
+      title: "Shops",
+      path: "/shops/",
+      component: Shops,
+    },
+    {
       name: "Ligia",
       title: "Ligia",
-      path: "/ligia",
+      path: "species/ligia/",
       component: Ligia,
     },
     {
       name: "Ligia pallasii",
       title: "Ligia pallasii",
-      path: "/ligia-pallasii",
+      path: "species/ligia/ligia-pallasii/",
       component: LigiaPallasii,
     },
 

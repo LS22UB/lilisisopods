@@ -1,5 +1,6 @@
 export * from './About.tsx'
 export * from './Home.tsx'
 export * from './faq.tsx'
+export * from './shops.tsx'
 export * from './species/ligia.tsx'
 export * from './species/Ligia/ligia-pallasii.tsx'
