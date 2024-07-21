@@ -69,19 +69,11 @@ const App = () => {
         )}
         <Route
           path="/species/armadilidium-klugii/"
-          element={<Navigate to="/species/armadillidium/armadilidium-klugii" />}
-        />
-        <Route
-          path="/species/armadilidium-klugii"
-          element={<Navigate to="/species/armadillidium/armadillidium-klugii" />}
-        />
-        <Route
-          path="species/armadilidium-klugii/"
           element={<Navigate to="/species/armadillidium/armadillidium-klugii" />}
         />
         <Route
           path="/species/armadilidium-klugii/"
-          element={<Navigate to="/species/armadillidium/armadillidium-klugii" />}
+          element={<Navigate to="species/armadillidium/armadillidium-klugii" />}
         />
         <Route
           path="*"
