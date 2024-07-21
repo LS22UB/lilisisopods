@@ -67,10 +67,6 @@ const App = () => {
             />
           ),
         )}
-        <Route 
-          path="/faq/"
-          element={<Navigate to="/#/faq/"/>}
-        />
 
         <Route
           path="*"
