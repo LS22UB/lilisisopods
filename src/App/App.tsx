@@ -71,10 +71,10 @@ const App = () => {
           path="/species/armadilidium-klugii/"
           element={<Navigate to="/species/armadillidium/armadillidium-klugii" />}
         />
-        <Route
+        {/* <Route
           path="/species/armadilidium-klugii/"
           element={<Navigate to="species/armadillidium/armadillidium-klugii" />}
-        />
+        /> */}
         <Route
           path="*"
           element={<Navigate to="/" />}
