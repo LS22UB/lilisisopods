@@ -1,8 +1,7 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Route, Routes} from "react-router-dom";
+import { Route, Routes, Navigate} from "react-router-dom";
 import { Footer } from "../components/Footer";
-import { NotFound } from "../components/NotFound";
 import { Navbar } from "../components/Navbar";
 import { getPathMapping } from "../utils/getPathMapping";
 import { useEffect} from "react";
@@ -70,12 +69,7 @@ const App = () => {
         )}
         <Route
           path="*"
-          element={
-            <>
-              
-              <NotFound />
-            </>
-          }
+          element={<Navigate to="/" />}
         />
       </Routes>
 
