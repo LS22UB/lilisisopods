@@ -1,9 +1,10 @@
 {
     "compilerOptions": {
-   
+      "module": "ESNext",
       "checkJs": true,
       "jsx": "react",
-      "esModuleInterop": true,  
+      "esModuleInterop": true,
+      "moduleResolution": "bundler",  
     },
     "include": ["public", "src"]
   }
