@@ -30,6 +30,9 @@ jobs:
       - name: Build the React app
         run: npm run build
 
+      - name: Add _redirects file
+        run: echo '/* /index.html 200' > build/_redirects
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
