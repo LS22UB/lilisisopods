@@ -99,7 +99,6 @@ function w3RemoveClass(element: Element, name: string) {
 
 
 export function WikiSelector(){
-    ShowAll(); 
   return(
     <div>
       <WikiAction></WikiAction>
@@ -128,7 +127,7 @@ class WikiAction extends React.Component {
         onChange={this.handleChange}
         isMulti
         options={wikioptions}
-        defaultValue={[wikioptions[0]]}
+        defaultValue={{value: "all", label: "Show all"}}
         className="basic-multi-select"
         classNamePrefix="select"
       />

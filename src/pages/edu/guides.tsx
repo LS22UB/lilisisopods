@@ -11,7 +11,7 @@ export function Guides() {
                 This combination returns no instances. 
             </div>
             <Gui liste={guidelist}/>
-            <div className="filterable all">
+            <div className="filterable all show">
                 Ho
             </div>
             <hr/>
@@ -32,18 +32,28 @@ export function Guides() {
   }
 
   let guidelist = [
+    {
+        title: "test",
+        tags: ["array"], 
+        author: "string",
+        year: "string",
+    }
     
   ]
 
   function Gui({liste}: {liste: Array<GuideFace>}){
     let rows = [];
     for (let i = 0; i < liste.length; i++) {
-        let cla = "filterable all "
+        let y = ""; 
+        let cla = "filterable all show "
         for (let j = 0; j < liste[i].tags.length; j++){
             cla += " " + liste[i].tags[j]
         }
+        if(liste[i].year){
+            let y = "(" + liste[i].year + ")"; 
+        }
         rows.push(<div className={cla}>
-            
+         {liste[i].title} {y} by {liste[i].author}
         </div>); 
     }
     return rows; 
