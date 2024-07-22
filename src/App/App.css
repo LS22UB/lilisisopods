@@ -89,6 +89,15 @@ body {
   margin-top: 4vw;
 }
 
+.guide-box{
+  text-align: left;
+  padding: 1vw;
+  border-radius: 7px;
+  max-width: 70%;
+  margin-bottom: 1vw;
+  margin-top: 1vw;
+}
+
 
 /* * * * * * * */
 /* MEDIA RULES */

@@ -29,6 +29,8 @@ export function Guides() {
     tags: Array<string>; 
     author: string; 
     year?: string; 
+    free: boolean; 
+    url?: string; 
   }
 
   let guidelist = [
@@ -37,6 +39,15 @@ export function Guides() {
         tags: ["array"], 
         author: "string",
         year: "string",
+        free: false
+    }, 
+    {
+        title: "test",
+        tags: ["array"], 
+        author: "string",
+        year: "string",
+        free: true, 
+        url: "url"
     }
     
   ]
@@ -45,15 +56,24 @@ export function Guides() {
     let rows = [];
     for (let i = 0; i < liste.length; i++) {
         let y = ""; 
-        let cla = "filterable all show "
+        let u = ""; 
+        let l = ""; 
+        let f = "For sale"; 
+        let cla = "filterable guide-box all show "
         for (let j = 0; j < liste[i].tags.length; j++){
             cla += " " + liste[i].tags[j]
         }
         if(liste[i].year){
-            let y = "(" + liste[i].year + ")"; 
+            y = "(" + liste[i].year + ")"; 
+        }
+        if(liste[i].free){
+            f = "Free"
+            u = " at "
+            l =  liste[i].url; 
         }
         rows.push(<div className={cla}>
-         {liste[i].title} {y} by {liste[i].author}
+         <div>{liste[i].title} {y} by {liste[i].author}</div>
+         <div>{f} {u} <a href={l} property="url">{l}</a> </div>
         </div>); 
     }
     return rows; 
