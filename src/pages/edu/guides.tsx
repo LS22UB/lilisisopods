@@ -10,6 +10,7 @@ export function Guides() {
             <div id="nono" className="noshow">
                 This combination returns no instances. 
             </div>
+            <Gui liste={guidelist}/>
             <div className="filterable all">
                 Ho
             </div>
@@ -23,6 +24,23 @@ export function Guides() {
     );
   }
 
+  interface GuideFace {
+    title: string; 
+    tags: Array<string>; 
+    author: string; 
+    year?: string; 
+  }
+
   let guidelist = [
     
   ]
+
+  function Gui({liste}: {liste: Array<GuideFace>}){
+    let rows = [];
+    for (let i = 0; i < liste.length; i++) {
+        rows.push(<div className="filterable all">
+            Ho
+        </div>); 
+    }
+    return rows; 
+  }
