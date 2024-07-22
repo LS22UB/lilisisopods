@@ -179,7 +179,7 @@ p.mix {border-style: dotted dashed solid double;}
 
 
 .show {
-  display: block;
+  display: block !important;
 }
 .noshow{
   display: none;

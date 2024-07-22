@@ -1,8 +1,7 @@
 import React from "react";
-import { WikiSelector } from "../../components/Filter";
+import { WikiSelector} from "../../components/Filter";
 
 export function Guides() {
-
     return (
       <>
         <div className="row">
@@ -12,7 +11,7 @@ export function Guides() {
                 This combination returns no instances. 
             </div>
             <div className="filterable all">
-            
+                Ho
             </div>
             <hr/>
           </div>
@@ -23,4 +22,7 @@ export function Guides() {
       </>
     );
   }
-  
+
+  let guidelist = [
+    
+  ]

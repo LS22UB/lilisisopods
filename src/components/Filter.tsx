@@ -19,8 +19,18 @@ const wikioptions =[
   
 ]
 
+export function ShowAll(){
+    var x: string | any[] | HTMLCollectionOf<Element>, i: number;
+    x = document.getElementsByClassName("filterable");
+    for (i = 0; i < x.length; i++) {
+        let el = x[i]; 
+        w3AddClass(el, "show");
+        console.log(el)
+      }
+}
 
-      function filterMultiSelection(arr: Array<Props>){
+
+     export function filterMultiSelection(arr: Array<Props>){
         let nono = document.getElementById("nono");
         nono!.className = "noshow"; 
         var x: string | any[] | HTMLCollectionOf<Element>, i: number;
@@ -89,6 +99,7 @@ function w3RemoveClass(element: Element, name: string) {
 
 
 export function WikiSelector(){
+    ShowAll(); 
   return(
     <div>
       <WikiAction></WikiAction>
