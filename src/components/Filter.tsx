@@ -10,15 +10,15 @@ interface Props {
 }
 const wikioptions =[
   {value: "all", label: "Show all"},
-  {value: "react", label: "React"},
-  {value: "type", label: "Types"},
-  {value: "property", label: "Properties"},
-  {value: "pipeline", label: "GitLab Pipeline"},
+  {value: "australia", label: "Australia"},
+  {value: "oniscidea", label: "Oniscidea"},
+  {value: "armadillidae", label: "Armadillidae"},
+  {value: "ligiidae", label: "Ligiidae"},
   {value: "html", label: "HTML"},
-  {value: "css", label: "CSS"},
+  {value: "cssa", label: "CSS"},
   
 ]
-
+/* 
 export function ShowAll(){
     var x: string | any[] | HTMLCollectionOf<Element>, i: number;
     x = document.getElementsByClassName("filterable");
@@ -27,43 +27,57 @@ export function ShowAll(){
         w3AddClass(el, "show");
         console.log(el)
       }
-}
+} */
 
 
-     export function filterMultiSelection(arr: Array<Props>){
-        let nono = document.getElementById("nono");
-        nono!.className = "noshow"; 
-        var x: string | any[] | HTMLCollectionOf<Element>, i: number;
-        x = document.getElementsByClassName("filterable");
-        for (i = 0; i < x.length; i++) {
-          let el = x[i]; 
+      interface Props {
+        value: string;
+      }
+      
+      
+      export function filterMultiSelection(arr: Array<Props>) {
+        const nono = document.getElementById("nono");
+        if (nono) {
+          nono.className = "noshow";
+        }
+      
+        const filterableElements = document.getElementsByClassName("filterable");
+      
+        // Remove "show" class from all elements
+        for (let i = 0; i < filterableElements.length; i++) {
+          const el = filterableElements[i];
           w3RemoveClass(el, "show");
         }
-        let shownum = 0; 
-        let boo = true;
-        for (i = 0; i < x.length; i++) {
-          
-          arr.forEach((entry) => {
-             if (x[i].className.indexOf(entry.value) <= -1){
-              boo = false; 
-             }
-             else{
-                if (!x[i].classList.contains(entry.value)){
-                  boo = false; 
-                }
-             }
-          }) 
-          if (boo){
-            w3AddClass(x[i], "show");
-            shownum++; 
+      
+        console.log("Begin");
+      
+        // Apply filter criteria
+        for (let i = 0; i < filterableElements.length; i++) {
+          const el = filterableElements[i];
+          let shouldShow = true;
+      
+          for (const entry of arr) {
+            console.log(`entry: ${entry.value}`);
+            if (!el.classList.contains(entry.value)) {
+              shouldShow = false;
+              break;
+            }
+          }
+      
+          console.log(`shouldShow: ${shouldShow}`);
+          if (shouldShow) {
+            w3AddClass(el, "show");
           }
         }
-        let y = document.getElementsByClassName("show").length;
-        if (y < 1){
-            console.log(y)
-            nono!.className = "show"; 
+      
+        // Check if any element is shown
+        const shownElements = document.getElementsByClassName("show");
+        if (shownElements.length < 1 && nono) {
+          console.log(shownElements.length);
+          nono.className = "show";
         }
       }
+      
 
 /* function filterSelection(label: string) {
   var x, i;

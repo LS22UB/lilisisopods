@@ -11,10 +11,6 @@ export function Guides() {
                 This combination returns no instances. 
             </div>
             <Gui liste={guidelist}/>
-            <div className="filterable all show">
-                Ho
-            </div>
-            <hr/>
           </div>
         </div>
         <div className="row">
@@ -31,23 +27,29 @@ export function Guides() {
     year?: string; 
     free: boolean; 
     url?: string; 
+    type: string; /* Website, Book, Article, Thesis, Chapter */
+    language: string; 
   }
 
   let guidelist = [
     {
         title: "test",
-        tags: ["array"], 
+        tags: ["cssa", "australia"], 
         author: "string",
         year: "string",
-        free: false
+        free: false, 
+        type: "Book", 
+        language: "en"
     }, 
     {
-        title: "test",
-        tags: ["array"], 
-        author: "string",
-        year: "string",
+        title: "Guide to Barrow Island",
+        tags: ["australia", "oniscidea", "armadillidae", "ligiidae"], 
+        author: "Simon Judd and Giulia Perina",
+        year: "2013",
         free: true, 
-        url: "url"
+        url: "https://museum.wa.gov.au/sites/default/files/10.%20Judd,%20Perina.pdf", 
+        type: "Article", 
+        language: "en"
     }
     
   ]
@@ -58,8 +60,8 @@ export function Guides() {
         let y = ""; 
         let u = ""; 
         let l = ""; 
-        let f = "For sale"; 
-        let cla = "filterable guide-box all show "
+        let f = <span property="isAccessibleForFree"  content="false">For sale</span>; 
+        let cla = "filterable guide-box all show " + liste[i].language
         for (let j = 0; j < liste[i].tags.length; j++){
             cla += " " + liste[i].tags[j]
         }
@@ -67,13 +69,14 @@ export function Guides() {
             y = "(" + liste[i].year + ")"; 
         }
         if(liste[i].free){
-            f = "Free"
+            f =  <span property="isAccessibleForFree"  content="true">Free</span>; 
             u = " at "
             l =  liste[i].url; 
         }
-        rows.push(<div className={cla}>
-         <div>{liste[i].title} {y} by {liste[i].author}</div>
-         <div>{f} {u} <a href={l} property="url">{l}</a> </div>
+        rows.push(<div className={cla} typeof={liste[i].type}>
+         <div><b>{liste[i].title} </b> <span property="datePublished" content={y}>{y}</span> by <span property="author"> <i>{liste[i].author}</i></span></div>
+         <div>{f} {u} <a href={l} property="url">{l}</a> (<span property="inLanguage" content={liste[i].language}>{liste[i].language}</span>)</div>
+         
         </div>); 
     }
     return rows; 
