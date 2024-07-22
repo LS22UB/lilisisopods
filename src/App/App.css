@@ -172,3 +172,7 @@ p.mix {border-style: dotted dashed solid double;}
   background: var(--accent-light);
   color: white;
 }
+.fa-github{
+  background-color: var(--accent-dark);
+  color: white;
+}
