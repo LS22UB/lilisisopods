@@ -6,6 +6,7 @@ import { Navbar } from "../components/Navbar";
 import { getPathMapping } from "../utils/getPathMapping";
 import { useEffect} from "react";
 import React from "react";
+import "../utils/highlight.js";
 
 const App = () => {
   
