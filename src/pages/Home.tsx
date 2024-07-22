@@ -1,4 +1,5 @@
 import React from "react";
+import { BoldPara } from "../components/text-types";
 
 export function Home() {
 
@@ -8,12 +9,12 @@ export function Home() {
           <div className="col">
             <h2>Under construction!</h2>
             <div className="welcome-box center">
-              <b>
+              <BoldPara>
                 I collect knowledge and resources about isopods - both for scientific and hobby purposes. 
-              </b>
-              <b>
+              </BoldPara>
+              <BoldPara>
               I am always happy for people to contact me. {/* Doing this website alone takes time and I am very open to other people joining. */}
-              </b>
+              </BoldPara>
             </div>
           </div>
         </div>

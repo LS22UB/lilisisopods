@@ -1,6 +1,6 @@
 import React from "react";
 
-export function BoldPara(children: React.ReactNode){
+export function BoldPara({children}: {children: React.ReactNode}){
     return(
         <p>
             <b>
