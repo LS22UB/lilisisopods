@@ -5,6 +5,8 @@ export * from './components/Navbar.tsx'
 export * from './components/Footer.tsx'
 export * from './components/NotFound.tsx'
 export * from './components/text-types.tsx'
+export * from './components/SocialMedia.tsx'
+export * from './components/SocialMedia.tsx'
 
 
 export * from './utils/getPathMapping.ts'

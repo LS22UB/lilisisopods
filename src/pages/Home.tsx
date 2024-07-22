@@ -1,5 +1,6 @@
 import React from "react";
 import { BoldPara } from "../components/text-types";
+import { SocialRow } from "../components/SocialMedia";
 
 export function Home() {
 
@@ -16,6 +17,8 @@ export function Home() {
               I am always happy for people to contact me. {/* Doing this website alone takes time and I am very open to other people joining. */}
               </BoldPara>
             </div>
+            <SocialRow/>
+            
           </div>
         </div>
         <div className="row">
