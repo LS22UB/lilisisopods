@@ -38,8 +38,12 @@ export function Guides() {
   function Gui({liste}: {liste: Array<GuideFace>}){
     let rows = [];
     for (let i = 0; i < liste.length; i++) {
-        rows.push(<div className="filterable all">
-            Ho
+        let cla = "filterable all "
+        for (let j = 0; j < liste[i].tags.length; j++){
+            cla += " " + liste[i].tags[j]
+        }
+        rows.push(<div className={cla}>
+            
         </div>); 
     }
     return rows; 
