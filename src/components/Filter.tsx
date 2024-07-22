@@ -19,37 +19,6 @@ const wikioptions =[
   
 ]
 
-/* function filterMultiSelection(arr: Array<Props>){
-  var x: string | any[] | HTMLCollectionOf<Element>, i;
-  x = document.getElementsByClassName("filterable");
-  let label = ""; 
-  arr.forEach((entry) => {
-    label = label  + entry.label + " "
-  })
-  if (label == "all" || label =="all ") label = "";
-    for (i = 0; i < x.length; i++) {
-      let el = x[i]; 
-      w3RemoveClass(el, "show");
-      if (x[i].className.indexOf(label) > -1) w3AddClass(x[i], "show");
-    }
-} */
-  /*   function filterMultiSelection(arr: Array<Props>){
-      var x: string | any[] | HTMLCollectionOf<Element>, i;
-      x = document.getElementsByClassName("filterable");
-      for (i = 0; i < x.length; i++) {
-        let el = x[i]; 
-        w3RemoveClass(el, "show");
-      }
-      
-      arr.forEach((entry) => {
-        for (i = 0; i < x.length; i++) {
-          console.log("Label: " + entry.value)
-          if (x[i].className.indexOf(entry.value) > -1) w3AddClass(x[i], "show");
-        }
-      })
-    } */
-
-      /*  */
 
       function filterMultiSelection(arr: Array<Props>){
         let nono = document.getElementById("nono");

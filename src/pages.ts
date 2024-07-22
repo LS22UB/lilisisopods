@@ -1,4 +1,4 @@
-import { About, Home, Ligia, LigiaPallasii, FAQ, Shops, ArmadillidiumKlugii } from "./pages/page-list";
+import { About, Home, Ligia, LigiaPallasii, FAQ, Shops, ArmadillidiumKlugii, Guides } from "./pages/page-list";
 
 interface Base {
     name: string | undefined;
@@ -56,6 +56,12 @@ interface Base {
               path: "/faq",
               component: FAQ,
           },
+          {
+            name: "Identification guides list",
+            title: "Identification guides list",
+            path: "/education/identification/guide-list",
+            component: Guides,
+          },
       ]
     }
   ]
@@ -79,6 +85,12 @@ interface Base {
       title: "FAQ",
       path: "/faq",
       component: FAQ,
+    },
+    {
+      name: "Identification guides list",
+      title: "Identification guides list",
+      path: "/education/identification/guide-list",
+      component: Guides,
     },
     {
       name: "Home",

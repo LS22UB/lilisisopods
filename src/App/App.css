@@ -176,3 +176,15 @@ p.mix {border-style: dotted dashed solid double;}
   background-color: var(--accent-dark);
   color: white;
 }
+
+
+.show {
+  display: block;
+}
+.noshow{
+  display: none;
+}
+.filterable {
+  margin-bottom: 4px;
+  display: none;
+}
