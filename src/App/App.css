@@ -2,4 +2,105 @@
   text-align: center;
 }
 
+:root{
+  --accent-dark: #102542; /* (Oxford blue) */
+  --accent-light: #FFCB77; /* Sunset */
+  --accent-urgent: #A02C3C; /* Amaranth purple */
+  /* --colour-one: #50AA92; */ /* Zomp */
+  /* --colour-two: #309488; */ /* Dark Cyan */
+  --colour-two: #3AB09E; /* Keppel */
+  --colour-three: #107E7D; /* Teal */
+  --colour-four: #105260; /* Midnight Green */
+  --background: #F1F9F7; /* Mint Cream */
+}
 
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* * * * * * * */
+/* *  BODY * * */
+/* * * * * * * */
+body {
+  padding-top: 56px; 
+  color: black;
+  background-color: var(--background) !important;
+}
+
+/* * * * * * * */
+/* *  NAVBAR * */
+/* * * * * * * */
+.nav-link{
+  color: var(--accent-dark) !important; 
+}
+.nav-link:hover {
+  color: var(--background) !important;
+  background-color: var(--accent-dark) !important;
+  border-radius: 7px;
+}
+.navbar{
+  backdrop-filter: blur(5px);
+  transition: visibility 0s, 0.6s, opacity 0.6s linear, transform 1s;
+  height: 50px;
+}
+  nav.navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.dropdown-item{
+  color: var(--accent-dark) !important;
+}
+.dropdown-item:hover{
+  color: var(--background) !important;
+  background-color: var(--accent-dark) !important;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  background-color: var(--background);
+  border-color: var(--accent-dark);
+  border-radius: 7px;
+}
+.navbar-brand{
+  color: var(--accent-dark) !important;
+}
+.dropdown-menu{
+  margin-top: 0 !important;
+}
+
+/* * * * * * * */
+/* *  BOXES  * */
+/* * * * * * * */
+
+.welcome-box{
+  background-color: #105260;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 7px;
+  max-width: 70%;
+}
+
+
+/* * * * * * * */
+/* MEDIA RULES */
+/* * * * * * * */
+/*For tablet or bigger*/
+@media screen and (min-width: 992px) {
+  /* navbar opens on hover*/ 
+  .dropdown:hover .dropdown-menu {
+      display: block;
+  }
+}
+
+
+/* * * * * * * */
+/* * CONTENT * */
+/* * * * * * * */
+.center-content{
+  align-items: center;
+  display: flex;
+}
