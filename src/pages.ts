@@ -48,7 +48,7 @@ interface Base {
       ]
     },
     {
-      name: "Questions",
+      name: "Education",
       folder: [
           {
               name: "FAQ",
