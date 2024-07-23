@@ -43,14 +43,38 @@ export function Guides() {
     }, 
     {
         title: "Guide to Barrow Island",
-        tags: ["australia", "oniscidea", "armadillidae", "ligiidae"], 
+        tags: ["australia", "oniscidea", "armadillidae", "ligiidae", "maps", "photos"], 
         author: "Simon Judd and Giulia Perina",
         year: "2013",
         free: true, 
         url: "https://museum.wa.gov.au/sites/default/files/10.%20Judd,%20Perina.pdf", 
         type: "Article", 
         language: "en"
-    }
+    }, 
+    {
+        title: "CLAVE DE IDENTIFICACIÓN",
+        tags: ["chile", "ligiidae", "tylidae", "styloniscidae", "detonidae", "philoscidae",
+             "oniscidea", "armadillidae", "bathytropidae", "oniscidae", "porcellionidae", 
+                "armadillidiidae"], 
+        author: "Pérez-Schultheiss",
+        free: true, 
+        year: "2010",
+        url: "http://www.bbchile.com/pdfs/2010/4/04-Perez-Schultheiss-b-2010-4.pdf", 
+        type: "Article", 
+        language: "es"
+    },
+    {
+        title: "Clé des Isopodes terrestres du Nord de la France- 2021",
+        tags: ["france", "photos", "Armadillidiidae", "ligiidae", "detonidae", "philoscidae",
+             "halophiloscidae", "stenoniscidae", "Platyarthridae", "Armadillidae", "Oniscidae", 
+            "Trachelipodidae", "Cylisticidae", "Agnaridae", "Porcellionidae"], 
+        author: "Noël and Séchet",
+        year: "2021",
+        free: true, 
+        url: "https://www.researchgate.net/publication/355145019_Cle_des_Isopodes_terrestres_du_Nord_de_la_France-_2021",
+        type: "Book", 
+        language: "fr"
+    }, 
     
   ]
 
