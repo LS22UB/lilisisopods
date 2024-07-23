@@ -51,6 +51,9 @@ body {
   color: black;
   background-color: var(--background) !important;
 }
+a{
+  color: var(--colour-four) !important;
+}
 
 /* * * * * * * */
 /* *  NAVBAR * */
