@@ -212,7 +212,7 @@ export function Guides() {
       type: "Article", 
       language: "en",
     },
-    {
+    { 
       title: "Oniscidea of California",
       tags: ["California", "USA", "Ligiidae" , "Alloniscidae","Armadillidae", "Trichoniscidae", 
         "Armadillidiidae", "Detonidae","Halophiloscidae","Platyarthridae","Porcellionidae"],

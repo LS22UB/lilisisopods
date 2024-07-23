@@ -11,7 +11,7 @@ interface Props {
 /* Photos, Maps */
 
 const filteroptions =[
-  {value: "Oniscidea", label: "Oniscidea"},
+  /* {value: "Oniscidea", label: "Oniscidea"},
   {value: "Agnaridae", label: "Agnaridae"},
   {value: "Alloniscidae", label: "Alloniscidae"},
   {value: "Armadillidae", label: "Armadillidae"},
@@ -32,9 +32,9 @@ const filteroptions =[
   {value: "Tyliidae", label: "Tyliidae"},
   {value: "Trachelipodidae", label: "Trachelipodidae"}, 
   {value: "Trichoniscidae", label: "Trichoniscidae"},
+ */
 
-
-  {value: "Asellidae", label: "Asellidae"},
+ /*  {value: "Asellidae", label: "Asellidae"},
   {value: "Gnathiidae", label: "Gnathiidae"},
   {value: "Asellota", label: "Asellota"},
   {value: "Aselidae", label: "Aselidae"},
@@ -44,7 +44,7 @@ const filteroptions =[
   {value: "Sphaeromatidea", label: "Sphaeromatidea"},
   {value: "Sphaeromatidae", label: "Sphaeromatidae"},
   {value: "Cymothoida", label: "Cymothoida"},
-  {value: "Limnoriidae", label: "Limnoriidae"},
+  {value: "Limnoriidae", label: "Limnoriidae"}, */
 
   
 
