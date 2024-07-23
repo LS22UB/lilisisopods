@@ -7,7 +7,7 @@ export function Guides() {
       <>
       <div className="row align-items-center">
         <div className="col">
-        <h2>As of today, you can search through <span className="bg-c3 c-al heading-highlight">{len}</span> guides. </h2>
+        <h2>As of today, you can search through <span className="bg-ad c-al heading-highlight">{len}</span> guides. </h2>
         </div>
         <div className="col-4">
         <iframe title="[ Insert title here ]" aria-label="Interactive line chart" id="datawrapper-chart-4AVPd" src="https://datawrapper.dwcdn.net/4AVPd/1/" scrolling="no" frameBorder="0"  width="382" height="267" data-external="1"></iframe> 
