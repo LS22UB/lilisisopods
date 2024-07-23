@@ -54,7 +54,7 @@ const filteroptions =[
   {value: "MarineIsopods", label: "Marine Isopods"},
   {value: "CavernicolousIsopods", label: "Cavernicolous Isopods"},
   
-
+  {value: "GeneralKey", label: "General Key"},
   
   {value: "NorthAmerica", label: "North America"},
   {value: "SouthAmerica", label: "South America"},
@@ -63,6 +63,7 @@ const filteroptions =[
   {value: "Africa", label: "Africa"},
 
     {value: "Australia", label: "Australia"},
+    {value: "Brazil", label: "Brazil"},
     {value: "Canada", label: "Canada"},
     {value: "Chile", label: "Chile"},
     {value: "Cuba", label: "Cuba"},
@@ -81,6 +82,9 @@ const filteroptions =[
 
 
     {value: "California", label: "California"},
+    {value: "Maryland", label: "Maryland"},
+    {value: "Wisconsin", label: "Wisconsin"},
+    {value: "Texas", label: "Texas"},
 
     {value: "en", label: "English"},
     {value: "es", label: "Spanish"},
