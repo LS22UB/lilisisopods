@@ -8,8 +8,8 @@ let guidegraph = [
         number: 24
     },
     {
-        date: "2024-07-23", 
-        number: 18
+        date: "2024-07-22", 
+        number: 24
     }
     
 ]
