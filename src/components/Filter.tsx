@@ -40,17 +40,6 @@ const languageoptions = [
     {value: "de", label: "German"},
     {value: "fr", label: "French"},
 ]
-/* 
-export function ShowAll(){
-    var x: string | any[] | HTMLCollectionOf<Element>, i: number;
-    x = document.getElementsByClassName("filterable");
-    for (i = 0; i < x.length; i++) {
-        let el = x[i]; 
-        w3AddClass(el, "show");
-        console.log(el)
-      }
-} */
-
 
       interface Props {
         value: string;
@@ -101,16 +90,6 @@ export function ShowAll(){
       }
       
 
-/* function filterSelection(label: string) {
-  var x, i;
-  x = document.getElementsByClassName("filterable");
-  if (label == "all") label = "";
-  for (i = 0; i < x.length; i++) {
-    let el = x[i]; 
-    w3RemoveClass(el, "show");
-    if (x[i].className.indexOf(label) > -1) w3AddClass(x[i], "show");
-  }
-} */
   
 function w3AddClass(element: Element, name: string) {
   var i, arr1, arr2;
@@ -238,56 +217,3 @@ class CountryAction extends React.Component {
     }
   }
 
-/* Type '(selectedOption: Props | null) => void' is not assignable to type '(newValue: MultiValue<{ value: string; label: string; } | null>, actionMeta: ActionMeta<{ value: string; label: string; } | null>) => void'.
-  Types of parameters 'selectedOption' and 'newValue' are incompatible.
-    Type 'readonly ({ value: string; label: string; } | null)[]' is missing the following properties from type 'Props': value, label */
-    /* const hpoptions =[
-      {value: "all", label: "All"},
-      {value: "Academia", label: "Academia"},
-      {value: "PatientPatient", label: "Patient"},
-      {value: "Medical", label: "Medical Professional"},
-      {value: "property", label: "Properties"},
-      {value: "pipeline", label: "GitLab Pipeline"},
-      {value: "html", label: "HTML"},
-      {value: "css", label: "CSS"},
-      
-    ]
-
-    export function HPSelector(){
-      return(
-        <div>
-          <HPAction></HPAction>
-        </div>
-      )
-    }
-
-
-
-    class HPAction extends React.Component {
-      state = {
-        selectedOption: null,
-      };
-      handleChange = (selectedOption: any) => {
-        
-        this.setState({ selectedOption }, () =>
-        console.log(`Option selected:`, this.state.selectedOption)
-         
-        );
-          filterMultiSelection(selectedOption)
-      };
-      render() {
-        const { selectedOption } = this.state;
-    
-        return (
-          <Select
-            value={selectedOption}
-            onChange={this.handleChange}
-            isMulti
-            options={hpoptions}
-            defaultValue={[hpoptions[0]]}
-            className="basic-multi-select"
-            classNamePrefix="select"
-          />
-        );
-      }
-    } */
