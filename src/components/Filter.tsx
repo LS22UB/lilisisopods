@@ -25,11 +25,23 @@ const filteroptions =[
   {value: "Platyarthridae", label: "Platyarthridae"},
   {value: "Porcellionidae", label: "Porcellionidae"},
   {value: "Stenoniscidae", label: "Stenoniscidae"},
-  {value: "Trachelipodidae", label: "Trachelipodidae"},
+  {value: "Trachelipodidae", label: "Trachelipodidae"}, 
+  {value: "Trichoniscidae", label: "Trichoniscidae"},
 
-  {value: "Australia", label: "Australia"},
-{value: "Chile", label: "Chile"},
+  {value: "Slater", label: "Ligiidae"},
+  {value: "Oniscidea", label: "Terrestrial Isopods"},
+  {value: "FreshwaterIsopods", label: "Freshwater Isopods"},
+  
+
+    {value: "Australia", label: "Australia"},
+    {value: "Chile", label: "Chile"},
+    {value: "England", label: "England"},
     {value: "France", label: "France"},
+    {value: "Ireland", label: "Ireland"},
+    {value: "Germany", label: "Germany"},
+    {value: "GreatBritain", label: "Great Britain"},
+    {value: "Scottland", label: "Scottland"},
+    {value: "USA", label: "USA"},
 
     {value: "en", label: "English"},
     {value: "es", label: "Spanish"},

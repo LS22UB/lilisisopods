@@ -56,7 +56,7 @@ export function Guides() {
     },
     {
         title: "Clé des Isopodes terrestres du Nord de la France- 2021",
-        tags: ["France", "Photos", "Armadillidiidae", "Ligiidae", "Detonidae", "Philoscidae",
+        tags: ["France", "Photos", "Oniscidea", "Armadillidiidae", "Ligiidae", "Detonidae", "Philoscidae",
              "Halophiloscidae", "Stenoniscidae", "Platyarthridae", "Armadillidae", "Oniscidae", 
             "Trachelipodidae", "Cylisticidae", "Agnaridae", "Porcellionidae"], 
         author: "Noël and Séchet",
@@ -65,6 +65,73 @@ export function Guides() {
         url: "https://www.researchgate.net/publication/355145019_Cle_des_Isopodes_terrestres_du_Nord_de_la_France-_2021",
         type: "Book", 
         language: "fr"
+    }, 
+    {
+        title: "Bestimmungsschlüssel Landasseln",
+        tags: ["Germany", "Photos", "Armadillidiidae", "Oniscidea", "Ligiidae",  "Philoscidae",
+             , "Trichoniscidae", "Platyarthridae",  "Oniscidae", 
+            "Trachelipodidae", "Cylisticidae", "Porcellionidae"], 
+        author: "Bodentier hoch 4",
+        free: true, 
+        url: "https://bodentierhochvier.de/erkennen/bestimmung-landasseln/",
+        type: "Website", 
+        language: "de"
+    }, 
+    {
+      title: "Introduction to woodlice",
+      tags: ["GreatBritain", "Ireland", "England", "Schottland", "Photos", "Armadillidiidae", "Oniscidea", "Ligiidae", "Philoscidae",
+           , "Trichoniscidae", "Platyarthridae",  "Oniscidae", 
+          "Trachelipodidae", "Cylisticidae", "Porcellionidae"], 
+      author: "Paul Richards",
+      free: true, 
+      year: "2011",
+      url: "https://bmig.org.uk/sites/default/files/docs/Woodlice.pdf",
+      type: "Website", 
+      language: "en"
+    }, 
+    {
+      title: "A key to the woodlice of Britain and Ireland",
+      tags: ["GreatBritain", "Ireland", "England", "Schottland","Armadillidiidae", "Oniscidea", "Ligiidae", "Philoscidae",
+           , "Trichoniscidae", "Platyarthridae",  "Oniscidae", 
+          "Trachelipodidae", "Cylisticidae", "Porcellionidae"], 
+      author: "FSC AIDGAP",
+      free: false, 
+      year: "1991",
+      type: "Book", 
+      language: "en",
+    }, 
+    {
+      title: "Woodlice: Linnean Society Synopsis (New Series) 49",
+      tags: ["GreatBritain", "Ireland", "England", "Schottland", "Armadillidiidae", "Oniscidea", "Ligiidae", "Philoscidae",
+           , "Trichoniscidae", "Platyarthridae",  "Oniscidae", 
+          "Trachelipodidae", "Cylisticidae", "Porcellionidae"], 
+      author: "Linnean Society",
+      free: false, 
+      year: "1993",
+      type: "Book", 
+      language: "en",
+    }, 
+    {
+      title: "An Introduction to the Identification of the Woodlice (Isopoda: Oniscidea) occurring in Berkshire, Buckinghamshire and Oxfordshire",
+      tags: ["England", "Armadillidiidae", "Oniscidea", "Ligiidae", "Philoscidae",
+           , "Trichoniscidae", "Platyarthridae", "Oniscidae", 
+          "Trachelipodidae", "Cylisticidae", "Porcellionidae"], 
+      author: "Steve Gregory",
+      free: true, 
+      year: "2019",
+      url: "https://anhso.org.uk/wp-content/uploads/Fritillary/frit8-woodlice.pdf",
+      type: "Book", 
+      language: "en",
+    }, 
+    {
+      title: "British freshwater Crustacea Malacostraca: a key with ecological notes",
+      tags: ["England", "Slater", "Ligiidae", "FreshwaterIsopods"], 
+      author: "Gledhill, A.T.; Sutcliffe, D.W.; Williams, W.D.",
+      free: false, 
+      year: "1993",
+      url: "https://www.fba.org.uk/shop/p/book-26",
+      type: "Book", 
+      language: "en",
     }, 
     
   ]
@@ -75,6 +142,7 @@ export function Guides() {
         let y = ""; 
         let u = ""; 
         let l = ""; 
+        let adv = ""; 
         let f = <span property="isAccessibleForFree"  content="false">For sale</span>; 
         let cla = "filterable guide-box all show " + liste[i].language
         for (let j = 0; j < liste[i].tags.length; j++){
@@ -85,12 +153,18 @@ export function Guides() {
         }
         if(liste[i].free){
             f =  <span property="isAccessibleForFree"  content="true">Free</span>; 
-            u = " at "
-            l =  liste[i].url; 
+            
+        }
+        if(liste[i].url){
+          u = " at "
+          l =  liste[i].url; 
+          if(! liste[i].free){
+            adv = "or second hand (cheaper) from other sources"
+          }
         }
         rows.push(<div className={cla} typeof={liste[i].type}>
          <div><b>{liste[i].title} </b> <span property="datePublished" content={y}>{y}</span> by <span property="author"> <i>{liste[i].author}</i></span></div>
-         <div>{f} {u} <a href={l} property="url">{l}</a> (<span property="inLanguage" content={liste[i].language}>{liste[i].language}</span>)</div>
+         <div>{f} {u} <small> <a  href={l} property="url">{l}</a> {adv}</small> (<span property="inLanguage" content={liste[i].language}>{liste[i].language}</span>) </div>
          
         </div>); 
     }
