@@ -182,15 +182,7 @@ export function Guides() {
       type: "Article", 
       language: "en",
     }, 
-    {
-      title: "A new species of isopod (Isopoda: Flabellifera: Sphaeromatidae) from Cuba, with an identification key for the species of Paraimene",
-      tags: ["Cuba", "Sphaeromatidae", "MarineIsopods"],
-      author: "Manuel Ortiz Touzet",
-      free: true, 
-      url: "https://www.inaturalist.org/guides/5808",
-      type: "Article", 
-      language: "en",
-    }, 
+
     /* {
       title: "Isopods of Oman",
       tags: ["Oman" ],
