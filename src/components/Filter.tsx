@@ -17,8 +17,8 @@ const filteroptions =[
   {value: "Armadillidae", label: "Armadillidae"},
   {value: "Armadillidiidae", label: "Armadillidiidae"},
   {value: "Balloniscidae", label: "Balloniscidae"},
+  {value: "Buddelundiellidae", label: "Buddelundiellidae"},
   {value: "Cylisticidae", label: "Cylisticidae"},
-  {value: "Agnaridae", label: "Agnaridae"},
   {value: "Detonidae", label: "Detonidae"},
   {value: "Halophiloscidae", label: "Halophiloscidae"},
   {value: "Ligiidae", label: "Ligiidae"},
@@ -26,8 +26,10 @@ const filteroptions =[
   {value: "Philoscidae", label: "Philoscidae"},
   {value: "Platyarthridae", label: "Platyarthridae"},
   {value: "Porcellionidae", label: "Porcellionidae"},
+  {value: "Scleropactidae", label: "Scleropactidae"},
   {value: "Stenoniscidae", label: "Stenoniscidae"},
-  {value: "Styloniscidae", label: "Stenoniscidae"},
+  {value: "Styloniscidae", label: "Styloniscidae"},
+  {value: "Tyliidae", label: "Tyliidae"},
   {value: "Trachelipodidae", label: "Trachelipodidae"}, 
   {value: "Trichoniscidae", label: "Trichoniscidae"},
 
@@ -40,13 +42,13 @@ const filteroptions =[
   {value: "Sphaeromatidae", label: "Sphaeromatidae"},
   {value: "Limnoriidae", label: "Limnoriidae"},
 
-"Tyliidae",
   
 
   {value: "Slater", label: "Ligiidae"},
   {value: "Oniscidea", label: "Terrestrial Isopods"},
   {value: "FreshwaterIsopods", label: "Freshwater Isopods"},
   {value: "MarineIsopods", label: "Marine Isopods"},
+  {value: "CavernicolousIsopods", label: "Cavernicolous Isopods"},
   
 
   
@@ -59,6 +61,7 @@ const filteroptions =[
     {value: "Australia", label: "Australia"},
     {value: "Canada", label: "Canada"},
     {value: "Chile", label: "Chile"},
+    {value: "Cuba", label: "Cuba"},
     {value: "England", label: "England"},
     {value: "France", label: "France"},
     {value: "Ireland", label: "Ireland"},
@@ -66,6 +69,9 @@ const filteroptions =[
     {value: "Germany", label: "Germany"},
     {value: "GreatBritain", label: "Great Britain"},
     {value: "Mexico", label: "Mexico"},
+    {value: "NewZealand", label: "New Zealand"},
+    {value: "Oman", label: "Oman"},
+    {value: "Romania", label: "Romania"},
     {value: "Scottland", label: "Scottland"},
     {value: "USA", label: "USA"},
 
@@ -73,6 +79,9 @@ const filteroptions =[
     {value: "es", label: "Spanish"},
     {value: "de", label: "German"},
     {value: "fr", label: "French"},
+
+
+    
 ]
 
 

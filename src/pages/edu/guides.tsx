@@ -68,7 +68,7 @@ export function Guides() {
     }, 
     {
         title: "Bestimmungsschlüssel Landasseln",
-        tags: ["Germany", "Photos", "Armadillidiidae", "Oniscidea", "Ligiidae",  "Philoscidae",
+        tags: ["Germany", "Photos", "Armadillidiidae", "Oniscidea", "Ligiidae",  "Philoscidae"
              , "Trichoniscidae", "Platyarthridae","Europe",  "Oniscidae", 
             "Trachelipodidae", "Cylisticidae", "Porcellionidae"], 
         author: "Bodentier hoch 4",
@@ -80,7 +80,7 @@ export function Guides() {
     {
       title: "Introduction to woodlice",
       tags: ["GreatBritain", "Ireland", "England", "Schottland", "Photos", "Armadillidiidae", "Oniscidea", "Ligiidae", "Philoscidae",
-           , "Trichoniscidae", "Platyarthridae", "Europe", "Oniscidae", 
+            "Trichoniscidae", "Platyarthridae", "Europe", "Oniscidae", 
           "Trachelipodidae", "Cylisticidae", "Porcellionidae"], 
       author: "Paul Richards",
       free: true, 
@@ -92,7 +92,7 @@ export function Guides() {
     {
       title: "A key to the woodlice of Britain and Ireland",
       tags: ["GreatBritain", "Ireland", "England","Europe", "Schottland","Armadillidiidae", "Oniscidea", "Ligiidae", "Philoscidae",
-           , "Trichoniscidae", "Platyarthridae",  "Oniscidae", 
+            "Trichoniscidae", "Platyarthridae",  "Oniscidae", 
           "Trachelipodidae", "Cylisticidae", "Porcellionidae"], 
       author: "FSC AIDGAP",
       free: false, 
@@ -103,7 +103,7 @@ export function Guides() {
     {
       title: "Woodlice: Linnean Society Synopsis (New Series) 49",
       tags: ["GreatBritain", "Ireland", "England", "Schottland", "Europe","Armadillidiidae", "Oniscidea", "Ligiidae", "Philoscidae",
-           , "Trichoniscidae", "Platyarthridae",  "Oniscidae", 
+            "Trichoniscidae", "Platyarthridae",  "Oniscidae", 
           "Trachelipodidae", "Cylisticidae", "Porcellionidae"], 
       author: "Linnean Society",
       free: false, 
@@ -114,7 +114,7 @@ export function Guides() {
     {
       title: "An Introduction to the Identification of the Woodlice (Isopoda: Oniscidea) occurring in Berkshire, Buckinghamshire and Oxfordshire",
       tags: ["England", "Armadillidiidae", "Oniscidea", "Ligiidae","Europe", "Philoscidae",
-           , "Trichoniscidae", "Platyarthridae", "Oniscidae", 
+            "Trichoniscidae", "Platyarthridae", "Oniscidae", 
           "Trachelipodidae", "Cylisticidae", "Porcellionidae"], 
       author: "Steve Gregory",
       free: true, 
@@ -166,14 +166,50 @@ export function Guides() {
     }, 
     {
       title: "Terrestrial Isopods (Oniscidea) of North America north of Mexico ",
-      tags: ["Photos",  "USA", "Canada", "NorthAmerica", "Slater", "Tyliidae", "Styloniscidae", "Trichoniscidae","Alloniscidae","Armadillidae","Armadillidiidae","Balloniscidae","Cylisticidae","Detonidae","Halophiloscidae","Oniscidae","Philoscidae","Platyarthridae","Porcellionidae","Trachelipodidae","Ligiidae","Armadillidiidae", "FreshwaterIsopds",  "MarineIsopods", "Sphaeromatidae", "Asellidae"], 
+      tags: ["Photos",  "USA", "Canada", "NorthAmerica", "Oniscidea", "TerrestrialIsopds", "Slater", "Tyliidae", "Styloniscidae", "Trichoniscidae","Alloniscidae","Armadillidae","Armadillidiidae","Balloniscidae","Cylisticidae","Detonidae","Halophiloscidae","Oniscidae","Philoscidae","Platyarthridae","Porcellionidae","Trachelipodidae","Ligiidae","Armadillidiidae", "FreshwaterIsopds",  "MarineIsopods", "Sphaeromatidae", "Asellidae"], 
       author: "Inaturalist Users",
       free: true, 
       url: "https://www.inaturalist.org/guides/5808",
       type: "Website", 
       language: "en",
     }, 
-    
+    {
+      title: "A new species of isopod (Isopoda: Flabellifera: Sphaeromatidae) from Cuba, with an identification key for the species of Paraimene",
+      tags: ["Cuba", "Sphaeromatidae", "MarineIsopods"],
+      author: "Manuel Ortiz Touzet",
+      free: true, 
+      url: "https://www.inaturalist.org/guides/5808",
+      type: "Article", 
+      language: "en",
+    }, 
+    {
+      title: "A new species of isopod (Isopoda: Flabellifera: Sphaeromatidae) from Cuba, with an identification key for the species of Paraimene",
+      tags: ["Cuba", "Sphaeromatidae", "MarineIsopods"],
+      author: "Manuel Ortiz Touzet",
+      free: true, 
+      url: "https://www.inaturalist.org/guides/5808",
+      type: "Article", 
+      language: "en",
+    }, 
+    /* {
+      title: "Isopods of Oman",
+      tags: ["Oman" ],
+      author: "Liliana Sanfilippo",
+      free: true, 
+      url: "",
+      type: "Website", 
+      language: "en",
+    },  */
+    {
+      title: "Identification key to the cavernicolous Oniscidea of Romania",
+      tags: ["Romania", "CavernicolousIsopods", "TerrestrialIsopods", "Trichoniscidae", 
+        "Buddelundiellidae", "Porcellionidae", "Armadillidiidae", "Cylisticidae", "Scleropactidae"],
+      author: "Ionel Tabacaru and Andrei Giurginca",
+      free: true, 
+      url: "https://www.researchgate.net/publication/321832824_Identification_key_to_the_cavernicolous_Oniscidea_of_Romania",
+      type: "Article", 
+      language: "en",
+    },
   ]
 
   function Gui({liste}: {liste: Array<GuideFace>}){
