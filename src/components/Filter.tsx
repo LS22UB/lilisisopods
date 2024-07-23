@@ -47,8 +47,8 @@ const filteroptions =[
   {value: "Limnoriidae", label: "Limnoriidae"}, */
 
   
-
-  {value: "Slater", label: "Ligiidae"},
+  {value: "ParasiticIsopods", label: "Parasitic Isopods"},
+  {value: "Ligiidae", label: "Slater"},
   {value: "Oniscidea", label: "Terrestrial Isopods"},
   {value: "FreshwaterIsopods", label: "Freshwater Isopods"},
   {value: "MarineIsopods", label: "Marine Isopods"},
@@ -71,6 +71,8 @@ const filteroptions =[
     {value: "France", label: "France"},
     {value: "Ireland", label: "Ireland"},
     {value: "Iceland", label: "Iceland"},
+    {value: "India", label: "India"},
+    {value: "Japan", label: "Japan"},
     {value: "Germany", label: "Germany"},
     {value: "GreatBritain", label: "Great Britain"},
     {value: "Mexico", label: "Mexico"},
@@ -78,6 +80,7 @@ const filteroptions =[
     {value: "Oman", label: "Oman"},
     {value: "Romania", label: "Romania"},
     {value: "Scottland", label: "Scottland"},
+    {value: "SouthKorea", label: "South Korea"},
     {value: "USA", label: "USA"},
 
 

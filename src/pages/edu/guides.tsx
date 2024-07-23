@@ -198,15 +198,7 @@ export function Guides() {
       language: "en",
     }, 
 
-    /* {
-      title: "Isopods of Oman",
-      tags: ["Oman" ],
-      author: "Liliana Sanfilippo",
-      free: true, 
-      url: "",
-      type: "Website", 
-      language: "en",
-    },  */
+    
     {
       title: "Identification key to the cavernicolous Oniscidea of Romania",
       tags: ["Romania", "CavernicolousIsopods", "TerrestrialIsopods", "Trichoniscidae", 
@@ -310,6 +302,76 @@ export function Guides() {
       type: "Article", 
       language: "en",
     }, 
+    {
+      title: "Bestimmungsleitfaden für die häufigsten Landasseln Deutschlands",
+      tags: ["Germany", "TerrestrialIsopods", "Europe", "Photos"],
+      author: "Benedikt Kästle and Stephanie Binder",
+      free: true, 
+      year: "2024",
+      url: "https://www.rote-liste-zentrum.de/files/Bestimmungsleitfaden_Asseln.pdf",
+      type: "Article", 
+      language: "de",
+    },
+    {
+      title: "Redescription and molecular characterisation of the fish parasitic isopod Norileca indica (Milne Edwards, 1840) (Crustacea: Isopoda: Cymothoidae) with a key to the genus",
+      tags: ["MarineIsopods", "ParasiticIsopods"],
+      author: "Serita van der Wal, Nico J Smit and Kerry A Hadfield",
+      free: true, 
+      year: "2017",
+      url: "https://www.tandfonline.com/doi/abs/10.1080/15627020.2017.1382389",
+      type: "Article", 
+      language: "en",
+    },
+    {
+      title: "Four new species of isopods (Crustacea, Isopoda) from South Korea with keys of the genera",
+      tags: ["MarineIsopods", "SouthKorea", "Asia"],
+      author: "Sung Hoon Kim and Seong Myeong Yoon",
+      free: true, 
+      year: "2021",
+      url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7817651/",
+      type: "Article", 
+      language: "en",
+    },
+    {
+      title: "Nine New Species of Ilyarachninae from Australia and New Zealand with an Updated Key of the Subfamily from the Southwest Pacific",
+      tags: ["Australia", "NewZealand", "MarineIsopods" ],
+      author: "Kelly L. Merrin",
+      free: true, 
+      url: "https://www.mdpi.com/2673-6500/4/2/13",
+      year: "2024",
+      type: "Article", 
+      language: "en",
+    },
+    {
+      title: "A new neotenous genus and species, Deltanthura palpus gen. et sp. nov. from Japan, with a revised key to the genera in Paranthuridae",
+      tags: ["Asia", "Japan", "MarineIsopods"],
+      author: "Shoki Shiraki, Michitaka Shimomura and Keiichi Kakui",
+      free: true, 
+      year: "2022",
+      url: "https://www.researchgate.net/publication/359632308_A_new_neotenous_genus_and_species_Deltanthura_palpus_gen_et_sp_nov_Isopoda_Anthuroidea_Paranthuridae_from_Japan_with_a_revised_key_to_the_genera_in_Paranthuridae",
+      type: "Article", 
+      language: "en",
+    },
+    {
+      title: "Redescription of the monotypic micro-predatory isopod genera Alitropus and Barybrotes with a taxonomic key to the Cymothooidea from India",
+      tags: ["India", "Asia", "MarineIsopods" ],
+      author: "P. Vigneshwaran, S. Ravichandrana, and T.T. Ajith Kumar",
+      free: true, 
+      year: "2022",
+      url: "https://www.tandfonline.com/doi/full/10.1080/00222933.2021.2008542",
+      type: "Article", 
+      language: "en",
+    }, 
+    /* {
+      title: "Isopods of Oman",
+      tags: ["Oman" ],
+      author: "Liliana Sanfilippo",
+      free: true, 
+      year: "",
+      url: "",
+      type: "Article", 
+      language: "en",
+    },  */
   ]
   
 
