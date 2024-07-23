@@ -28,9 +28,20 @@ const filteroptions =[
   {value: "Trachelipodidae", label: "Trachelipodidae"}, 
   {value: "Trichoniscidae", label: "Trichoniscidae"},
 
+  {value: "Gnathiidae", label: "Gnathiidae"},
+  {value: "Asellota", label: "Asellota"},
+  {value: "Idoteidae", label: "Idoteidae"},
+  {value: "Janiroidea", label: "Janiroidea"},
+  {value: "Sphaeromatidae", label: "Sphaeromatidae"},
+  {value: "Limnoriidae", label: "Limnoriidae"},
+
+
+
+
   {value: "Slater", label: "Ligiidae"},
   {value: "Oniscidea", label: "Terrestrial Isopods"},
   {value: "FreshwaterIsopods", label: "Freshwater Isopods"},
+  {value: "MarineIsopods", label: "Marine Isopods"},
   
 
     {value: "Australia", label: "Australia"},
@@ -38,6 +49,7 @@ const filteroptions =[
     {value: "England", label: "England"},
     {value: "France", label: "France"},
     {value: "Ireland", label: "Ireland"},
+    {value: "Iceland", label: "Iceland"},
     {value: "Germany", label: "Germany"},
     {value: "GreatBritain", label: "Great Britain"},
     {value: "Scottland", label: "Scottland"},
