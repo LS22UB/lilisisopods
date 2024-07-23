@@ -6,7 +6,7 @@ export function Guides() {
     return (
       <>
       <h2>
-      As of today, you can search through {len} guides. 
+      As of today, you can search through <span className="bg-ad c-al heading-highlight ">{len}</span> guides. 
       </h2><br/>
         <div className="row">
           <div className="col">

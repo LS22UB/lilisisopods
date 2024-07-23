@@ -23,7 +23,27 @@
   margin-right: auto;
   width: 50%;
 }
+/* * * * * * * */
+/* *  COLORS * */
+/* * * * * * * */
 
+.c-al{
+  color: var(--accent-light);
+}
+
+/* * * * * * * */
+/* Backgrounds */
+/* * * * * * * */
+
+.bg-ad{
+  background-color: var(--accent-dark);
+}
+
+
+.heading-highlight{
+  padding: 2px;
+  padding-right: 5px;
+}
 /* * * * * * * */
 /* *  BODY * * */
 /* * * * * * * */
