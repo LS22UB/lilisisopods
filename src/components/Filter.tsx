@@ -13,8 +13,10 @@ interface Props {
 const filteroptions =[
   {value: "Oniscidea", label: "Oniscidea"},
   {value: "Agnaridae", label: "Agnaridae"},
+  {value: "Alloniscidae", label: "Alloniscidae"},
   {value: "Armadillidae", label: "Armadillidae"},
   {value: "Armadillidiidae", label: "Armadillidiidae"},
+  {value: "Balloniscidae", label: "Balloniscidae"},
   {value: "Cylisticidae", label: "Cylisticidae"},
   {value: "Agnaridae", label: "Agnaridae"},
   {value: "Detonidae", label: "Detonidae"},
@@ -25,9 +27,12 @@ const filteroptions =[
   {value: "Platyarthridae", label: "Platyarthridae"},
   {value: "Porcellionidae", label: "Porcellionidae"},
   {value: "Stenoniscidae", label: "Stenoniscidae"},
+  {value: "Styloniscidae", label: "Stenoniscidae"},
   {value: "Trachelipodidae", label: "Trachelipodidae"}, 
   {value: "Trichoniscidae", label: "Trichoniscidae"},
 
+
+  {value: "Asellidae", label: "Asellidae"},
   {value: "Gnathiidae", label: "Gnathiidae"},
   {value: "Asellota", label: "Asellota"},
   {value: "Idoteidae", label: "Idoteidae"},
@@ -35,8 +40,8 @@ const filteroptions =[
   {value: "Sphaeromatidae", label: "Sphaeromatidae"},
   {value: "Limnoriidae", label: "Limnoriidae"},
 
-
-
+"Tyliidae",
+  
 
   {value: "Slater", label: "Ligiidae"},
   {value: "Oniscidea", label: "Terrestrial Isopods"},
@@ -44,7 +49,15 @@ const filteroptions =[
   {value: "MarineIsopods", label: "Marine Isopods"},
   
 
+  
+  {value: "NorthAmerica", label: "North America"},
+  {value: "SouthAmerica", label: "South America"},
+  {value: "Europe", label: "Europe"},
+  {value: "Asia", label: "Asia"},
+  {value: "Africa", label: "Africa"},
+
     {value: "Australia", label: "Australia"},
+    {value: "Canada", label: "Canada"},
     {value: "Chile", label: "Chile"},
     {value: "England", label: "England"},
     {value: "France", label: "France"},
@@ -52,6 +65,7 @@ const filteroptions =[
     {value: "Iceland", label: "Iceland"},
     {value: "Germany", label: "Germany"},
     {value: "GreatBritain", label: "Great Britain"},
+    {value: "Mexico", label: "Mexico"},
     {value: "Scottland", label: "Scottland"},
     {value: "USA", label: "USA"},
 

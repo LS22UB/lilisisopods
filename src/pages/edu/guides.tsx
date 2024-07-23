@@ -44,7 +44,7 @@ export function Guides() {
     }, 
     {
         title: "CLAVE DE IDENTIFICACIÓN",
-        tags: ["Chile", "Ligiidae", "Tylidae", "Styloniscidae", "Detonidae", "Philoscidae",
+        tags: ["Chile", "Ligiidae", "SouthAmerica","Tylidae", "Styloniscidae", "Detonidae", "Philoscidae",
              "Oniscidea", "Armadillidae", "Bathytropidae", "Oniscidae", "Porcellionidae", 
                 "Armadillidiidae"], 
         author: "Pérez-Schultheiss",
@@ -56,7 +56,7 @@ export function Guides() {
     },
     {
         title: "Clé des Isopodes terrestres du Nord de la France- 2021",
-        tags: ["France", "Photos", "Oniscidea", "Armadillidiidae", "Ligiidae", "Detonidae", "Philoscidae",
+        tags: ["France", "Photos", "Oniscidea", "Europe","Armadillidiidae", "Ligiidae", "Detonidae", "Philoscidae",
              "Halophiloscidae", "Stenoniscidae", "Platyarthridae", "Armadillidae", "Oniscidae", 
             "Trachelipodidae", "Cylisticidae", "Agnaridae", "Porcellionidae"], 
         author: "Noël and Séchet",
@@ -69,7 +69,7 @@ export function Guides() {
     {
         title: "Bestimmungsschlüssel Landasseln",
         tags: ["Germany", "Photos", "Armadillidiidae", "Oniscidea", "Ligiidae",  "Philoscidae",
-             , "Trichoniscidae", "Platyarthridae",  "Oniscidae", 
+             , "Trichoniscidae", "Platyarthridae","Europe",  "Oniscidae", 
             "Trachelipodidae", "Cylisticidae", "Porcellionidae"], 
         author: "Bodentier hoch 4",
         free: true, 
@@ -80,7 +80,7 @@ export function Guides() {
     {
       title: "Introduction to woodlice",
       tags: ["GreatBritain", "Ireland", "England", "Schottland", "Photos", "Armadillidiidae", "Oniscidea", "Ligiidae", "Philoscidae",
-           , "Trichoniscidae", "Platyarthridae",  "Oniscidae", 
+           , "Trichoniscidae", "Platyarthridae", "Europe", "Oniscidae", 
           "Trachelipodidae", "Cylisticidae", "Porcellionidae"], 
       author: "Paul Richards",
       free: true, 
@@ -91,7 +91,7 @@ export function Guides() {
     }, 
     {
       title: "A key to the woodlice of Britain and Ireland",
-      tags: ["GreatBritain", "Ireland", "England", "Schottland","Armadillidiidae", "Oniscidea", "Ligiidae", "Philoscidae",
+      tags: ["GreatBritain", "Ireland", "England","Europe", "Schottland","Armadillidiidae", "Oniscidea", "Ligiidae", "Philoscidae",
            , "Trichoniscidae", "Platyarthridae",  "Oniscidae", 
           "Trachelipodidae", "Cylisticidae", "Porcellionidae"], 
       author: "FSC AIDGAP",
@@ -102,7 +102,7 @@ export function Guides() {
     }, 
     {
       title: "Woodlice: Linnean Society Synopsis (New Series) 49",
-      tags: ["GreatBritain", "Ireland", "England", "Schottland", "Armadillidiidae", "Oniscidea", "Ligiidae", "Philoscidae",
+      tags: ["GreatBritain", "Ireland", "England", "Schottland", "Europe","Armadillidiidae", "Oniscidea", "Ligiidae", "Philoscidae",
            , "Trichoniscidae", "Platyarthridae",  "Oniscidae", 
           "Trachelipodidae", "Cylisticidae", "Porcellionidae"], 
       author: "Linnean Society",
@@ -113,7 +113,7 @@ export function Guides() {
     }, 
     {
       title: "An Introduction to the Identification of the Woodlice (Isopoda: Oniscidea) occurring in Berkshire, Buckinghamshire and Oxfordshire",
-      tags: ["England", "Armadillidiidae", "Oniscidea", "Ligiidae", "Philoscidae",
+      tags: ["England", "Armadillidiidae", "Oniscidea", "Ligiidae","Europe", "Philoscidae",
            , "Trichoniscidae", "Platyarthridae", "Oniscidae", 
           "Trachelipodidae", "Cylisticidae", "Porcellionidae"], 
       author: "Steve Gregory",
@@ -125,7 +125,7 @@ export function Guides() {
     }, 
     {
       title: "British freshwater Crustacea Malacostraca: a key with ecological notes",
-      tags: ["GreatBritain", "Ireland", "England", "Schottland", "Slater", "Ligiidae", "FreshwaterIsopods"], 
+      tags: ["GreatBritain", "Ireland", "England", "Schottland","Europe", "Slater", "Ligiidae", "FreshwaterIsopods"], 
       author: "Gledhill, A.T.; Sutcliffe, D.W.; Williams, W.D.",
       free: false, 
       year: "1993",
@@ -135,7 +135,7 @@ export function Guides() {
     }, 
     {
       title: "British Marine Isopods: Keys and Notes for the Identification of the Species",
-      tags: ["GreatBritain", "Ireland", "England", "Schottland",  "MarineIsopods", "Gnathiidae",
+      tags: ["GreatBritain", "Ireland", "England", "Schottland", "Europe", "MarineIsopods", "Gnathiidae",
         "Idoteidae","Sphaeromatidae","Limnoriidae"], 
       author: "E. Naylor",
       free: true, 
@@ -147,11 +147,30 @@ export function Guides() {
     {
       title: "Guide for Haploniscidae",
       tags: ["Asellota", "Iceland", "Janiroidea",  "MarineIsopods"], 
-      author: "Kürzel et al",
+      author: "Kürzel et al.",
       free: true, 
       url: "https://www.frontiersin.org/articles/10.3389/fmars.2021.795196/full",
       year: "2021",
       type: "Article", 
+      language: "en",
+    }, 
+    {
+      title: "Guía de identificación de isópodos acuáticos continentales mexicanos",
+      tags: ["Asellota", "Mexico", "SouthAmerica","FreshwaterIsopds",  "MarineIsopods", "Sphaeromatidae", "Asellidae"], 
+      author: "Rocha-Ramírez et al.",
+      free: true, 
+      url: "https://www.researchgate.net/publication/310796268_Guia_de_identificacion_de_isopodos_acuaticos_continentales_mexicanos",
+      year: "2012",
+      type: "Article", 
+      language: "es",
+    }, 
+    {
+      title: "Terrestrial Isopods (Oniscidea) of North America north of Mexico ",
+      tags: ["Photos",  "USA", "Canada", "NorthAmerica", "Slater", "Tyliidae", "Styloniscidae", "Trichoniscidae","Alloniscidae","Armadillidae","Armadillidiidae","Balloniscidae","Cylisticidae","Detonidae","Halophiloscidae","Oniscidae","Philoscidae","Platyarthridae","Porcellionidae","Trachelipodidae","Ligiidae","Armadillidiidae", "FreshwaterIsopds",  "MarineIsopods", "Sphaeromatidae", "Asellidae"], 
+      author: "Inaturalist Users",
+      free: true, 
+      url: "https://www.inaturalist.org/guides/5808",
+      type: "Website", 
       language: "en",
     }, 
     
