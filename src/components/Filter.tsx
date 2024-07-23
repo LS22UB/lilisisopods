@@ -37,9 +37,13 @@ const filteroptions =[
   {value: "Asellidae", label: "Asellidae"},
   {value: "Gnathiidae", label: "Gnathiidae"},
   {value: "Asellota", label: "Asellota"},
+  {value: "Aselidae", label: "Aselidae"},
+  {value: "Valvifera", label: "Valvifera"},
   {value: "Idoteidae", label: "Idoteidae"},
   {value: "Janiroidea", label: "Janiroidea"},
+  {value: "Sphaeromatidea", label: "Sphaeromatidea"},
   {value: "Sphaeromatidae", label: "Sphaeromatidae"},
+  {value: "Cymothoida", label: "Cymothoida"},
   {value: "Limnoriidae", label: "Limnoriidae"},
 
   
@@ -74,6 +78,9 @@ const filteroptions =[
     {value: "Romania", label: "Romania"},
     {value: "Scottland", label: "Scottland"},
     {value: "USA", label: "USA"},
+
+
+    {value: "California", label: "California"},
 
     {value: "en", label: "English"},
     {value: "es", label: "Spanish"},

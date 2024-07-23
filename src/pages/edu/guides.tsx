@@ -2,8 +2,12 @@ import React from "react";
 import { WikiSelector} from "../../components/Filter";
 //die auswahl setzt sich noch ganz zurück, wenn man einen Filter zurück setzt...das muss geändert werden
 export function Guides() {
+  let len = guidelist.length; 
     return (
       <>
+      <h2>
+      As of today, you can search through {len} guides. 
+      </h2><br/>
         <div className="row">
           <div className="col">
           <WikiSelector></WikiSelector>
@@ -166,7 +170,11 @@ export function Guides() {
     }, 
     {
       title: "Terrestrial Isopods (Oniscidea) of North America north of Mexico ",
-      tags: ["Photos",  "USA", "Canada", "NorthAmerica", "Oniscidea", "TerrestrialIsopds", "Slater", "Tyliidae", "Styloniscidae", "Trichoniscidae","Alloniscidae","Armadillidae","Armadillidiidae","Balloniscidae","Cylisticidae","Detonidae","Halophiloscidae","Oniscidae","Philoscidae","Platyarthridae","Porcellionidae","Trachelipodidae","Ligiidae","Armadillidiidae", "FreshwaterIsopds",  "MarineIsopods", "Sphaeromatidae", "Asellidae"], 
+      tags: ["Photos",  "USA", "Canada", "NorthAmerica", "Oniscidea", "TerrestrialIsopds", 
+        "Slater", "Tyliidae", "Styloniscidae", "Trichoniscidae","Alloniscidae","Armadillidae",
+        "Armadillidiidae","Balloniscidae","Cylisticidae","Detonidae","Halophiloscidae","Oniscidae",
+        "Philoscidae","Platyarthridae","Porcellionidae","Trachelipodidae","Ligiidae",
+        "Armadillidiidae"], 
       author: "Inaturalist Users",
       free: true, 
       url: "https://www.inaturalist.org/guides/5808",
@@ -175,11 +183,11 @@ export function Guides() {
     }, 
     {
       title: "A new species of isopod (Isopoda: Flabellifera: Sphaeromatidae) from Cuba, with an identification key for the species of Paraimene",
-      tags: ["Cuba", "Sphaeromatidae", "MarineIsopods"],
+      tags: ["Cuba", "Sphaeromatidae", "MarineIsopods" ],
       author: "Manuel Ortiz Touzet",
       free: true, 
       url: "https://www.inaturalist.org/guides/5808",
-      type: "Article", 
+      type: "Website", 
       language: "en",
     }, 
 
@@ -198,11 +206,45 @@ export function Guides() {
         "Buddelundiellidae", "Porcellionidae", "Armadillidiidae", "Cylisticidae", "Scleropactidae"],
       author: "Ionel Tabacaru and Andrei Giurginca",
       free: true, 
+      year: "2012", 
       url: "https://www.researchgate.net/publication/321832824_Identification_key_to_the_cavernicolous_Oniscidea_of_Romania",
       type: "Article", 
       language: "en",
     },
+    {
+      title: "Oniscidea of California",
+      tags: ["California", "USA", "Ligiidae" , "Alloniscidae","Armadillidae", "Trichoniscidae", 
+        "Armadillidiidae", "Detonidae","Halophiloscidae","Platyarthridae","Porcellionidae"],
+      author: "Inaturalist Users",
+      free: true, 
+      url: "https://www.inaturalist.org/guides/1503",
+      type: "Website", 
+      language: "en",
+    },
+    {
+      title: "Review and guide to the isopods (Crustacea, Isopoda) of littoral and sublittoral marine habitats in the Southern California Bight",
+      tags: ["California", "USA", "Oniscidea", "Asellota", "Valvifera", "Sphaeromatidae", "Sphaeromatidea", 
+        "Limnoriidae", "Cymothoida"
+      ],
+      author: "Timothy D. Stebbins and Regina Wetzer",
+      free: true, 
+      year: "2023", 
+      url: "https://zookeys.pensoft.net/article/100390/list/8/",
+      type: "Article", 
+      language: "en",
+    },
+    {
+      title: "Freshwater isopods (Asellidae) of North America",
+      tags: ["USA", "FreshwaterIsopods", "Aselidae", "Asellota"],
+      author: "W. D. William",
+      free: true, 
+      year: "1972", 
+      url: "  https://archive.org/details/freshwaterisopod00will",
+      type: "Book", 
+      language: "en",
+    },
   ]
+
 
   function Gui({liste}: {liste: Array<GuideFace>}){
     let rows = [];
