@@ -1,6 +1,6 @@
 import React from "react";
 import { WikiSelector} from "../../components/Filter";
-
+//die auswahl setzt sich noch ganz zurück, wenn man einen Filter zurück setzt...das muss geändert werden
 export function Guides() {
     return (
       <>
@@ -33,17 +33,8 @@ export function Guides() {
 
   let guidelist = [
     {
-        title: "test",
-        tags: ["cssa", "australia"], 
-        author: "string",
-        year: "string",
-        free: false, 
-        type: "Book", 
-        language: "en"
-    }, 
-    {
         title: "Guide to Barrow Island",
-        tags: ["australia", "oniscidea", "armadillidae", "ligiidae", "maps", "photos"], 
+        tags: ["Australia", "Oniscidea", "Armadillidae", "Ligiidae", "Maps", "Photos"], 
         author: "Simon Judd and Giulia Perina",
         year: "2013",
         free: true, 
@@ -53,9 +44,9 @@ export function Guides() {
     }, 
     {
         title: "CLAVE DE IDENTIFICACIÓN",
-        tags: ["chile", "ligiidae", "tylidae", "styloniscidae", "detonidae", "philoscidae",
-             "oniscidea", "armadillidae", "bathytropidae", "oniscidae", "porcellionidae", 
-                "armadillidiidae"], 
+        tags: ["Chile", "Ligiidae", "Tylidae", "Styloniscidae", "Detonidae", "Philoscidae",
+             "Oniscidea", "Armadillidae", "Bathytropidae", "Oniscidae", "Porcellionidae", 
+                "Armadillidiidae"], 
         author: "Pérez-Schultheiss",
         free: true, 
         year: "2010",
@@ -65,8 +56,8 @@ export function Guides() {
     },
     {
         title: "Clé des Isopodes terrestres du Nord de la France- 2021",
-        tags: ["france", "photos", "Armadillidiidae", "ligiidae", "detonidae", "philoscidae",
-             "halophiloscidae", "stenoniscidae", "Platyarthridae", "Armadillidae", "Oniscidae", 
+        tags: ["France", "Photos", "Armadillidiidae", "Ligiidae", "Detonidae", "Philoscidae",
+             "Halophiloscidae", "Stenoniscidae", "Platyarthridae", "Armadillidae", "Oniscidae", 
             "Trachelipodidae", "Cylisticidae", "Agnaridae", "Porcellionidae"], 
         author: "Noël and Séchet",
         year: "2021",

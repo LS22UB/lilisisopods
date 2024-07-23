@@ -8,15 +8,37 @@ interface Props {
   value: string,
   label: string
 }
-const wikioptions =[
-  {value: "all", label: "Show all"},
-  {value: "australia", label: "Australia"},
-  {value: "oniscidea", label: "Oniscidea"},
-  {value: "armadillidae", label: "Armadillidae"},
-  {value: "ligiidae", label: "Ligiidae"},
-  {value: "html", label: "HTML"},
-  {value: "cssa", label: "CSS"},
-  
+/* Photos, Maps */
+
+const taxonomyoptions =[
+  {value: "Oniscidea", label: "Oniscidea"},
+  {value: "Agnaridae", label: "Agnaridae"},
+  {value: "Armadillidae", label: "Armadillidae"},
+  {value: "Armadillidiidae", label: "Armadillidiidae"},
+  {value: "Cylisticidae", label: "Cylisticidae"},
+  {value: "Agnaridae", label: "Agnaridae"},
+  {value: "Detonidae", label: "Detonidae"},
+  {value: "Halophiloscidae", label: "Halophiloscidae"},
+  {value: "Ligiidae", label: "Ligiidae"},
+  {value: "Oniscidae", label: "Oniscidae"},
+  {value: "Philoscidae", label: "Philoscidae"},
+  {value: "Platyarthridae", label: "Platyarthridae"},
+  {value: "Porcellionidae", label: "Porcellionidae"},
+  {value: "Stenoniscidae", label: "Stenoniscidae"},
+  {value: "Trachelipodidae", label: "Trachelipodidae"},
+]
+const countryoptions = [
+    {value: "Australia", label: "Australia"},
+    {value: "Chile", label: "Chile"},
+    {value: "France", label: "France"},
+    
+]
+
+const languageoptions = [
+    {value: "en", label: "English"},
+    {value: "es", label: "Spanish"},
+    {value: "de", label: "German"},
+    {value: "fr", label: "French"},
 ]
 /* 
 export function ShowAll(){
@@ -114,13 +136,24 @@ function w3RemoveClass(element: Element, name: string) {
 
 export function WikiSelector(){
   return(
-    <div>
-      <WikiAction></WikiAction>
+    <div className='row align-items-center'>
+        <div className='col-4'>
+            Taxonomy: 
+            <TaxoAction/>
+        </div>
+        <div className='col-4'>
+            Countries: 
+            <CountryAction/>
+        </div>
+        <div className='col-4'>
+            Langauages: 
+            <LangAction/>
+        </div>
     </div>
   )
 }
 
-class WikiAction extends React.Component {
+class TaxoAction extends React.Component {
   state = {
     selectedOption: null,
   };
@@ -140,7 +173,7 @@ class WikiAction extends React.Component {
         value={selectedOption}
         onChange={this.handleChange}
         isMulti
-        options={wikioptions}
+        options={taxonomyoptions}
         defaultValue={{value: "all", label: "Show all"}}
         className="basic-multi-select"
         classNamePrefix="select"
@@ -148,6 +181,62 @@ class WikiAction extends React.Component {
     );
   }
 }
+class LangAction extends React.Component {
+    state = {
+      selectedOption: null,
+    };
+    handleChange = (selectedOption: any) => {
+        
+        this.setState({ selectedOption }, () =>
+        console.log(`Option selected:`, this.state.selectedOption)
+         
+      );
+          filterMultiSelection(selectedOption)
+    };
+    render() {
+      const { selectedOption } = this.state;
+  
+      return (
+        <Select
+          value={selectedOption}
+          onChange={this.handleChange}
+          isMulti
+          options={languageoptions}
+          defaultValue={{value: "all", label: "Show all"}}
+          className="basic-multi-select"
+          classNamePrefix="select"
+        />
+      );
+    }
+  }
+class CountryAction extends React.Component {
+    state = {
+      selectedOption: null,
+    };
+    handleChange = (selectedOption: any) => {
+        
+        this.setState({ selectedOption }, () =>
+        console.log(`Option selected:`, this.state.selectedOption)
+         
+      );
+          filterMultiSelection(selectedOption)
+    };
+    render() {
+      const { selectedOption } = this.state;
+  
+      return (
+        <Select
+          value={selectedOption}
+          onChange={this.handleChange}
+          isMulti
+          options={countryoptions}
+          defaultValue={{value: "all", label: "Show all"}}
+          className="basic-multi-select"
+          classNamePrefix="select"
+        />
+      );
+    }
+  }
 
 /* Type '(selectedOption: Props | null) => void' is not assignable to type '(newValue: MultiValue<{ value: string; label: string; } | null>, actionMeta: ActionMeta<{ value: string; label: string; } | null>) => void'.
   Types of parameters 'selectedOption' and 'newValue' are incompatible.
