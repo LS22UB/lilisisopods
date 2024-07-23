@@ -10,7 +10,7 @@ interface Props {
 }
 /* Photos, Maps */
 
-const taxonomyoptions =[
+const filteroptions =[
   {value: "Oniscidea", label: "Oniscidea"},
   {value: "Agnaridae", label: "Agnaridae"},
   {value: "Armadillidae", label: "Armadillidae"},
@@ -26,20 +26,17 @@ const taxonomyoptions =[
   {value: "Porcellionidae", label: "Porcellionidae"},
   {value: "Stenoniscidae", label: "Stenoniscidae"},
   {value: "Trachelipodidae", label: "Trachelipodidae"},
-]
-const countryoptions = [
-    {value: "Australia", label: "Australia"},
-    {value: "Chile", label: "Chile"},
-    {value: "France", label: "France"},
-    
-]
 
-const languageoptions = [
+  {value: "Australia", label: "Australia"},
+{value: "Chile", label: "Chile"},
+    {value: "France", label: "France"},
+
     {value: "en", label: "English"},
     {value: "es", label: "Spanish"},
     {value: "de", label: "German"},
     {value: "fr", label: "French"},
 ]
+
 
       interface Props {
         value: string;
@@ -115,24 +112,16 @@ function w3RemoveClass(element: Element, name: string) {
 
 export function WikiSelector(){
   return(
-    <div className='row align-items-center'>
-        <div className='col-4'>
-            Taxonomy: 
-            <TaxoAction/>
+        <div >
+            <div> Search by Country, Taxonomy and Language - Type in your request. </div> 
+            <br/>
+
+            <FilterAction/>
         </div>
-        <div className='col-4'>
-            Countries: 
-            <CountryAction/>
-        </div>
-        <div className='col-4'>
-            Langauages: 
-            <LangAction/>
-        </div>
-    </div>
   )
 }
 
-class TaxoAction extends React.Component {
+class FilterAction extends React.Component {
   state = {
     selectedOption: null,
   };
@@ -152,7 +141,7 @@ class TaxoAction extends React.Component {
         value={selectedOption}
         onChange={this.handleChange}
         isMulti
-        options={taxonomyoptions}
+        options={filteroptions}
         defaultValue={{value: "all", label: "Show all"}}
         className="basic-multi-select"
         classNamePrefix="select"
@@ -160,60 +149,3 @@ class TaxoAction extends React.Component {
     );
   }
 }
-class LangAction extends React.Component {
-    state = {
-      selectedOption: null,
-    };
-    handleChange = (selectedOption: any) => {
-        
-        this.setState({ selectedOption }, () =>
-        console.log(`Option selected:`, this.state.selectedOption)
-         
-      );
-          filterMultiSelection(selectedOption)
-    };
-    render() {
-      const { selectedOption } = this.state;
-  
-      return (
-        <Select
-          value={selectedOption}
-          onChange={this.handleChange}
-          isMulti
-          options={languageoptions}
-          defaultValue={{value: "all", label: "Show all"}}
-          className="basic-multi-select"
-          classNamePrefix="select"
-        />
-      );
-    }
-  }
-class CountryAction extends React.Component {
-    state = {
-      selectedOption: null,
-    };
-    handleChange = (selectedOption: any) => {
-        
-        this.setState({ selectedOption }, () =>
-        console.log(`Option selected:`, this.state.selectedOption)
-         
-      );
-          filterMultiSelection(selectedOption)
-    };
-    render() {
-      const { selectedOption } = this.state;
-  
-      return (
-        <Select
-          value={selectedOption}
-          onChange={this.handleChange}
-          isMulti
-          options={countryoptions}
-          defaultValue={{value: "all", label: "Show all"}}
-          className="basic-multi-select"
-          classNamePrefix="select"
-        />
-      );
-    }
-  }
-
