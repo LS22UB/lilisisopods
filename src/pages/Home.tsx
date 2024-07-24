@@ -9,7 +9,6 @@ export function Home() {
       <>
         <div className="row">
           <div className="col">
-            <h2>Under construction!</h2>
             <div className="welcome-box center" property="description">
               <BoldPara>
                 I collect knowledge and resources about isopods - both for scientific and hobby purposes. 
