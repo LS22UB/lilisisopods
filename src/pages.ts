@@ -37,7 +37,7 @@ interface Base {
         ]
     },
     {
-      name: "Species",
+      name: "Taxonomy",
       folder: [
           {
               name: "Ligia",

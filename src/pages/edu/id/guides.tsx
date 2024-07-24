@@ -1,5 +1,5 @@
 import React from "react";
-import { WikiSelector} from "../../components/Filter";
+import { WikiSelector} from "../../../components/Filter";
 //die auswahl setzt sich noch ganz zurück, wenn man einen Filter zurück setzt...das muss geändert werden
 export function Guides() {
   let len = guidelist.length; 
