@@ -1,4 +1,5 @@
 import React from "react";
+import { MovingWebsite } from "../../../components/UnderConstruction";
 
 export function LigiaPallasii() {
 
@@ -6,9 +7,7 @@ export function LigiaPallasii() {
       <>
         <div className="row">
           <div className="col">
-            <p>Ligia pallasii</p>
-            <h2>Under construction!</h2>
-            <hr/>
+          <MovingWebsite/>
           </div>
         </div>
         <div className="row">

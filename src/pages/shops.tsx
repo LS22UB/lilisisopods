@@ -1,4 +1,5 @@
 import React from "react";
+import { MovingWebsite } from "../components/UnderConstruction";
 
 export function Shops() {
 
@@ -6,8 +7,7 @@ export function Shops() {
       <>
         <div className="row">
           <div className="col">
-            <h2>Under construction!</h2>
-            <hr/>
+          <MovingWebsite/>
           </div>
         </div>
         <div className="row">

@@ -1,4 +1,6 @@
 import React from "react";
+import { MovingWebsite } from "../../../components/UnderConstruction";
+
 
 export function ArmadillidiumKlugii() {
 
@@ -6,9 +8,7 @@ export function ArmadillidiumKlugii() {
       <>
         <div className="row">
           <div className="col">
-            <p>Armadillidium klugii</p>
-            <h2>Under construction!</h2>
-            <hr/>
+          <MovingWebsite/>
           </div>
         </div>
         <div className="row">
