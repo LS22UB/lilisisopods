@@ -63,7 +63,31 @@ export function Lungs() {
             </div>
             <div className="col">
             
-           {/*  <img src="public/assets/Pleopod11.png"></img> */}
+            {/* <img className="maxfull" src="https://lilisisopods.com/assets/Pleopod11.png"></img>  */}
+            </div>
+        </div>
+        <h3>Synarmadilloides-type</h3>
+        <p>The synarmadilloides-type lungs are partially enclosed within the appendages. The fold are only 
+            partly coplanar with the surface of the exopod, meaning not all over them are on the same level 
+            as the surface of the pleopodal exopod. Some of them are "intraflexed inside the exopod" instead. 
+            This means they are folds that go a bit into the surface like a crack. [cm_simple_footnote id="1"] 
+        </p>
+        <div className="row align-items-center">
+            <div className="col">
+            Schema of synarmadilloides-type lung
+            Synarmadilloides-type-coloured
+            </div>
+            <div className="col">
+            In the picture the exposed part of the lung is coloured pink and the hidden part blue. Both colours signify the folded surface. The green parts stand for the troughs. 
+            </div>
+        </div>
+
+        <div className="row align-items-center">
+            <div className="col">
+
+            </div>
+            <div className="col">
+                
             </div>
         </div>
         <div className="row align-items-center">

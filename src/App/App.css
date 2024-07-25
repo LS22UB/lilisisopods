@@ -233,3 +233,14 @@ p.mix {border-style: dotted dashed solid double;}
   margin-bottom: 4px;
   display: none;
 }
+
+
+
+.fit{
+  width: fit-content; 
+}
+
+
+.maxfull{
+  max-width: 100%;
+}
