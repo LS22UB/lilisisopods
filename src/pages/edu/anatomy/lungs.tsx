@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Graphviz } from 'graphviz-react';
+import { Figure } from "../../../components/Fugures";
 
 
 
@@ -59,11 +60,21 @@ export function Lungs() {
             <p>The atracheodillo-type lungs are directly exposed to the air and not partially covered. All folds are coplanar (on the same level) with the surface of the pleopodal exopod.  [cm_simple_footnote id="1"]</p>
         <div className="row align-items-center">
             <div className="col">
-            Pleopod8
-            </div>
+            <Figure 
+                url="https://lilisisopods.com/assets/atracheodillo-type-B-color.png"
+                caption="Fig. 1 - Schema of atracheodillo-type lung"
+                alt="Schema of atracheodillo-type lung"
+                id="atracheodillo-lung-B"
+                />
+             </div>
+
             <div className="col">
-            
-            {/* <img className="maxfull" src="https://lilisisopods.com/assets/Pleopod11.png"></img>  */}
+            <Figure 
+                url="https://lilisisopods.com/assets/atracheodillo-type-A-color.png"
+                caption="Fig. 2 - Schema of atracheodillo-type lung"
+                alt="Schema of atracheodillo-type lung"
+                id="atracheodillo-lung-A"
+                />
             </div>
         </div>
         <h3>Synarmadilloides-type</h3>
@@ -74,14 +85,128 @@ export function Lungs() {
         </p>
         <div className="row align-items-center">
             <div className="col">
-            Schema of synarmadilloides-type lung
+            
             Synarmadilloides-type-coloured
-            </div>
-            <div className="col">
             In the picture the exposed part of the lung is coloured pink and the hidden part blue. Both colours signify the folded surface. The green parts stand for the troughs. 
             </div>
+            <div className="col">
+                <Figure 
+                url="https://lilisisopods.com/assets/synarmadilloides-type-color.png"
+                caption="Fig. 3 - Schema of synarmadilloides-type lung"
+                alt="Schema of synarmadilloides-type lung"
+                id="synarmadilloides-lung"
+                />
+            </div>
         </div>
-
+        <blockquote>
+            <h4> 
+            "With increasing complexity of the lungs, habitats of lower humidity could be colonised.""
+            </h4>
+        </blockquote>
+        <cite>Schmidt and Wägele, 2001 [cm_simple_footnote id="4"]</cite>
+        <br/> <br/>
+        <h2>Covered lungs</h2>
+        <p>These lungs are not directly exposed to the air. Their respiratory surface lies within 
+            tissue that has no respiratory function. Air is only able to reach the respiratory surfaces 
+            though one or multiple spiracles (breathing-holes) and respiratory trees (tree like structures 
+            that allow air to pass though). [cm_simple_footnote id="1"] </p>
+            <p>The tissue that has no respiratory function and contains the respiratory surface is called 
+                perispiracular area. Respiratory trees are connected to the air though the spiracles. 
+                Due to this, one spiracular and one respiratory tree (or multiple of each) go hand in hand. 
+                [cm_simple_footnote id="1"] </p>
+        <h3>Polyspiracular lungs</h3>
+        <p>These types possess several respiratory trees and several spiracles. Therefore, they are called 
+            polyspiracular. [cm_simple_footnote id="1"]  Usually, there are most spiracles on the first 
+            pleopod and the number lessens from the first to the last pleopod. [cm_simple_footnote id="4"]</p>
+            
+        <div className="row align-items-center">
+            <div className="col">
+            <h4>Somalonicus-types</h4>
+            <p>The somaloniscus-type lungs are a modified version of the eubelum-type lungs that are specialised 
+            for arid environments. [cm_simple_footnote id="1"] </p>
+            </div>
+            <div className="col">
+            <Figure 
+                url="https://lilisisopods.com/assets/somaloniscus-type-color.png"
+                caption="Fig. 3 - Schema of somaloniscus-type lung"
+                alt="Schema of somaloniscus-type lung"
+                id="somaloniscus-lung"
+                />
+            </div>
+        </div>
+        <div className="row align-items-center">
+            <div className="col">
+            <Figure 
+                url="https://lilisisopods.com/assets/eubelum-type-color.png"
+                caption="Fig. 3 - Schema of eubelum-type lung"
+                alt="Schema of eubelum-type lung"
+                id="eubelum-lung"
+                />
+        </div>
+            <div className="col">
+            <h4>Eubelum-types</h4>
+            <p>These lungs have "multiple arborescent invaginations". This term describes that they possess 
+                multiple respiratory trees. [cm_simple_footnote id="1"] </p>
+            </div>
+        </div>
+        
+       
+        <h4>Aethiopopactes- and Periscyphis-types</h4>
+        <p>These types possess only one respiratory tree and one spiracle. Therefore, they are monospiracular. 
+             [cm_simple_footnote id="1"]  </p>
+        
+        <div className="row align-items-center">
+            <div className="col">
+            <h5>Aethiopopactes-types    </h5>
+            <p>This type has only "one arborescent invagination" meaning only one respiratory tree. 
+                [cm_simple_footnote id="1"] </p>
+            </div>
+            <div className="col">
+            <Figure 
+                url="https://lilisisopods.com/assets/aethiopopactes-type-lung-color.png"
+                caption="Fig. 3 - Schema of aethiopopactes-type lung"
+                alt="Schema of aethiopopactes-type lung"
+                id="aethiopopactes-lung"
+                />
+            </div>
+        </div>
+        <p className="has-text-align-center has-small-font-size">In the picture you can see the spiracle 
+            coloured green and the perispiracular area coloured blue. </p>
+            <p className="has-text-align-center has-small-font-size">Under that, the respiratory tree containing 
+            the respiratory surface is pictured. The lined are dotted, because the tree is not really visible as it lies under the cuticle. </p>
+            
+        <div className="row align-items-center">
+            <div className="col">
+            <Figure 
+                url="https://lilisisopods.com/assets/periscyphis-type-color.png"
+                caption="Fig. 3 - Schema of periscyphis-type lung"
+                alt="Schema of periscyphis-type lung"
+                id="periscyphis-lung"
+                />
+            </div>
+            <div className="col">
+            <h5>Periscyphis-types</h5>
+            <p>The periscyphis-type lungs are a modified version of the aethiopopactes-types lungs that are 
+            specialised for arid environments. [cm_simple_footnote id="1"] </p>
+            <p>The perispiracular area is very reduced or even absent. Unlike in other types, the respiratory 
+                tree is not only in the exopods of the pleopods but also grows into the pleon (abdomen). 
+                [cm_simple_footnote id="1"]</p>
+            <p>Another adaptation to living in deserts is the mechanism in Periscyphis to 
+                close the spiracles when necessary. [cm_simple_footnote id="4"]</p>
+            </div>
+        </div>
+        <h2>Other types</h2>
+        <p>genus Parelumoides and two species of the genus Elumoides (E. monocellatus, E. atlanticus),</p>
+        <h3>Pleopods without respiratory structures</h3>
+        <h3>Dorsal respiratory fields (Trachelipodidae-types)</h3>
+        <h2>Surface morphology</h2>
+        <h3>Respiratory tissue</h3>
+        <p>In P. scaber, three types of respiratory tissue are differentiated at the time.  
+            The intugement, the exopodal lungs and the endopodal lungs. [cm_simple_footnote id="3"]</p>
+        <h3>Perispiracular region  </h3>
+        <h2>Which species have which lungs?</h2>
+        <p>The following table contains species for which I found explicit mentions of the lung type. </p>
+        
         <div className="row align-items-center">
             <div className="col">
 
@@ -89,14 +214,7 @@ export function Lungs() {
             <div className="col">
                 
             </div>
-        </div>
-        <div className="row align-items-center">
-            <div className="col">
-
-            </div>
-            <div className="col">
-                
-            </div>
+            {/* {i:0;s:217:"Paoli, P., Ferrara, F. and Taiti, S. (2002), Morphology and evolution of the respiratory apparatus in the family Eubelidae (Crustacea, Isopoda, Oniscidea). J. Morphol., 253: 272-289. https://doi.org/10.1002/jmor.10008";i:1;s:223:"Inui, Naoto & Miura, Toru. (2024). Comparisons of developmental processes of air- breathing organs among terrestrial isopods (Crustacea, Oniscidea): implications for their evolutionary origins. 10.21203/rs.3.rs-4023002/v1. ";i:2;s:216:"Naoto Inui, Ryosuke Kimbara, Haruka Yamaguchi, Toru Miura, Pleopodal lung development in a terrestrial isopod, Porcellio scaber (Oniscidea), Arthropod Structure & Development, Volume 71, 2022, 101210, ISSN 1467-8039,";i:3;s:248:"Schmidt, C. and Wägele, J.W. (2001), Morphology and evolution of respiratory structures in the pleopod exopodites of terrestrial Isopoda (Crustacea, Isopoda, Oniscidea). Acta Zoologica, 82: 315-330. https://doi.org/10.1046/j.1463-6395.2001.00092.x";i:4;s:199:"Elisabeth, Hornung. (2011). Evolutionary adaptation of oniscidean isopods to terrestrial life: Structure, physiology and behavior. Terrestrial Arthropod Reviews. 4. 95-130. 10.1163/187498311X576262. " */}
         </div>
         
       </>

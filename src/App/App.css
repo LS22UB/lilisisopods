@@ -16,12 +16,18 @@
   --background: #fcfffc; /* #F1F9F7 Mint Cream */
 }
 
-
+.center-normal{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  text-align: center  ;
 }
 /* * * * * * * */
 /* *  COLORS * */
@@ -243,4 +249,7 @@ p.mix {border-style: dotted dashed solid double;}
 
 .maxfull{
   max-width: 100%;
+}
+.max70{
+  max-width: 70%;
 }
