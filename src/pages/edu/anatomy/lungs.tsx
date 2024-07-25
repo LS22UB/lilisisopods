@@ -48,12 +48,22 @@ export function Lungs() {
             </div>
             <br/>
             <p>Most lungs can be put in either the category "covered" or "uncovered". Both categories have lungs types that are specialised for arid environments. </p>
+            <p>Not every species that has the same lung type has the same number of lungs! </p>
+            <h2>Uncovered lungs </h2>
+            <p>These lungs have a pleated (wrinkled) respiratory surface that is directly or partially exposed to the air. [cm_simple_footnote id="1"]</p>
+            <h3>Oniscus-type</h3>
+            <p>shallowly wrinkled </p>
+            <h3>Trachelipus-type</h3>
+            <p>partly covered </p>
+            <h3>Atracheodillo-type</h3>
+            <p>The atracheodillo-type lungs are directly exposed to the air and not partially covered. All folds are coplanar (on the same level) with the surface of the pleopodal exopod.  [cm_simple_footnote id="1"]</p>
         <div className="row align-items-center">
             <div className="col">
-                
+            Pleopod8
             </div>
             <div className="col">
-                
+            Pleopod11
+            <img src=''></img>
             </div>
         </div>
         <div className="row align-items-center">
