@@ -195,6 +195,7 @@ export function Lungs() {
                 close the spiracles when necessary. [cm_simple_footnote id="4"]</p>
             </div>
         </div>
+        
         <h2>Other types</h2>
         <p>genus Parelumoides and two species of the genus Elumoides (E. monocellatus, E. atlanticus),</p>
         <h3>Pleopods without respiratory structures</h3>
