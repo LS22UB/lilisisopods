@@ -1,4 +1,4 @@
-import { About, Home, Ligia, LigiaPallasii, FAQ, Shops, ArmadillidiumKlugii, Guides } from "./pages/page-list";
+import { About, Home, Lungs, Ligia, LigiaPallasii, FAQ, Shops, ArmadillidiumKlugii, Guides } from "./pages/page-list";
 
 interface Base {
     name: string | undefined;
@@ -63,6 +63,17 @@ interface Base {
             component: Guides,
           },
       ]
+    },
+    {
+      name: "Anatomy",
+      folder: [
+        {
+          name: "Lungs",
+          title: "Lungs",
+          path: "education/anatomy/lungs-of-isopods",
+          component: Lungs,
+        },
+      ]
     }
   ]
 
@@ -109,6 +120,12 @@ interface Base {
       title: "Ligia",
       path: "species/ligia",
       component: Ligia,
+    },
+    {
+      name: "Lungs",
+      title: "Lungs",
+      path: "education/anatomy/lungs-of-isopods",
+      component: Lungs,
     },
     {
       name: "Ligia pallasii",

@@ -4,6 +4,7 @@ export * from './Home.tsx'
 
 export * from './edu/faq.tsx'
 export * from './edu/anatomy/posterolateral-corners.tsx'
+export * from './edu/anatomy/lungs.tsx'
 export * from './edu/health/irido.tsx'
 export * from './edu/id/guides.tsx'
 export * from './edu/id/how-key.tsx'
