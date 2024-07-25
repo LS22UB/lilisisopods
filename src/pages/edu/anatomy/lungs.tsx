@@ -62,8 +62,8 @@ export function Lungs() {
             Pleopod8
             </div>
             <div className="col">
-            Pleopod11
-            <img src=''></img>
+            
+           {/*  <img src="public/assets/Pleopod11.png"></img> */}
             </div>
         </div>
         <div className="row align-items-center">
