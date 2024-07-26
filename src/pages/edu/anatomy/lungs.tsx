@@ -117,7 +117,7 @@ export function Lungs() {
         <div className="row align-items-center">
             <div className="col">
             <Figure 
-                url="https://lilisisopods.com/assets/atracheodillo-type-B-color.png"
+                url="https://lilisisopods.com/assets/atracheodillo-type-B-color-nobg.png"
                 caption="Schema of atracheodillo-type lung"
                 alt="Schema of atracheodillo-type lung"
                 id="atracheodillo-lung-B"
@@ -129,7 +129,7 @@ export function Lungs() {
 
             <div className="col">
             <Figure 
-                url="https://lilisisopods.com/assets/atracheodillo-type-A-color.pn"
+                url="https://lilisisopods.com/assets/atracheodillo-type-A-color-nobg.png"
                 caption="Fig. 2 - Schema of atracheodillo-type lung"
                 alt="Schema of atracheodillo-type lung"
                 id="atracheodillo-lung-A"
@@ -148,7 +148,7 @@ export function Lungs() {
             </div>
             <div className="col">
                 <Figure 
-                url="https://lilisisopods.com/assets/synarmadilloides-type-color.png"
+                url="https://lilisisopods.com/assets/synarmadilloides-type-color-nobg.png"
                 caption="Schema of synarmadilloides-type lung"
                 alt="Schema of synarmadilloides-type lung"
                 id="synarmadilloides-lung"
@@ -183,7 +183,7 @@ export function Lungs() {
             </div>
             <div className="col" >
             <Figure 
-                url="https://lilisisopods.com/assets/somaloniscus-type-color.png"
+                url="https://lilisisopods.com/assets/somaloniscus-type-color-nobg.png"
                 caption="Schema of somaloniscus-type lung"
                 alt="Schema of somaloniscus-type lung"
                 id="somaloniscus-lung"
@@ -194,7 +194,7 @@ export function Lungs() {
         <div className="row align-items-center">
             <div className="col">
             <Figure 
-                url="https://lilisisopods.com/assets/eubelum-type-color.png"
+                url="https://lilisisopods.com/assets/eubelum-type-color-nobg.png"
                 caption="Schema of eubelum-type lung"
                 alt="Schema of eubelum-type lung"
                 id="eubelum-lung"
@@ -221,7 +221,7 @@ export function Lungs() {
             </div>
             <div className="col">
             <Figure 
-                url="https://lilisisopods.com/assets/aethiopopactes-type-lung-color.png"
+                url="https://lilisisopods.com/assets/aethiopopactes-type-lung-color-nobg.png"
                 caption="Schema of aethiopopactes-type lung"
                 alt="Schema of aethiopopactes-type lung"
                 id="aethiopopactes-lung"

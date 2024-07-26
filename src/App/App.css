@@ -13,7 +13,7 @@
   --colour-two: #3AB09E; /* Keppel */
   --colour-three: #107E7D; /* Teal */
   --colour-four: #105260; /* Midnight Green */
-  --background-darker:  #cbe0cb;
+  --background-darker:  #dfeedf; /* #cbe0cb; */ /* #f2f8f2; */
   --background: #fcfffc ; /* #F1F9F7 Mint Cream */
 }
 
@@ -52,6 +52,10 @@
 
 .bg-gray{
   background-color: #e4e8e4 ;
+}
+
+.bg-darker{
+  background-color: var(--background-darker);
 }
 
 
@@ -506,4 +510,10 @@ span{
    margin: 0;
    padding-top: 20px;
    z-index: 1;
+}
+
+.figure-img{
+  padding: 30px 10px;
+  border-radius: 10px;
+  margin: 10px 0 !important;
 }
