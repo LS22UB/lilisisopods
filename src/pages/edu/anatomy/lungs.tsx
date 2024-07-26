@@ -3,6 +3,7 @@ import React from "react";
 import { Graphviz } from 'graphviz-react';
 import { Figure } from "../../../components/Fugures";
 import HeaderBox from "../../../components/HeaderBox";
+import { BlockQuote } from "../../../components/Quotes";
 
 
 
@@ -23,45 +24,95 @@ export function Lungs() {
                 "covered lungs" [shape=box, style=filled];
                 "uncovered lungs" [shape=box, style=filled];
                 lungs [shape="pentagon"];  
-                "Aethiopopactes-type"[style=filled, color="turquoise"]
-                "Somaloniscus-type"[style=filled, color="turquoise"]
-                "Eubelum-type"[style=filled, color="turquoise"]
-                "Periscyphis-type"[style=filled, color="turquoise"]
-                "Atracheodillo-type"[style=filled, color="turquoise"]
-                "Synarmadilloides-type"[style=filled, color="turquoise"]
+                "Aethiopopactes-type"[style=filled, color="#3AB09E"]
+                "Somaloniscus-type"[style=filled, color="#3AB09E"]
+                "Eubelum-type"[style=filled, color="#3AB09E"]
+                "Periscyphis-type"[style=filled, color="#3AB09E"]
+                "Atracheodillo-type"[style=filled, color="#3AB09E"]
+                "Synarmadilloides-type"[style=filled, color="#3AB09E"]
                 }`} 
                 options={{height: "300px", width: "100%"}}
                 />
         </div>
         </HeaderBox>
-       
-        <div className="col">
+        <div className="col border-left" >
             <h1>The majority of isopods bear lungs on their pleopods.</h1>
             <h2>On their pleopodal exopods, to be precise.</h2>
         </div>
         <br/>
-        <div className="row align-items-center">
+        <div className="row align-items-center"> 
             <div className="col">
-            Female A. vulgare (living)
+            <Figure 
+                url="http://placehold.jp/77767b/ffffff/150x150.png?text=Placeholder%20image"
+                caption="Female A. vulgare (living)"
+                alt="pleopods of living female A. vulgare"
+                id="female-vulgare-pleopods"
+                />
             </div>
             <div className="col">
-            Female H. reaumuri (conserved specimen)
+            <Figure 
+                url="http://placehold.jp/77767b/ffffff/150x150.png?text=Placeholder%20image"
+                caption="Female H. reaumuri (conserved specimen)"
+                alt="pleopods of conserved female H. reaumuri specimen"
+                id="female-reaumuri-pleopods"
+                />
             </div>
-        </div>
-        <h2>Types of lungs</h2>
+            </div>
             <div className="col">
-            
-            
-            </div>
-            <br/>
-            <p>Most lungs can be put in either the category "covered" or "uncovered". Both categories have lungs types that are specialised for arid environments. </p>
-            <p>Not every species that has the same lung type has the same number of lungs! </p>
+                <p>Most lungs can be put in either the category "covered" or "uncovered". Both categories have lungs types that are specialised for arid environments. </p>
+                <p>Not every species that has the same lung type has the same number of lungs! </p>
+                </div>
+            <div className="row align-items-center">
+                <div className="col">
+                <Figure 
+                url="http://placehold.jp/77767b/ffffff/150x150.png?text=Placeholder%20image"
+                caption="Isopod with x lungs"
+                alt=""
+                id=""
+                />
+                </div>
+                <div className="col">
+                <Figure 
+                url="http://placehold.jp/77767b/ffffff/150x150.png?text=Placeholder%20image"
+                caption="Isopod with y lungs"
+                alt=""
+                id=""
+                />
+                </div>
+                </div>
             <h2>Uncovered lungs </h2>
             <p>These lungs have a pleated (wrinkled) respiratory surface that is directly or partially exposed to the air. [cm_simple_footnote id="1"]</p>
             <h3>Oniscus-type</h3>
-            <p>shallowly wrinkled </p>
+            <div className="row items-align-center">
+                <div className="col">
+                <Figure 
+                url="http://placehold.jp/77767b/ffffff/150x150.png?text=Placeholder%20image"
+                caption="Isopod with y lungs"
+                alt=""
+                id=""
+                />
+                </div>
+                <div className="col text-box">
+                <p>shallowly wrinkled </p>  
+                </div>
+            </div>
             <h3>Trachelipus-type</h3>
-            <p>partly covered </p>
+            <div className="row items-align-center">
+                <div className="col text-box">
+                <p>partly covered </p>
+                </div>
+                <div className="col">
+                <Figure 
+                url="http://placehold.jp/77767b/ffffff/150x150.png?text=Placeholder%20image"
+                caption="Isopod with y lungs"
+                alt=""
+                id=""
+                />
+                </div>
+            </div>
+            
+            
+            
             <h3>Atracheodillo-type</h3>
             <p>The atracheodillo-type lungs are directly exposed to the air and not partially covered. All folds are coplanar (on the same level) with the surface of the pleopodal exopod.  [cm_simple_footnote id="1"]</p>
         <div className="row align-items-center">
@@ -90,10 +141,8 @@ export function Lungs() {
             This means they are folds that go a bit into the surface like a crack. [cm_simple_footnote id="1"] 
         </p>
         <div className="row align-items-center">
-            <div className="col">
-            
-            Synarmadilloides-type-coloured
-            In the picture the exposed part of the lung is coloured pink and the hidden part blue. Both colours signify the folded surface. The green parts stand for the troughs. 
+            <div className="col text-box">
+                In the picture the exposed part of the lung is coloured pink and the hidden part blue. Both colours signify the folded surface. The green parts stand for the troughs. 
             </div>
             <div className="col">
                 <Figure 
@@ -104,12 +153,10 @@ export function Lungs() {
                 />
             </div>
         </div>
-        <blockquote>
-            <h4> 
-            "With increasing complexity of the lungs, habitats of lower humidity could be colonised.""
-            </h4>
-        </blockquote>
-        <cite>Schmidt and Wägele, 2001 [cm_simple_footnote id="4"]</cite>
+        <BlockQuote
+            text=" With increasing complexity of the lungs, habitats of lower humidity could be colonised."
+            cite="Schmidt and Wägele, 2001 fn4"
+        />
         <br/> <br/>
         <h2>Covered lungs</h2>
         <p>These lungs are not directly exposed to the air. Their respiratory surface lies within 

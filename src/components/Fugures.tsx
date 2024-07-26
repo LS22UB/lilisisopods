@@ -8,7 +8,7 @@ export function Figure({url, caption, alt, id}:{url: string, caption: string, al
     return(
         <figure id={i} className="center-normal">
                 <img className="max70 center-normal" src={url} alt={alt} />
-                <figcaption className="center-normal">{caption}</figcaption>
+                <figcaption className="center-normal caption">{caption}</figcaption>
         </figure> 
     )
 }
