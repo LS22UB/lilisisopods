@@ -16,7 +16,6 @@ export default function HeaderBox({children, title}: Props ){
             {children}
           </div>
           <div className="base">
-            
           </div>
         </div>
         <div className="row">

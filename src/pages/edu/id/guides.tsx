@@ -1,19 +1,22 @@
 import React from "react";
 import { WikiSelector} from "../../../components/Filter";
+import HeaderBox from "../../../components/HeaderBox";
 //die auswahl setzt sich noch ganz zurück, wenn man einen Filter zurück setzt...das muss geändert werden
 export function Guides() {
   let len = guidelist.length; 
     return (
       <>
+      <HeaderBox title="Identification guides and keys">
       <div className="row align-items-center">
-        <div className="col">
-        <h2>As of today, you can search through <span className="bg-ad c-al heading-highlight">{len}</span> guides. </h2>
+        <div className="col" style={{paddingLeft: "40px"}}>
+          <h2>As of today, you can search through <span className="bg-ad c-al heading-highlight">{len}</span> guides. </h2>
         </div>
-        <div className="col-4">
-        <iframe title="[ Insert title here ]" aria-label="Interactive line chart" id="datawrapper-chart-4AVPd" src="https://datawrapper.dwcdn.net/4AVPd/1/" scrolling="no" frameBorder="0"  width="382" height="267" data-external="1"></iframe> 
+        <div className="col-4" >
+          <iframe title="[ Insert title here ]" aria-label="Interactive line chart" id="datawrapper-chart-4AVPd" src="https://datawrapper.dwcdn.net/4AVPd/1/" scrolling="no" frameBorder="0"  width="382" height="267" data-external="1"></iframe> 
         </div>
       </div>
-      <br/>
+      </HeaderBox>
+      
         <div className="row">
           <div className="col">
           <WikiSelector></WikiSelector>

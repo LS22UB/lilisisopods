@@ -272,3 +272,7 @@ p.mix {border-style: dotted dashed solid double;}
   font-weight: 900;
   line-height: 130px;
 }
+
+.base{
+  background-color: var(--colour-three);
+}
