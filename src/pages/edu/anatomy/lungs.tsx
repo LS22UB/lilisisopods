@@ -236,7 +236,7 @@ export function Lungs() {
         <div className="row align-items-center">
             <div className="col">
             <Figure 
-                url="https://lilisisopods.com/assets/periscyphis-type-color.png"
+                url="https://lilisisopods.com/assets/periscyphis-type-color-nobg.png"
                 caption="Schema of periscyphis-type lung"
                 alt="Schema of periscyphis-type lung"
                 id="periscyphis-lung"
