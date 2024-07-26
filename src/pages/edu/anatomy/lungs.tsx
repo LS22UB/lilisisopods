@@ -129,7 +129,7 @@ export function Lungs() {
 
             <div className="col">
             <Figure 
-                url="https://lilisisopods.com/assets/atracheodillo-type-A-color.png"
+                url="https://lilisisopods.com/assets/atracheodillo-type-A-color.pn"
                 caption="Fig. 2 - Schema of atracheodillo-type lung"
                 alt="Schema of atracheodillo-type lung"
                 id="atracheodillo-lung-A"
