@@ -4,7 +4,6 @@ import { Graphviz } from 'graphviz-react';
 import { Figure } from "../../../components/Fugures";
 import HeaderBox from "../../../components/HeaderBox";
 import {BlockQuoteB } from "../../../components/Quotes";
-import { ReferenceBox } from "../../../components/Citations";
 
 
 
@@ -282,8 +281,6 @@ export function Lungs() {
             ;i:3;s:248:"Schmidt, C. and Wägele, J.W. (2001), Morphology and evolution of respiratory structures in the pleopod exopodites of terrestrial Isopoda (Crustacea, Isopoda, Oniscidea). Acta Zoologica, 82: 315-330. https://doi.org/10.1046/j.1463-6395.2001.00092.x"
             ;i:4;s:199:"Elisabeth, Hornung. (2011). Evolutionary adaptation of oniscidean isopods to terrestrial life: Structure, physiology and behavior. Terrestrial Arthropod Reviews. 4. 95-130. 10.1163/187498311X576262. " */}
         </div>
-        <ReferenceBox
-        />
         <h2>References</h2>
         <ol>
             <li id="1" className="csl-bib-body"> <div data-csl-entry-id="PMID:12125066" className="csl-entry">Paoli, P., Ferrara, F., &#38; Taiti, S. (2002). Morphology and evolution of the respiratory apparatus in the family Eubelidae (Crustacea, Isopoda, Oniscidea). <i>Journal of Morphology</i>, <i>253</i>(3), 272–289. <a href="https://doi.org/10.1002/jmor.10008">https://doi.org/10.1002/jmor.10008</a></div> </li>
