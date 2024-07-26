@@ -13,17 +13,33 @@ export function BlockQuote({text, cite}: {text: string; cite: string}){
     )
 }
 
-export function BlockQuoteB({text, cite}: {text: string; cite: string}){
-    return(
-        <div className="blockquote-wrapper">
-            <div className="blockquotex">
-                <h2>
-                    {text}
-                </h2>
-                <h4><em>{cite}</em></h4>
+export function BlockQuoteB({text, cite, id}: {text: string; cite: string, id?: string}){
+    if (id){
+        let h = "#" + {id}
+        return(
+            <div className="blockquote-wrapper">
+                <div className="blockquotex">
+                    <h2>
+                        {text}
+                    </h2>
+                    <h4><em>{cite}</em> <a href={h}><sup>{id}</sup></a></h4>
+                </div>
             </div>
-            </div>
-    )
+        )  
+    }
+    else{
+        return(
+            <div className="blockquote-wrapper">
+                <div className="blockquotex">
+                    <h2>
+                        {text}
+                    </h2>
+                    <h4><em>{cite}</em></h4>
+                </div>
+                </div>
+        )
+    }
+    
 }
 
 

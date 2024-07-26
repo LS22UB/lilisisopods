@@ -82,7 +82,7 @@ export function Lungs() {
                 </div>
                 </div>
             <h2>Uncovered lungs </h2>
-            <p>These lungs have a pleated (wrinkled) respiratory surface that is directly or partially exposed to the air. [cm_simple_footnote id="1"]</p>
+            <p>These lungs have a pleated (wrinkled) respiratory surface that is directly or partially exposed to the air. <a href="#1"><sup>1</sup></a></p>
             <h3>Oniscus-type</h3>
             <div className="row items-align-center">
                 <div className="col">
@@ -141,7 +141,7 @@ export function Lungs() {
         <p>The synarmadilloides-type lungs are partially enclosed within the appendages. The fold are only 
             partly coplanar with the surface of the exopod, meaning not all over them are on the same level 
             as the surface of the pleopodal exopod. Some of them are "intraflexed inside the exopod" instead. 
-            This means they are folds that go a bit into the surface like a crack. [cm_simple_footnote id="1"] 
+            This means they are folds that go a bit into the surface like a crack. <a href="#1"><sup>1</sup></a>
         </p>
         <div className="row align-items-center">
             <div className="col">
@@ -159,28 +159,30 @@ export function Lungs() {
 
         <BlockQuoteB
             text=" With increasing complexity of the lungs, habitats of lower humidity could be colonised."
-            cite="Schmidt and Wägele, 2001 fn4"
+            cite="Schmidt and Wägele, 2001"
+            id = "4"
         />
+        
         <br/> <br/>
         <h2>Covered lungs</h2>
         <p>These lungs are not directly exposed to the air. Their respiratory surface lies within 
             tissue that has no respiratory function. Air is only able to reach the respiratory surfaces 
             though one or multiple spiracles (breathing-holes) and respiratory trees (tree like structures 
-            that allow air to pass though). [cm_simple_footnote id="1"] </p>
+            that allow air to pass though). <a href="#1"><sup>1</sup></a> </p>
             <p>The tissue that has no respiratory function and contains the respiratory surface is called 
                 perispiracular area. Respiratory trees are connected to the air though the spiracles. 
                 Due to this, one spiracular and one respiratory tree (or multiple of each) go hand in hand. 
-                [cm_simple_footnote id="1"] </p>
+                <a href="#1"><sup>1</sup></a> </p>
         <h3>Polyspiracular lungs</h3>
         <p>These types possess several respiratory trees and several spiracles. Therefore, they are called 
-            polyspiracular. [cm_simple_footnote id="1"]  Usually, there are most spiracles on the first 
-            pleopod and the number lessens from the first to the last pleopod. [cm_simple_footnote id="4"]</p>
+            polyspiracular. <a href="#1"><sup>1</sup></a> Usually, there are most spiracles on the first 
+            pleopod and the number lessens from the first to the last pleopod. <a href="#4"><sup>4</sup></a></p>
             
         <div className="row align-items-center">
             <div className="col">
             <h4>Somalonicus-types</h4>
             <p>The somaloniscus-type lungs are a modified version of the eubelum-type lungs that are specialised 
-            for arid environments. [cm_simple_footnote id="1"] </p>
+            for arid environments. <a href="#1"><sup>1</sup></a> </p>
             </div>
             <div className="col" >
             <Figure 
@@ -205,20 +207,20 @@ export function Lungs() {
             <div className="col">
             <h4>Eubelum-types</h4>
             <p>These lungs have "multiple arborescent invaginations". This term describes that they possess 
-                multiple respiratory trees. [cm_simple_footnote id="1"] </p>
+                multiple respiratory trees. <a href="#1"><sup>1</sup></a> </p>
             </div>
         </div>
         
        
         <h4>Aethiopopactes- and Periscyphis-types</h4>
         <p>These types possess only one respiratory tree and one spiracle. Therefore, they are monospiracular. 
-             [cm_simple_footnote id="1"]  </p>
+        <a href="#1"><sup>1</sup></a> </p>
         
         <div className="row align-items-center">
             <div className="col">
             <h5>Aethiopopactes-types    </h5>
             <p>This type has only "one arborescent invagination" meaning only one respiratory tree. 
-                [cm_simple_footnote id="1"] </p>
+            <a href="#1"><sup>1</sup></a></p>
             </div>
             <div className="col">
             <Figure 
@@ -246,12 +248,12 @@ export function Lungs() {
             <div className="col">
             <h5>Periscyphis-types</h5>
             <p>The periscyphis-type lungs are a modified version of the aethiopopactes-types lungs that are 
-            specialised for arid environments. [cm_simple_footnote id="1"] </p>
+            specialised for arid environments. <a href="#1"><sup>1</sup></a> </p>
             <p>The perispiracular area is very reduced or even absent. Unlike in other types, the respiratory 
                 tree is not only in the exopods of the pleopods but also grows into the pleon (abdomen). 
-                [cm_simple_footnote id="1"]</p>
+                <a href="#1"><sup>1</sup></a></p>
             <p>Another adaptation to living in deserts is the mechanism in Periscyphis to 
-                close the spiracles when necessary. [cm_simple_footnote id="4"]</p>
+                close the spiracles when necessary. <a href="#4"><sup>4</sup></a></p>
             </div>
         </div>
         
@@ -274,12 +276,26 @@ export function Lungs() {
             <div className="col">
                 
             </div>
-            {/* {i:0;s:217:"Paoli, P., Ferrara, F. and Taiti, S. (2002), Morphology and evolution of the respiratory apparatus in the family Eubelidae (Crustacea, Isopoda, Oniscidea). J. Morphol., 253: 272-289. https://doi.org/10.1002/jmor.10008";i:1;s:223:"Inui, Naoto & Miura, Toru. (2024). Comparisons of developmental processes of air- breathing organs among terrestrial isopods (Crustacea, Oniscidea): implications for their evolutionary origins. 10.21203/rs.3.rs-4023002/v1. ";i:2;s:216:"Naoto Inui, Ryosuke Kimbara, Haruka Yamaguchi, Toru Miura, Pleopodal lung development in a terrestrial isopod, Porcellio scaber (Oniscidea), Arthropod Structure & Development, Volume 71, 2022, 101210, ISSN 1467-8039,";i:3;s:248:"Schmidt, C. and Wägele, J.W. (2001), Morphology and evolution of respiratory structures in the pleopod exopodites of terrestrial Isopoda (Crustacea, Isopoda, Oniscidea). Acta Zoologica, 82: 315-330. https://doi.org/10.1046/j.1463-6395.2001.00092.x";i:4;s:199:"Elisabeth, Hornung. (2011). Evolutionary adaptation of oniscidean isopods to terrestrial life: Structure, physiology and behavior. Terrestrial Arthropod Reviews. 4. 95-130. 10.1163/187498311X576262. " */}
+            {/* {i:0;s:217:"Paoli, P., Ferrara, F. and Taiti, S. (2002), Morphology and evolution of the respiratory apparatus in the family Eubelidae (Crustacea, Isopoda, Oniscidea). J. Morphol., 253: 272-289. https://doi.org/10.1002/jmor.10008";
+            i:1;s:223:"Inui, Naoto & Miura, Toru. (2024). Comparisons of developmental processes of air- breathing organs among terrestrial isopods (Crustacea, Oniscidea): implications for their evolutionary origins. 10.21203/rs.3.rs-4023002/v1. "
+            ;i:2;s:216:"Naoto Inui, Ryosuke Kimbara, Haruka Yamaguchi, Toru Miura, Pleopodal lung development in a terrestrial isopod, Porcellio scaber (Oniscidea), Arthropod Structure & Development, Volume 71, 2022, 101210, ISSN 1467-8039,"
+            ;i:3;s:248:"Schmidt, C. and Wägele, J.W. (2001), Morphology and evolution of respiratory structures in the pleopod exopodites of terrestrial Isopoda (Crustacea, Isopoda, Oniscidea). Acta Zoologica, 82: 315-330. https://doi.org/10.1046/j.1463-6395.2001.00092.x"
+            ;i:4;s:199:"Elisabeth, Hornung. (2011). Evolutionary adaptation of oniscidean isopods to terrestrial life: Structure, physiology and behavior. Terrestrial Arthropod Reviews. 4. 95-130. 10.1163/187498311X576262. " */}
         </div>
-        <ReferenceBox>
-            
-        </ReferenceBox>
+        <ReferenceBox
+        />
+        <h2>References</h2>
+        <ol>
+            <li id="1" className="csl-bib-body"> <div data-csl-entry-id="PMID:12125066" className="csl-entry">Paoli, P., Ferrara, F., &#38; Taiti, S. (2002). Morphology and evolution of the respiratory apparatus in the family Eubelidae (Crustacea, Isopoda, Oniscidea). <i>Journal of Morphology</i>, <i>253</i>(3), 272–289. <a href="https://doi.org/10.1002/jmor.10008">https://doi.org/10.1002/jmor.10008</a></div> </li>
+            <li></li>
+            <li></li>
+            <li id="4" className="csl-bib-body"> 
+                <div data-csl-entry-id="https://doi.org/10.1046/j.1463-6395.2001.00092.x" className="csl-entry">Schmidt, C., &#38; Wägele, J. W. (2001). Morphology and evolution of respiratory structures in the pleopod exopodites of terrestrial Isopoda (Crustacea, Isopoda, Oniscidea). <i>Acta Zoologica</i>, <i>82</i>(4), 315–330. <a href="https://doi.org/https://doi.org/10.1046/j.1463-6395.2001.00092.x">https://doi.org/https://doi.org/10.1046/j.1463-6395.2001.00092.x</a></div> 
+            </li>
+        </ol>
+
       </>
     );
   }
+  
   

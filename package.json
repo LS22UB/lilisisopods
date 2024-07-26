@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@citation-js/core": "^0.7.14",
+    "@citation-js/plugin-bibjson": "^0.7.14",
     "@citation-js/plugin-csl": "^0.7.14",
     "@citation-js/plugin-doi": "^0.7.14",
     "@testing-library/jest-dom": "^5.17.0",
