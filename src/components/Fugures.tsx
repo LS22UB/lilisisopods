@@ -11,7 +11,7 @@ export function Figure({url, caption, alt, id, num}:{url: string, caption: strin
     }
     let cl = n + " center-normal"
     return(
-        <figure id={i} className="center-normal">
+        <figure id={i} className="center-normal bg-c3">
                 <img className={cl} src={url} alt={alt} />
                 <figcaption className="center-normal caption">{caption}</figcaption>
         </figure> 

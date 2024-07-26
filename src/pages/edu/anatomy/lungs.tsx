@@ -3,7 +3,7 @@ import React from "react";
 import { Graphviz } from 'graphviz-react';
 import { Figure } from "../../../components/Fugures";
 import HeaderBox from "../../../components/HeaderBox";
-import { BlockQuote, BlockQuoteB } from "../../../components/Quotes";
+import {BlockQuoteB } from "../../../components/Quotes";
 
 
 
