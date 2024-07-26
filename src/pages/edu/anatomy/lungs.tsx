@@ -2,6 +2,7 @@ import React from "react";
 
 import { Graphviz } from 'graphviz-react';
 import { Figure } from "../../../components/Fugures";
+import HeaderBox from "../../../components/HeaderBox";
 
 
 
@@ -10,23 +11,9 @@ export function Lungs() {
 
     return (
       <>
-       
-        <div className="col">
-            <h1>The lungs of isopods</h1>
-            <p>The majority of isopods bear lungs on their pleopods. On their pleopodal exopods, to be precise. </p>
-        </div>
-        <br/>
-        <div className="row align-items-center">
-            <div className="col">
-            Female A. vulgare (living)
-            </div>
-            <div className="col">
-            Female H. reaumuri (conserved specimen)
-            </div>
-        </div>
-        <h2>Types of lungs</h2>
-            <div className="col">
-            <Graphviz dot={`digraph {
+        <HeaderBox title="The lungs of isopods">
+        <div>
+        <Graphviz dot={`digraph {
                 lungs -> "covered lungs" -> Polyspiracular -> "Eubelum-type";
                 Polyspiracular -> "Somaloniscus-type"; 
                 "covered lungs" -> Monospiracular -> "Aethiopopactes-type"; 
@@ -43,8 +30,27 @@ export function Lungs() {
                 "Atracheodillo-type"[style=filled, color="turquoise"]
                 "Synarmadilloides-type"[style=filled, color="turquoise"]
                 }`} 
-                options={{height: "200px", width: "100%"}}
+                options={{height: "300px", width: "100%"}}
                 />
+        </div>
+        </HeaderBox>
+       
+        <div className="col">
+            <h1>The majority of isopods bear lungs on their pleopods.</h1>
+            <h2>On their pleopodal exopods, to be precise.</h2>
+        </div>
+        <br/>
+        <div className="row align-items-center">
+            <div className="col">
+            Female A. vulgare (living)
+            </div>
+            <div className="col">
+            Female H. reaumuri (conserved specimen)
+            </div>
+        </div>
+        <h2>Types of lungs</h2>
+            <div className="col">
+            
             
             </div>
             <br/>
@@ -125,7 +131,7 @@ export function Lungs() {
             <p>The somaloniscus-type lungs are a modified version of the eubelum-type lungs that are specialised 
             for arid environments. [cm_simple_footnote id="1"] </p>
             </div>
-            <div className="col">
+            <div className="col" >
             <Figure 
                 url="https://lilisisopods.com/assets/somaloniscus-type-color.png"
                 caption="Fig. 3 - Schema of somaloniscus-type lung"

@@ -253,3 +253,22 @@ p.mix {border-style: dotted dashed solid double;}
 .max70{
   max-width: 70%;
 }
+
+
+
+.header-container{
+  padding-top: 60px;
+  height: 750px;
+  padding-bottom: 60px;
+  background-color: var(--background);
+}
+
+.header-title{
+  color: var(--colour-four);
+  text-align: left;
+  align-self: flex-start;
+  padding: 0 30px;
+  font-size: 130px;
+  font-weight: 900;
+  line-height: 130px;
+}
