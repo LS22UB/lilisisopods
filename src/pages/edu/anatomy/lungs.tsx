@@ -3,7 +3,7 @@ import React from "react";
 import { Graphviz } from 'graphviz-react';
 import { Figure } from "../../../components/Fugures";
 import HeaderBox from "../../../components/HeaderBox";
-import { BlockQuote } from "../../../components/Quotes";
+import { BlockQuote, BlockQuoteB } from "../../../components/Quotes";
 
 
 
@@ -153,7 +153,8 @@ export function Lungs() {
                 />
             </div>
         </div>
-        <BlockQuote
+
+        <BlockQuoteB
             text=" With increasing complexity of the lungs, habitats of lower humidity could be colonised."
             cite="Schmidt and Wägele, 2001 fn4"
         />
