@@ -1,13 +1,18 @@
 import React from "react";
 
-export function Figure({url, caption, alt, id}:{url: string, caption: string, alt: string, id?: string}){
+export function Figure({url, caption, alt, id, num}:{url: string, caption: string, alt: string, id?: string, num?: string}){
     let i = ""
+    let n = "max70"
     if (id){
         i = id
     }
+    if(num){
+        n = "max" + num + "0"
+    }
+    let cl = n + " center-normal"
     return(
         <figure id={i} className="center-normal">
-                <img className="max70 center-normal" src={url} alt={alt} />
+                <img className={cl} src={url} alt={alt} />
                 <figcaption className="center-normal caption">{caption}</figcaption>
         </figure> 
     )

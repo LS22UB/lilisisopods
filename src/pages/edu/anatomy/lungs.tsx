@@ -114,15 +114,17 @@ export function Lungs() {
             
             
             <h3>Atracheodillo-type</h3>
-            <p>The atracheodillo-type lungs are directly exposed to the air and not partially covered. All folds are coplanar (on the same level) with the surface of the pleopodal exopod.  [cm_simple_footnote id="1"]</p>
         <div className="row align-items-center">
             <div className="col">
             <Figure 
                 url="https://lilisisopods.com/assets/atracheodillo-type-B-color.png"
-                caption="Fig. 1 - Schema of atracheodillo-type lung"
+                caption="Schema of atracheodillo-type lung"
                 alt="Schema of atracheodillo-type lung"
                 id="atracheodillo-lung-B"
                 />
+             </div>
+             <div className="col text-box">
+             <p>The atracheodillo-type lungs are directly exposed to the air and not partially covered. All folds are coplanar (on the same level) with the surface of the pleopodal exopod.  [cm_simple_footnote id="1"]</p>
              </div>
 
             <div className="col">
@@ -147,7 +149,7 @@ export function Lungs() {
             <div className="col">
                 <Figure 
                 url="https://lilisisopods.com/assets/synarmadilloides-type-color.png"
-                caption="Fig. 3 - Schema of synarmadilloides-type lung"
+                caption="Schema of synarmadilloides-type lung"
                 alt="Schema of synarmadilloides-type lung"
                 id="synarmadilloides-lung"
                 />
@@ -182,9 +184,10 @@ export function Lungs() {
             <div className="col" >
             <Figure 
                 url="https://lilisisopods.com/assets/somaloniscus-type-color.png"
-                caption="Fig. 3 - Schema of somaloniscus-type lung"
+                caption="Schema of somaloniscus-type lung"
                 alt="Schema of somaloniscus-type lung"
                 id="somaloniscus-lung"
+                num="5"
                 />
             </div>
         </div>
@@ -192,9 +195,10 @@ export function Lungs() {
             <div className="col">
             <Figure 
                 url="https://lilisisopods.com/assets/eubelum-type-color.png"
-                caption="Fig. 3 - Schema of eubelum-type lung"
+                caption="Schema of eubelum-type lung"
                 alt="Schema of eubelum-type lung"
                 id="eubelum-lung"
+                num="6"
                 />
         </div>
             <div className="col">
@@ -218,7 +222,7 @@ export function Lungs() {
             <div className="col">
             <Figure 
                 url="https://lilisisopods.com/assets/aethiopopactes-type-lung-color.png"
-                caption="Fig. 3 - Schema of aethiopopactes-type lung"
+                caption="Schema of aethiopopactes-type lung"
                 alt="Schema of aethiopopactes-type lung"
                 id="aethiopopactes-lung"
                 />
@@ -233,7 +237,7 @@ export function Lungs() {
             <div className="col">
             <Figure 
                 url="https://lilisisopods.com/assets/periscyphis-type-color.png"
-                caption="Fig. 3 - Schema of periscyphis-type lung"
+                caption="Schema of periscyphis-type lung"
                 alt="Schema of periscyphis-type lung"
                 id="periscyphis-lung"
                 />
