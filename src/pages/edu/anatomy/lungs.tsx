@@ -92,13 +92,13 @@ export function Lungs() {
                 id=""
                 />
                 </div>
-                <div className="col text-box">
+                <div className="col">
                 <p>shallowly wrinkled </p>  
                 </div>
             </div>
             <h3>Trachelipus-type</h3>
             <div className="row items-align-center">
-                <div className="col text-box">
+                <div className="col">
                 <p>partly covered </p>
                 </div>
                 <div className="col">
@@ -123,7 +123,7 @@ export function Lungs() {
                 id="atracheodillo-lung-B"
                 />
              </div>
-             <div className="col text-box">
+             <div className="col">
              <p>The atracheodillo-type lungs are directly exposed to the air and not partially covered. All folds are coplanar (on the same level) with the surface of the pleopodal exopod.  [cm_simple_footnote id="1"]</p>
              </div>
 
@@ -143,7 +143,7 @@ export function Lungs() {
             This means they are folds that go a bit into the surface like a crack. [cm_simple_footnote id="1"] 
         </p>
         <div className="row align-items-center">
-            <div className="col text-box">
+            <div className="col">
                 In the picture the exposed part of the lung is coloured pink and the hidden part blue. Both colours signify the folded surface. The green parts stand for the troughs. 
             </div>
             <div className="col">
