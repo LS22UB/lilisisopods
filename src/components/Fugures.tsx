@@ -1,4 +1,5 @@
 import React from "react";
+// Load Citation.js
 
 export function Figure({url, caption, alt, id, num}:{url: string, caption: string, alt: string, id?: string, num?: string}){
     let i = ""

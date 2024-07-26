@@ -4,6 +4,7 @@ import { Graphviz } from 'graphviz-react';
 import { Figure } from "../../../components/Fugures";
 import HeaderBox from "../../../components/HeaderBox";
 import {BlockQuoteB } from "../../../components/Quotes";
+import { ReferenceBox } from "../../../components/Citations";
 
 
 
@@ -275,7 +276,9 @@ export function Lungs() {
             </div>
             {/* {i:0;s:217:"Paoli, P., Ferrara, F. and Taiti, S. (2002), Morphology and evolution of the respiratory apparatus in the family Eubelidae (Crustacea, Isopoda, Oniscidea). J. Morphol., 253: 272-289. https://doi.org/10.1002/jmor.10008";i:1;s:223:"Inui, Naoto & Miura, Toru. (2024). Comparisons of developmental processes of air- breathing organs among terrestrial isopods (Crustacea, Oniscidea): implications for their evolutionary origins. 10.21203/rs.3.rs-4023002/v1. ";i:2;s:216:"Naoto Inui, Ryosuke Kimbara, Haruka Yamaguchi, Toru Miura, Pleopodal lung development in a terrestrial isopod, Porcellio scaber (Oniscidea), Arthropod Structure & Development, Volume 71, 2022, 101210, ISSN 1467-8039,";i:3;s:248:"Schmidt, C. and Wägele, J.W. (2001), Morphology and evolution of respiratory structures in the pleopod exopodites of terrestrial Isopoda (Crustacea, Isopoda, Oniscidea). Acta Zoologica, 82: 315-330. https://doi.org/10.1046/j.1463-6395.2001.00092.x";i:4;s:199:"Elisabeth, Hornung. (2011). Evolutionary adaptation of oniscidean isopods to terrestrial life: Structure, physiology and behavior. Terrestrial Arthropod Reviews. 4. 95-130. 10.1163/187498311X576262. " */}
         </div>
-        
+        <ReferenceBox>
+            
+        </ReferenceBox>
       </>
     );
   }
