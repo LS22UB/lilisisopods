@@ -1,4 +1,4 @@
-import { About, Home, Lungs, Ligia, LigiaPallasii, FAQ, Shops, ArmadillidiumKlugii, Guides } from "./pages/page-list";
+import { About, Home, Irido, Lungs, Ligia, LigiaPallasii, FAQ, Shops, ArmadillidiumKlugii, Guides } from "./pages/page-list";
 
 interface Base {
     name: string | undefined;
@@ -6,9 +6,15 @@ interface Base {
   
   class Folder implements Base {
     name: string | undefined;
-    folder: Page[] | undefined;
+    folder:  Page[] | undefined;
   }
-  
+
+/*   class Subfolder implements Base {
+    name: string | undefined;
+    folder:  Folder[] | undefined;
+  } */
+
+   
   class Page implements Base {
     name: string | undefined;
     title: string | undefined;
@@ -48,14 +54,8 @@ interface Base {
       ]
     },
     {
-      name: "Education",
+      name: "Identification",
       folder: [
-          {
-              name: "FAQ",
-              title: "FAQ",
-              path: "/faq",
-              component: FAQ,
-          },
           {
             name: "Identification guides list",
             title: "Identification guides list",
@@ -72,6 +72,39 @@ interface Base {
           title: "Lungs",
           path: "education/anatomy/lungs-of-isopods",
           component: Lungs,
+        },
+      ]
+    },
+    {
+      name: "Care and Advice",
+      folder: [
+        {
+          name: "FAQ",
+          title: "FAQ",
+          path: "/faq",
+          component: FAQ,
+      },
+      ]
+    },
+    {
+      name: "Art",
+      folder: [
+        {
+          name: "Home",
+          title: "Home",
+          path: "/",
+          component: Home,
+        },
+      ]
+    },
+    {
+      name: "Health",
+      folder: [
+        {
+          name: "Home",
+          title: "Home",
+          path: "/",
+          component: Home,
         },
       ]
     }
