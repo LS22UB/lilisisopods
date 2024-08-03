@@ -1,5 +1,5 @@
 import React from "react";
-import { MovingWebsite } from "../../../components/UnderConstruction";
+import { MovingWebsite } from "../../components/UnderConstruction";
 
 export function caremoulting() {
 return ( 
