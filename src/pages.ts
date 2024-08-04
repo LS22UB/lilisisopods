@@ -1,4 +1,13 @@
-import { About, Home, Irido, Lungs, Ligia, LigiaPallasii, FAQ, Shops, ArmadillidiumKlugii, Guides } from "./pages/page-list";
+import { About, 
+  Home, 
+  Acanthoniscusspiniger, TooMany, OniscusAsellus, PorcellioLaevis, PorcellioScaber, PorcellioSpinicornis,
+  HowKey, PosterolateralCorners, percountryusa, percountrygermany, taxonomyfamilies, taxonomygenera, taxonomyspecies,
+  idpercountry, artartists, artclothing, artdigital, artpaintings, artphotography, artpottery, artkeychains,
+  Morphshighyellow, artstickers,
+  Morphsmorphs, 
+  Irido, Lungs, Ligia, 
+  LigiaPallasii, FAQ, Shops, 
+  ArmadillidiumKlugii, Guides } from "./pages/page-list";
 
 interface Base {
     name: string | undefined;
@@ -45,17 +54,41 @@ interface Base {
     {
       name: "Taxonomy",
       folder: [
-          {
-              name: "Ligia",
-              title: "Ligia",
-              path: "species/ligia",
-              component: Ligia,
-          },
+        {
+          name: "Families",
+          title: "Families",
+          path: "/families",
+          component: taxonomyfamilies,
+        },
+        {
+          name: "Genera",
+          title: "Genera",
+          path: "/genera",
+          component: taxonomygenera,
+        },
+        {
+          name: "Species",
+          title: "Species",
+          path: "/species",
+          component: taxonomyspecies,
+        },
+        {
+          name: "Morphs",
+          title: "Morphs",
+          path: "/morphs",
+          component: Morphsmorphs,
+        },
       ]
     },
     {
       name: "Identification",
       folder: [
+          {
+            name: "How to use keys",
+            title: "How to use keys",
+            path: "/how-to-use-keys",
+            component: HowKey,
+          },
           {
             name: "Identification guides list",
             title: "Identification guides list",
@@ -84,16 +117,28 @@ interface Base {
           path: "/faq",
           component: FAQ,
       },
+      {
+        name: "Too many isopods",
+        title: "Too many",
+        path: "/too-many",
+        component: TooMany,
+      },
       ]
     },
     {
       name: "Art",
       folder: [
         {
-          name: "Home",
-          title: "Home",
-          path: "/",
-          component: Home,
+          name: "Artists",
+          title: "Artists",
+          path: "/artists",
+          component: artartists,
+        },
+        {
+          name: "Digital art",
+          title: "Digital art",
+          path: "/digital-art",
+          component: artdigital,
         },
       ]
     },
@@ -101,10 +146,10 @@ interface Base {
       name: "Health",
       folder: [
         {
-          name: "Home",
-          title: "Home",
-          path: "/",
-          component: Home,
+          name: "Irido virus",
+          title: "Irido virus",
+          path: "/irido-virus",
+          component: Irido,
         },
       ]
     }
@@ -113,7 +158,7 @@ interface Base {
 
   export const Pages: (Page | Folder)[] = [
     {
-      name: "About",
+      name: "About", /* y */
       title: "About",
       path: "/about",
       component: About,
@@ -125,28 +170,58 @@ interface Base {
       component: ArmadillidiumKlugii,
     },
     {
-      name: "FAQ",
+      name: "Artists", /* y */
+      title: "Artists",
+      path: "/artists",
+      component: artartists,
+    },
+    {
+      name: "Digital art", /* y */
+      title: "Digital art",
+      path: "/digital-art",
+      component: artdigital,
+    },
+    {
+      name: "Families", /* y */
+      title: "Families",
+      path: "/families",
+      component: taxonomyfamilies,
+    },
+    {
+      name: "FAQ", /* y */
       title: "FAQ",
       path: "/faq",
       component: FAQ,
     },
     {
-      name: "Identification guides list",
-      title: "Identification guides list",
-      path: "/education/identification/guide-list",
-      component: Guides,
+      name: "Genera", /* y */
+      title: "Genera",
+      path: "/genera",
+      component: taxonomygenera,
     },
     {
-      name: "Home",
+      name: "Home", /* y */
       title: "Home",
       path: "/",
       component: Home,
     },
     {
-      name: "Shops",
-      title: "Shops",
-      path: "/shops",
-      component: Shops,
+      name: "How to use keys", /* y */
+      title: "How to use keys",
+      path: "/how-to-use-keys",
+      component: HowKey,
+    },
+    {
+      name: "Identification guides list", /* y */
+      title: "Identification guides list",
+      path: "/education/identification/guide-list",
+      component: Guides,
+    },
+    {
+      name: "Irido virus", /* y */
+      title: "Irido virus",
+      path: "/health/irido-virus",
+      component: Irido,
     },
     {
       name: "Ligia",
@@ -155,7 +230,7 @@ interface Base {
       component: Ligia,
     },
     {
-      name: "Lungs",
+      name: "Lungs", /* y */
       title: "Lungs",
       path: "education/anatomy/lungs-of-isopods",
       component: Lungs,
@@ -166,5 +241,28 @@ interface Base {
       path: "species/ligia/ligia-pallasii",
       component: LigiaPallasii,
     },
-
+    {
+      name: "Morphs", /* y */
+      title: "Morphs",
+      path: "/morphs",
+      component: Morphsmorphs,
+    },
+    {
+      name: "Shops",
+      title: "Shops",
+      path: "/shops",
+      component: Shops,
+    },
+    {
+      name: "Species", /* y */
+      title: "Species",
+      path: "/species",
+      component: taxonomyspecies,
+    },
+    {
+      name: "Too many", /* y */
+      title: "Too many",
+      path: "/too-many",
+      component: TooMany,
+    },
   ]
