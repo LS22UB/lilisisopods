@@ -1,9 +1,9 @@
 import { About, 
   Home, 
-  Acanthoniscusspiniger, TooMany, OniscusAsellus, PorcellioLaevis, PorcellioScaber, PorcellioSpinicornis,
-  HowKey, PosterolateralCorners, percountryusa, percountrygermany, taxonomyfamilies, taxonomygenera, taxonomyspecies,
-  idpercountry, artartists, artclothing, artdigital, artpaintings, artphotography, artpottery, artkeychains,
-  Morphshighyellow, artstickers,
+ /*  Acanthoniscusspiniger, */ TooMany, /* OniscusAsellus, PorcellioLaevis, PorcellioScaber, PorcellioSpinicornis, */
+  HowKey, PosterolateralCorners, /* percountryusa, percountrygermany,  */  taxonomyfamilies, taxonomygenera, taxonomyspecies,
+  idpercountry, artartists, /* artclothing, */ artdigital, /* artpaintings, artphotography, artpottery, artkeychains, */
+ /*  Morphshighyellow, artstickers, */
   Morphsmorphs, 
   Irido, Lungs, Ligia, 
   LigiaPallasii, FAQ, Shops, 
@@ -92,8 +92,14 @@ interface Base {
           {
             name: "Identification guides list",
             title: "Identification guides list",
-            path: "/education/identification/guide-list",
+            path: "/identification/guide-list",
             component: Guides,
+          },
+          {
+            name: "Guides per country", 
+            title: "Guides per country",
+            path: "/identification/per-country",
+            component: idpercountry,
           },
       ]
     },
@@ -103,8 +109,14 @@ interface Base {
         {
           name: "Lungs",
           title: "Lungs",
-          path: "education/anatomy/lungs-of-isopods",
+          path: "/anatomy/lungs-of-isopods",
           component: Lungs,
+        },
+        {
+          name: "Posterolateral Corners", /* y */
+          title: "Posterolateral Corners",
+          path: "/anatomy/posterolateral-corners",
+          component: PosterolateralCorners,
         },
       ]
     },
@@ -148,7 +160,7 @@ interface Base {
         {
           name: "Irido virus",
           title: "Irido virus",
-          path: "/irido-virus",
+          path: "/health/irido-virus",
           component: Irido,
         },
       ]
@@ -200,6 +212,12 @@ interface Base {
       component: taxonomygenera,
     },
     {
+      name: "Guides per country", /* y */
+      title: "Guides per country",
+      path: "/identification/per-country",
+      component: idpercountry,
+    },
+    {
       name: "Home", /* y */
       title: "Home",
       path: "/",
@@ -214,7 +232,7 @@ interface Base {
     {
       name: "Identification guides list", /* y */
       title: "Identification guides list",
-      path: "/education/identification/guide-list",
+      path: "/identification/guide-list",
       component: Guides,
     },
     {
@@ -226,19 +244,19 @@ interface Base {
     {
       name: "Ligia",
       title: "Ligia",
-      path: "species/ligia",
+      path: "/species/ligia",
       component: Ligia,
     },
     {
       name: "Lungs", /* y */
       title: "Lungs",
-      path: "education/anatomy/lungs-of-isopods",
+      path: "/anatomy/lungs-of-isopods",
       component: Lungs,
     },
     {
       name: "Ligia pallasii",
       title: "Ligia pallasii",
-      path: "species/ligia/ligia-pallasii",
+      path: "/species/ligia/ligia-pallasii",
       component: LigiaPallasii,
     },
     {
@@ -246,6 +264,12 @@ interface Base {
       title: "Morphs",
       path: "/morphs",
       component: Morphsmorphs,
+    },
+    {
+      name: "Posterolateral Corners", /* y */
+      title: "Posterolateral Corners",
+      path: "/anatomy/posterolateral-corners",
+      component: PosterolateralCorners,
     },
     {
       name: "Shops",
