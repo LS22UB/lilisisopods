@@ -2,7 +2,7 @@ import React from "react";
 import { MovingWebsite } from "../../components/UnderConstruction";
 import { InstaEmbedRow } from "../../components/Embeds/components/embeds/EmbedRow";
 
-export function artother() {
+export function artcomics() {
 return ( 
  <>
 <div className="row">
@@ -10,10 +10,18 @@ return (
 </div>
 </div>
 <InstaEmbedRow
-    url1="https://www.instagram.com/p/CaAqC_gqAnV"
-    url2="https://www.instagram.com/p/C-LBWZNOwMg"
+    url1="https://www.instagram.com/p/ChM_WhMKv_K"
+    url2="https://www.instagram.com/p/"
     url3="https://www.instagram.com/p/"
 />
 </>
 );
 }
+
+/* 
+<InstaEmbedRow
+    url1="https://www.instagram.com/p/"
+    url2="https://www.instagram.com/p/"
+    url3="https://www.instagram.com/p/"
+/>
+ */

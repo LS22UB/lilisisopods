@@ -20,7 +20,12 @@ return (
     url3="https://www.instagram.com/p/CjjUPsqqbnV"
 />
 <InstaEmbedRow
-    url1="https://www.instagram.com/p/"
+    url1="https://www.instagram.com/p/CinTsHSuAxs"
+    url2="https://www.instagram.com/p/CjNsJh0Olxt"
+    url3="https://www.instagram.com/p/ClLDHrJuimZ"  
+/>
+<InstaEmbedRow
+    url1="https://www.instagram.com/p/CmeF7fJqZCw"
     url2="https://www.instagram.com/p/"
     url3="https://www.instagram.com/p/"
 />
@@ -33,5 +38,11 @@ return (
     url1="https://www.instagram.com/p/"
     url2="https://www.instagram.com/p/"
     url3="https://www.instagram.com/p/"
+/>
+
+<PintEmbedRow
+    url1="https://www.pinterest.de/pin/"
+    url2="https://www.pinterest.de/pin/"
+    url3="https://www.pinterest.de/pin/"
 />
  */

@@ -4,7 +4,7 @@ import { About,
   HowKey, PosterolateralCorners, /* percountryusa, percountrygermany,  */  taxonomyfamilies, taxonomygenera, taxonomyspecies,
   idpercountry, artartists, /* artclothing, */ artdigital, /* artpaintings, artphotography, , artkeychains, */
  /*  Morphshighyellow, , */
-  artprints, artpottery, artplushie, artstickers,
+  artprints, artpottery, artplushie, artstickers, artother, artcomics,
   Morphsmorphs, 
   Irido, Lungs, Ligia, 
   LigiaPallasii, FAQ, Shops, 
@@ -148,6 +148,12 @@ interface Base {
           component: artartists,
         },
         {
+          name: "Comics", /* y */
+          title: "Comics",
+          path: "/comics",
+          component: artcomics,
+        },
+        {
           name: "Digital art",
           title: "Digital art",
           path: "/art/digital-art",
@@ -176,6 +182,12 @@ interface Base {
           title: "Sticker",
           path: "/art/sticker",
           component: artstickers,
+        },
+        {
+          name: "Other",
+          title: "Other",
+          path: "/art/other",
+          component: artother,
         },
       ]
     },
@@ -211,6 +223,12 @@ interface Base {
       title: "Artists",
       path: "/artists",
       component: artartists,
+    },
+    {
+      name: "Comics", /* y */
+      title: "Comics",
+      path: "/comics",
+      component: artcomics,
     },
     {
       name: "Digital art", /* y */
@@ -289,6 +307,12 @@ interface Base {
       title: "Morphs",
       path: "/morphs",
       component: Morphsmorphs,
+    },
+    {
+      name: "Other",
+      title: "Other",
+      path: "/art/other",
+      component: artother,
     },
     {
       name: "Plushies",

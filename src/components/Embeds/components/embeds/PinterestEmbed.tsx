@@ -72,7 +72,7 @@ export const PinterestEmbed = ({
   return (
     <div
       {...divProps}
-      className={classNames('rsme-embed rsme-pinterest-embed', divProps.className)}
+      className={classNames('col rsme-embed rsme-pinterest-embed', divProps.className)}
       style={{
         overflow: 'hidden',
         width: width ?? undefined,
