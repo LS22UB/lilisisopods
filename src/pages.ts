@@ -2,8 +2,9 @@ import { About,
   Home, 
  /*  Acanthoniscusspiniger, */ TooMany, /* OniscusAsellus, PorcellioLaevis, PorcellioScaber, PorcellioSpinicornis, */
   HowKey, PosterolateralCorners, /* percountryusa, percountrygermany,  */  taxonomyfamilies, taxonomygenera, taxonomyspecies,
-  idpercountry, artartists, /* artclothing, */ artdigital, /* artpaintings, artphotography, artpottery, artkeychains, */
- /*  Morphshighyellow, artstickers, */
+  idpercountry, artartists, /* artclothing, */ artdigital, /* artpaintings, artphotography, , artkeychains, */
+ /*  Morphshighyellow, , */
+  artprints, artpottery, artplushie, artstickers,
   Morphsmorphs, 
   Irido, Lungs, Ligia, 
   LigiaPallasii, FAQ, Shops, 
@@ -149,8 +150,32 @@ interface Base {
         {
           name: "Digital art",
           title: "Digital art",
-          path: "/digital-art",
+          path: "/art/digital-art",
           component: artdigital,
+        },
+        {
+          name: "Plushies",
+          title: "Plushies",
+          path: "/art/plushies",
+          component: artplushie,
+        },
+        {
+          name: "Pottery",
+          title: "Pottery",
+          path: "/art/pottery",
+          component: artpottery,
+        },
+        {
+          name: "Prints",
+          title: "Prints",
+          path: "/art/prints",
+          component: artprints,
+        },
+        {
+          name: "Sticker",
+          title: "Sticker",
+          path: "/art/sticker",
+          component: artstickers,
         },
       ]
     },
@@ -190,7 +215,7 @@ interface Base {
     {
       name: "Digital art", /* y */
       title: "Digital art",
-      path: "/digital-art",
+      path: "/art/digital-art",
       component: artdigital,
     },
     {
@@ -266,10 +291,28 @@ interface Base {
       component: Morphsmorphs,
     },
     {
+      name: "Plushies",
+      title: "Plushies",
+      path: "/art/plushies",
+      component: artplushie,
+    },
+    {
       name: "Posterolateral Corners", /* y */
       title: "Posterolateral Corners",
       path: "/anatomy/posterolateral-corners",
       component: PosterolateralCorners,
+    },
+    {
+      name: "Pottery",
+      title: "Pottery",
+      path: "/art/pottery",
+      component: artpottery,
+    },
+    {
+      name: "Prints",
+      title: "Prints",
+      path: "/art/prints",
+      component: artprints,
     },
     {
       name: "Shops",
@@ -282,6 +325,12 @@ interface Base {
       title: "Species",
       path: "/species",
       component: taxonomyspecies,
+    },
+    {
+      name: "Sticker",
+      title: "Sticker",
+      path: "/art/sticker",
+      component: artstickers,
     },
     {
       name: "Too many", /* y */
