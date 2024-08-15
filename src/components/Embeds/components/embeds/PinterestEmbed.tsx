@@ -83,7 +83,7 @@ export const PinterestEmbed = ({
     >
       <EmbedStyle />
       <iframe
-        id={url}
+        title={url}
         className={classNames('pinterest-post', !ready && 'rsme-d-none')}
         src={`https://assets.pinterest.com/ext/embed.html?id=${postId}`}
         width="100%"
