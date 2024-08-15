@@ -32,7 +32,7 @@ export function RedditEmbed({url}:{url: string}){
     
         return(
             <div className='col reddit'>
-            <blockquote className="reddit-embed-bq"  data-embed-height="740"><a href={url}></a><br/> <a href=""></a> in <a href="https://www.reddit.com/r/isopods/">isopods</a></blockquote>
+            <blockquote className="reddit-embed-bq"  data-embed-height="740"><a href={url}></a><br/> <a href="https://www.reddit.com/r/isopods/"></a> in <a href="https://www.reddit.com/r/isopods/">isopods</a></blockquote>
         </div>
         )
 }
