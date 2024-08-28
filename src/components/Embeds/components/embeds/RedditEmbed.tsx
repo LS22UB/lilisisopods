@@ -33,9 +33,9 @@ export function RedditEmbed({url}:{url: string}){
         return(
             <div className='col reddit'>
             <blockquote className="reddit-embed-bq"  data-embed-height="740">
-                <a href={url}></a>
+                <a href={url}>Post</a>
                 <br/> 
-                <a href="https://www.reddit.com/r/isopods/"></a> in 
+                <a href="https://www.reddit.com/r/isopods/">on reddit</a> in 
                 <a href="https://www.reddit.com/r/isopods/">isopods</a>
             </blockquote>
         </div>
