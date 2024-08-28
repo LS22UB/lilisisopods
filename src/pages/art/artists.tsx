@@ -1,6 +1,5 @@
 import React from "react";
 import { MovingWebsite } from "../../components/UnderConstruction";
-import { RedditEmbed } from "../../components/Embeds/components/embeds/RedditEmbed";
 import { RedditEmbedRow } from "../../components/Embeds/components/embeds/EmbedRow";
 
 export function artartists() {
