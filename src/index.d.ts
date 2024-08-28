@@ -7,6 +7,8 @@ export * from './components/NotFound.tsx'
 export * from './components/text-types.tsx'
 export * from './components/SocialMedia.tsx'
 export * from './components/Filter.tsx'
+export * from './components/Headings.tsx'
+export * from './components/Artist-Profile.tsx'
 export * from './components/UnderConstruction.tsx'
 
 
