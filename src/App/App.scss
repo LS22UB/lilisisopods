@@ -1,0 +1,17 @@
+.picture-frame {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 30rem; 
+    margin: 1rem;
+    background: #fff;
+    padding: 30px;
+    border-style: solid;
+    border-width: 30px;
+    border-top-color: darken(#102542, 0%);
+    border-right-color: darken(#102542, 10%);
+    border-bottom-color: darken(#102542, 0%);
+    border-left-color: darken(#102542, 10%);
+    box-shadow: 2px 2px 4px rgba(0,0,0,.6);
+  }

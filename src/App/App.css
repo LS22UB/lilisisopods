@@ -15,6 +15,7 @@
   --colour-four: #105260; /* Midnight Green */
   --background-darker:  #dfeedf; /* #cbe0cb; */ /* #f2f8f2; */
   --background: #fcfffc ; /* #F1F9F7 Mint Cream */
+  --borderR: 10px; 
 }
 
 .center-normal{
@@ -30,6 +31,18 @@
   width: 50%;
   text-align: center  ;
 }
+.left{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  align-items: left;
+  float: left;
+}
+
+.min{
+  width: min-content !important;
+}
 /* * * * * * * */
 /* *  COLORS * */
 /* * * * * * * */
@@ -38,6 +51,9 @@
   color: var(--accent-light);
 }
 
+/* IMAGES */
+
+
 /* * * * * * * */
 /* Backgrounds */
 /* * * * * * * */
@@ -45,11 +61,18 @@
 .bg-ad{
   background-color: var(--accent-dark);
 }
-
+.bg-gr{
+  background-color: var(--colour-two);
+}
 .bg-c3{
   background-color: var(--colour-three);
 }
-
+.bg-al{
+  background-color: var(--accent-light);
+}
+.bg-lr{
+  background-color: var(--accent-urgent-light);
+}
 .bg-gray{
   background-color: #e4e8e4 ;
 }
@@ -216,6 +239,18 @@ p.mix {border-style: dotted dashed solid double;}
 }
 .fa-instagram {
   background: var(--accent-dark-light);
+  color: white;
+}
+.fa-artists{
+ padding: 1rem;
+ background-color: var(--accent-dark-light) !important;
+ color: white !important;
+ border-radius: var(--borderR);
+ font-size: xx-large;
+}
+
+.fa-etsy{
+  background-color: var(--accent-dark-light);
   color: white;
 }
 .fa-reddit {
@@ -664,4 +699,77 @@ span{
 
 #embed-title, .line-clamp-3{
   display: none !important;
+}
+
+/* SLIDER */
+.slider{
+  margin-top: 5vh;
+}
+
+/* ARTIST PROFILE */
+.artist-profile{
+  padding: 20px;
+  border-radius: var(--borderR);
+}
+.selling-tag{
+  margin-left: 1rem !important;
+  padding: 0.5rem;
+  margin-top: 1rem !important;
+  box-shadow: 2px 0 2px 2px rgba(0,0,0,0.5);
+  width: fit-content !important;
+}
+.artist-social-div{
+  margin: 0 !important;
+  flex: none !important;
+}
+/* HEADERS */
+.popart{ 
+  font-size: 4rem;
+	letter-spacing:0.1em;
+  -webkit-text-fill-color: var(--background);
+  -webkit-text-stroke-width: 0.3vw;
+  -webkit-text-stroke-color: var(--colour-four);
+  text-shadow: 
+						0.4vw 0.4vw var(--colour-three),
+						0.6vw 0.6vw var(--colour-two);
+}
+
+.urgent-popart{
+  font-size: 4rem;
+	letter-spacing:0.1em;
+  -webkit-text-fill-color: var(--background);
+  -webkit-text-stroke-width: 0.3vw;
+  -webkit-text-stroke-color: var(--accent-urgent);
+  text-shadow: 
+						0.4vw 0.4vw var(--accent-urgent-light),
+						0.6vw 0.6vw var(--accent-light);
+}
+.popart-wrapper{
+  min-height: 1vw;
+}
+
+/* SPEECH BUBBLE */
+.bubble {
+  --r: 1em; /* the radius */
+  --t: 1.5em; /* the size of the tail */
+
+  max-width: 40rem;
+  padding: 1em;
+  border-inline: var(--t) solid #0000;
+  border-radius: calc(var(--r) + var(--t)) / var(--r);
+  mask: radial-gradient(100% 100% at var(--_p) 0, #0000 99%, #000 102%)
+      var(--_p) 100% / var(--t) var(--t) no-repeat,
+    linear-gradient(#000 0 0) padding-box;
+    background-color: var(--accent-dark);
+  color: #fff;
+}
+.bubble-left {
+  --_p: 0;
+  border-bottom-left-radius: 0 0;
+  place-self: start;
+}
+.bubble-right {
+  --_p: 100%;
+  border-bottom-right-radius: 0 0;
+  place-self: end;
 }

@@ -29,21 +29,25 @@ export default function ArtistSlider() {
     var settings = {
       dots: true,
       infinite: true,
-      speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay: true,
+     /*  autoplay: true, */
       speed: 2000,
       autoplaySpeed: 2000,
-      cssEase: "linear"
+      cssEase: "linear",
+      pauseOnHover: true
     };
     return (
-      <Slider {...settings}>
+      <div className="center slider" style={{width: "70%"}}>
+              <Slider {...settings}>
         <div>
           <ArtistProfile
           sells={true}
+          based="US"
+          etsy="https://www.etsy.com/de/shop/IsopalsArts"
+          backgroundcolor="#9cc34e"
           artistname="Phoenix"
-          pictureurl=""
+          pictureurl="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.Uge8n3cdvDQTUusYkX_BwAHaFl%26pid%3DApi&f=1&ipt=1ca4113ab5989ddc982bb3a0ca794ad09fadb49a4c664bc8dc6346691b9e5ed4&ipo=images"
           artname="Isopal Arts"
           insta="https://www.instagram.com/isopalsarts/"
           greeting="Hi! I'm Phoenix and I love to draw all kinds of critters, but isopods have a special place in my heart."
@@ -52,18 +56,7 @@ export default function ArtistSlider() {
         <div>
           <h3>2</h3>
         </div>
-        <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
-        </div>
-        <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
-        </div>
       </Slider>
+      </div>
     );
   }

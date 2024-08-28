@@ -98,7 +98,7 @@ export function Hwave({text}:{text: string}){
     )
 }
 
-export function Hpopart({text}:{text: string}){
+export function TealHpopart({text}:{text: string}){
 return(
     <div className="row">
         <div className="col">
@@ -111,6 +111,19 @@ return(
     </div>
 )
 }
+export function UrgentHpopart({text}:{text: string}){
+    return(
+        <div className="row">
+            <div className="col">
+        <div className="relative popart-wrapper">
+            <div className="absolute urgent-popart">
+                {text}
+            </div> 
+            </div>
+        </div>
+        </div>
+    )
+    }
 
 export function Hshadone({text}:{text: string}){
     return(
