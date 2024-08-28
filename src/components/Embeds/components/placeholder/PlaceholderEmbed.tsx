@@ -125,7 +125,7 @@ export const PlaceholderEmbed = ({
               />
             ) : (
               <div style={{ width: '100%', marginBottom: 40 }}>
-                <img src={imageUrl} style={{ width: '100%' }} />
+                <img src={imageUrl} style={{ width: '100%' }} alt='placeholder embed' />
               </div>
             ))}
         </div>
