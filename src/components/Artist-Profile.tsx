@@ -91,22 +91,25 @@ export function ArtistProfile({artistname, artname, based, sells, children, inst
         </div>
       </div>
       <div className="row">
-        <div className="col-3">
+        <div className="fit col no-flex">
         <p className={"left selling-tag " + bg}>This artist {selling}.</p> 
         </div>
-        <div className="col-3">
+        <div className="fit col no-flex">
         <p className={"left selling-tag bg-al"}>{basedin}</p>
         </div>
-        <div className="col">
-          <div className="row align-items-center">
-            {urls}
-          </div> 
+        <div className="fit col no-flex">
+          <div className="col margin-auto">
+            <div className="row align-items-center" style={{paddingLeft: "0.5rem"}}>
+              {urls}
+            </div> 
+          </div>
         </div>
+        
       </div>
       <br/>
       <div className="row">
         <div className="col">
-           
+           {childs}
         </div>
         <div className="col">
           <div className="bubble bubble-left">{greeting}</div>

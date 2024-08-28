@@ -24,12 +24,21 @@
   margin-right: auto;
   text-align: center;
 }
+.no-flex{
+  flex: none !important ;
+}
+.fit{
+  width: fit-content !important;
+}
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
   text-align: center  ;
+}
+.margin-auto{
+  margin: auto !important;
 }
 .left{
   display: block;
@@ -39,7 +48,9 @@
   align-items: left;
   float: left;
 }
-
+.no-margin{
+  margin: 0 !important;
+}
 .min{
   width: min-content !important;
 }
@@ -242,11 +253,14 @@ p.mix {border-style: dotted dashed solid double;}
   color: white;
 }
 .fa-artists{
- padding: 1rem;
+  margin-left: 1rem !important;
+  margin-top: 1rem !important;
+  box-shadow: 2px 0 2px 2px rgba(0,0,0,0.5);
+  width: fit-content !important;
+ padding: 0.7rem;
  background-color: var(--accent-dark-light) !important;
  color: white !important;
- border-radius: var(--borderR);
- font-size: xx-large;
+ font-size: large;
 }
 
 .fa-etsy{
