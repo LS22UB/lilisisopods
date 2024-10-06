@@ -10,8 +10,8 @@ export function About() {
          <MovingWebsite/>
         </div>
         <div className="row" style={{marginTop: "20px"}}>
-          <h2>Follow my projects</h2>
-          <Calendar year={2024} />
+          <h2>Follow my project</h2>
+          <Calendar year={2024}/>
           </div>
         
       </>
