@@ -1,29 +1,50 @@
 import React, { useEffect } from 'react';
+let tabs = [
+    {   
+        cssname: "october7", 
+        node: <>
+            <h1>Team Meeting</h1>
+            <h2>Organisation</h2>
+            <p>The team discussed important deadlines...</p>
+        </>
+    },
+    {
+        cssname: "march7",
+        node: <>
+            <h1>Project Planning</h1>
+            <h2>Project Scope</h2>
+            <p>The team discussed the project scope...</p>
+        </>
+    },
+    // Add more entries as needed...
+];
+
 
 export function Calendar({ year }: { year: number }) {
-  useEffect(() => {
-    showCurrentMonth();
-  }, []);
-
-  const months = generateMonthComponents(year);
-  const arrows: JSX.Element[] = Arrows();
-
-  return (
-    <div className="cal">
-      {arrows}
-      <ul className="weekdays">
-        <li>Mo</li>
-        <li>Tu</li>
-        <li>We</li>
-        <li>Th</li>
-        <li>Fr</li>
-        <li>Sa</li>
-        <li>Su</li>
-      </ul>
-      {months}
-    </div>
-  );
-}
+    useEffect(() => {
+      showCurrentMonth();  // This shows the current month on page load
+    }, []);
+  
+    // This function generates the components for each month
+    const months = generateMonthComponents(year);  // Adjust this function to include 'generateMonthDays'
+    const arrows: JSX.Element[] = Arrows();  // Your navigation arrows
+  
+    return (
+      <div className="cal">
+        {arrows}
+        <ul className="weekdays">
+          <li>Mo</li>
+          <li>Tu</li>
+          <li>We</li>
+          <li>Th</li>
+          <li>Fr</li>
+          <li>Sa</li>
+          <li>Su</li>
+        </ul>
+        {months} {/* This will display the months */}
+      </div>
+    );
+  }
 
 function generateMonthComponents(year: number): JSX.Element[] {
   const months = [
@@ -47,21 +68,33 @@ function getMonthInfo(year: number, monthIndex: number) {
   return { daysInMonth, startDay };
 }
 
-function generateDaysForMonth(daysInMonth: number, startDay: number) {
-  let days: JSX.Element[] = [];
+function generateMonthDays(month: string, year: number, startDay: number, numDays: number) {
+    let days: JSX.Element[] = [];
 
-  const adjustedStartDay = startDay === 0 ? 6 : startDay - 1;
+    // Add empty elements to represent days before the start of the month
+    for (let i = 0; i < startDay; i++) {
+        days.push(<li key={`empty-${i}`}></li>);
+    }
 
-  for (let i = 0; i < adjustedStartDay; i++) {
-    days.push(<li key={`empty-${i}`}></li>);
-  }
+    // Add actual days of the month
+    for (let day = 1; day <= numDays; day++) {
+        const { isActive, cssname } = isDateInDataset(month, day);
+        if (isActive && cssname) {
+            days.push(
+                <li key={`${month}-${day}`}>
+                    <a onClick={showEntry(cssname)}>
+                        <span className="active">{day}</span>
+                    </a>
+                </li>
+            );
+        } else {
+            days.push(<li key={`${month}-${day}`}>{day}</li>);
+        }
+    }
 
-  for (let day = 1; day <= daysInMonth; day++) {
-    days.push(<li key={day}>{day}</li>);
-  }
-
-  return days;
+    return days;
 }
+
 
 function Arrows() {
     const months = ["February", "March", "April", "May", "June", "July", "August", "September", "October"];
@@ -124,3 +157,71 @@ function showCurrentMonth() {
   if (datesElement) datesElement.style.display = 'block';
   if (arrowsElement) arrowsElement.style.display = 'block';
 }
+
+function isDateInDataset(month: string, day: number): { isActive: boolean, cssname?: string } {
+    let dateKey = `${month.toLowerCase()}${day}`;
+    let tab = tabs.find(t => t.cssname === dateKey);
+
+    if (tab) {
+        return { isActive: true, cssname: tab.cssname };
+    }
+    return { isActive: false };
+}
+
+
+export function CalTabs() {
+    let tablist: JSX.Element[] = []; 
+    for (let index = 0; index < tabs.length; index++) {
+        tablist.push(
+            <div className="cal-entry" id={tabs[index].cssname} style={{display: "none"}}>
+                <div className="entry-header">
+                    <h5>{parseDateFromCode(tabs[index].cssname)}</h5>
+                </div>
+                <div className="entry-body">
+                    {tabs[index].node}
+                </div>
+            </div>
+        );
+    }
+    return tablist; 
+}
+
+function parseDateFromCode(cssname: string): string {
+    let [month, day] = cssname.match(/[a-zA-Z]+|[0-9]+/g) || ["", ""];
+    return `${capitalize(month)} ${day}, 2024`;  // Example: February 27, 2024
+}
+
+function capitalize(word: string): string {
+    return word.charAt(0).toUpperCase() + word.slice(1);
+}
+
+
+function showEntry(entry: string) {
+    return (_event: React.MouseEvent<HTMLElement, MouseEvent>) => {
+        let elementsToHide = document.getElementsByClassName("cal-entry");
+        for (let index = 0; index < elementsToHide.length; index++) {
+            (elementsToHide[index] as HTMLElement).style.display = "none";
+        }
+
+        let entryBlock = document.getElementById(entry);
+        if (entryBlock) {
+            (entryBlock as HTMLElement).style.display = "block";
+        }
+    };
+}
+
+function generateDaysForMonth(daysInMonth: number, startDay: number) {
+    let days: JSX.Element[] = [];
+  
+    const adjustedStartDay = startDay === 0 ? 6 : startDay - 1;
+  
+    for (let i = 0; i < adjustedStartDay; i++) {
+      days.push(<li key={`empty-${i}`}></li>);
+    }
+  
+    for (let day = 1; day <= daysInMonth; day++) {
+      days.push(<li key={day}>{day}</li>);
+    }
+  
+    return days;
+  }
