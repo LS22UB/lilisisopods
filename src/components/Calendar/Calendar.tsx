@@ -46,27 +46,43 @@ export function Calendar({ year }: { year: number }) {
     );
   }
 
-function generateMonthComponents(year: number): JSX.Element[] {
-  const months = [
-    'January', 'February', 'March', 'April', 'May', 'June',
-    'July', 'August', 'September', 'October', 'November', 'December'
-  ];
+  function generateMonthComponents(year: number): JSX.Element[] {
+    const months = [
+      { name: "January", days: 31 },
+      { name: "February", days: isLeapYear(year) ? 29 : 28 },  // Adjust for leap years
+      { name: "March", days: 31 },
+      { name: "April", days: 30 },
+      { name: "May", days: 31 },
+      { name: "June", days: 30 },
+      { name: "July", days: 31 },
+      { name: "August", days: 31 },
+      { name: "September", days: 30 },
+      { name: "October", days: 31 },
+      { name: "November", days: 30 },
+      { name: "December", days: 31 },
+    ];
+  
+    const monthComponents = [];
+  
+    for (let i = 0; i < months.length; i++) {
+      const month = months[i];
+      const startDay = new Date(year, i, 1).getDay(); // Find the day of the week the month starts on
+  
+      monthComponents.push(
+        <ul key={month.name} id={`${month.name}-dates`} className="days hideable" style={{ display: "none" }}>
+          {generateMonthDays(month.name, year, (startDay + 6) % 7, month.days)} {/* Adjust startDay to match Mon-Sun */}
+        </ul>
+      );
+    }
+  
+    return monthComponents;
+  }
 
-  return months.map((month, index) => {
-    const { daysInMonth, startDay } = getMonthInfo(year, index);
-    return (
-      <ul key={month} id={`${month}-dates`} className="days hideable" style={{ display: 'none' }}>
-        {generateDaysForMonth(daysInMonth, startDay)}
-      </ul>
-    );
-  });
-}
-
-function getMonthInfo(year: number, monthIndex: number) {
+/* function getMonthInfo(year: number, monthIndex: number) {
   const daysInMonth = new Date(year, monthIndex + 1, 0).getDate();
   const startDay = new Date(year, monthIndex, 1).getDay();
   return { daysInMonth, startDay };
-}
+} */
 
 function generateMonthDays(month: string, year: number, startDay: number, numDays: number) {
     let days: JSX.Element[] = [];
@@ -210,7 +226,7 @@ function showEntry(entry: string) {
     };
 }
 
-function generateDaysForMonth(daysInMonth: number, startDay: number) {
+/* function generateDaysForMonth(daysInMonth: number, startDay: number) {
     let days: JSX.Element[] = [];
   
     const adjustedStartDay = startDay === 0 ? 6 : startDay - 1;
@@ -224,4 +240,9 @@ function generateDaysForMonth(daysInMonth: number, startDay: number) {
     }
   
     return days;
+  }
+ */
+
+  function isLeapYear(year: number): boolean {
+    return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
   }
