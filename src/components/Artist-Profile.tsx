@@ -55,7 +55,7 @@ export function ArtistProfile({artistname, artname, based, sells, children, inst
   else{
     urls.push(<div className="col-2 center"><p>This artist did not lodge a website, social media account or other way of contact.</p></div>)
   }
-  if (sells == false) {
+  if (sells === false) {
     bg = "bg-lr"
     selling = "does not sell their art"
   }
