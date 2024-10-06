@@ -1,5 +1,6 @@
 import React from "react";
 import { MovingWebsite } from "../components/UnderConstruction";
+import { Calendar } from "../components/Calendar/Calendar";
 
 export function About() {
 
@@ -8,6 +9,10 @@ export function About() {
         <div className="row">
          <MovingWebsite/>
         </div>
+        <div className="row" style={{marginTop: "20px"}}>
+          <h2>Follow my projects</h2>
+          <Calendar year={2024} />
+          </div>
         
       </>
     );
