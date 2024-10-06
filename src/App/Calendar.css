@@ -3,16 +3,18 @@
     padding: 70px 25px;
     width: 100%;
     margin-top: 40px;
-    background: var(--mediumpurple);
+    background: var(--accent-dark-light);
     text-align: center;
     border-radius: 10px;
+    color: white;
   }
 
 .cal-entry{
-  border-color: var(--text-primary);
+  border-color: var(--accent-dark);
   border-radius: 10px;
   border-width: 2px;
   border-style: dotted; 
+  margin-top: 20px;
 }
 
 .entry-body{
@@ -21,10 +23,11 @@
 }
  
 .entry-header{
-  background-color: var(--darkerbeige);
+  background-color: var(--accent-dark-light);
   padding: 15px;
-  border-bottom-color: var(--text-primary);
+  border-bottom-color: var(--accent-dark);
   border-bottom-width: 1px;
+  color: white;
   border-bottom-style: solid; 
 }
   
@@ -64,7 +67,7 @@
   .weekdays li {
     display: inline-block;
     width: 13.6%;
-    color: #666;
+    color: black;
     text-align: center;
   }
   
@@ -82,13 +85,14 @@
     text-align: center;
     margin-bottom: 5px;
     font-size:12px;
-    color: #777;
+    color: black;
   }
   
   .days li .active {
+    cursor: pointer;
     padding: 5px;
-    background: #1abc9c;
-    color: var(--ourbeige) !important
+    background: var(--colour-two) ;
+    color: white; 
   }
   
   /* Add media queries for smaller screens */
