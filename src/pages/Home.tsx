@@ -22,7 +22,7 @@ export function Home() {
             <MovingWebsite/>
           </div>
           <div className="row">
-          <h1>Dynamic Calendar for 2024</h1>
+         
           <Calendar year={2024} />
           </div>
         </div>
