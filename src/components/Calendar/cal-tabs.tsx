@@ -1,6 +1,8 @@
-let tabs = [
+import React from "react";
+
+export const tabs = [
     {   
-        cssname: "february27", 
+        cssname: "october7", 
         node: <>
             <h1>Team Meeting</h1>
             <h2>Organisation</h2>
