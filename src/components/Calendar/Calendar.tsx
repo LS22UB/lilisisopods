@@ -44,16 +44,16 @@ function Arrows() {
             <span>
               {index > 0 && (
                 <li className="prev">
-                  <a onClick={switchTo(months[index - 1])}>
+                  <button onClick={switchTo(months[index - 1])}>
                     <div>&#10094;</div>
-                  </a>
+                  </button>
                 </li>
               )}
               {index < months.length - 1 && (
                 <li className="next">
-                  <a onClick={switchTo(months[index + 1])}>
+                  <button onClick={switchTo(months[index + 1])}>
                     <div>&#10095;</div>
-                  </a>
+                  </button>
                 </li>
               )}
             </span>
