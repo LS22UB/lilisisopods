@@ -1,6 +1,6 @@
 import React from "react";
 import { DoubleFigure } from "../Figure";
-/* */
+import { CloClo } from "../Abbrevs";
 export const tabs = [
     {
         year: 2024,
@@ -16,6 +16,8 @@ export const tabs = [
             caption2="Dorsal view"
             alt2="venlo-isopod-dorsal"
             />
+            <p>{CloClo} suggested it could be A. archangelii</p>
+            <p>I took further photos for identification which have to be analysed yet.</p>
         </>
     },
     {
