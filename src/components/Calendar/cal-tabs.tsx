@@ -1,4 +1,5 @@
 import React from "react";
+import { DoubleFigure } from "../Figure";
 /* */
 export const tabs = [
     {
@@ -7,20 +8,14 @@ export const tabs = [
         node: <>
              <h1>Field</h1>
             <p>Found isopod without clear identification.</p>
-            <div className="row">
-                <div className="col">
-                    <figure>
-                        <img src="https://i.ibb.co/CWPTt1d/venlo-isopod-lateral.jpg" alt="venlo-isopod-lateral"/>
-                        <figcaption> Lateral view</figcaption>
-                    </figure>
-                </div>
-                <div className="col">
-                    <figure>
-                        <img src="https://i.ibb.co/GWmjP4v/venlo-isopod-dorsal.jpg" alt="venlo-isopod-dorsal" /> 
-                    <figcaption>Dorsal view</figcaption>
-                    </figure>
-                </div>
-            </div>
+            <DoubleFigure
+            url1="https://i.ibb.co/CWPTt1d/venlo-isopod-lateral.jpg"
+            caption1="Lateral view"
+            alt1="venlo-isopod-lateral"
+            url2="https://i.ibb.co/GWmjP4v/venlo-isopod-dorsal.jpg"
+            caption2="Dorsal view"
+            alt2="venlo-isopod-dorsal"
+            />
         </>
     },
     {
