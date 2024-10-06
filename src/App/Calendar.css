@@ -44,8 +44,9 @@
     list-style: none;
   }
   
-  .prev a, .next a{
+  .prev button, .next button{
     color: var(--ourbeige) !important;
+    background-color: inherit;
   }
   .month .prev {
     float: left;
