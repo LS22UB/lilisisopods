@@ -14,18 +14,30 @@ export function DoubleFigure({url1, url2, caption1, caption2, alt1, alt2}: figur
     return(
 
         <div className="row">
+        <figure>
+            <div className="row align-items-center">
                 <div className="col">
-                    <figure>
-                        <img src={url1} alt={alt1}/>
-                        <figcaption> {caption1}</figcaption>
-                    </figure>
+                    <img src={url1} alt={alt1}/>
                 </div>
                 <div className="col">
-                    <figure>
-                        <img src={url2} alt={alt2}/>
-                        <figcaption> {caption2}</figcaption>
-                    </figure>
-              </div>
+                    <img src={url2} alt={alt2}/>
+                </div>
+                
+            </div>
+            <figcaption> 
+            <div className="row align-items-center">
+                <div className="col">
+                {caption1}
+                </div>
+                <div className="col">
+                {caption2}
+                </div>
+                
+            </div>
+            </figcaption>
+
+        </figure>
+               
             </div>
         
     )

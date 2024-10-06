@@ -7,7 +7,7 @@ import { About,
   artprints, artpottery, artplushie, artstickers, artother, artcomics,
   Morphsmorphs, 
   Irido, Lungs, Ligia, 
-  LigiaPallasii, FAQ, Shops, 
+  LigiaPallasii, FAQ, Shops, Phylo,
   ArmadillidiumKlugii, Guides } from "./pages/page-list";
 
 interface Base {
@@ -56,6 +56,12 @@ interface Base {
       name: "Taxonomy",
       folder: [
         {
+          name: "Phylogenetics",
+          title: "Phylogenetics",
+          path: "/genetics/phylogeny",
+          component: Phylo,
+        },
+        {
           name: "Families",
           title: "Families",
           path: "/families",
@@ -96,12 +102,12 @@ interface Base {
             path: "/identification/guide-list",
             component: Guides,
           },
-          {
+         /*  {
             name: "Guides per country", 
             title: "Guides per country",
             path: "/identification/per-country",
             component: idpercountry,
-          },
+          }, */
       ]
     },
     {
@@ -319,6 +325,12 @@ interface Base {
       title: "Plushies",
       path: "/art/plushies",
       component: artplushie,
+    },
+    {
+      name: "Phylogenetics",
+      title: "Phylogenetics",
+      path: "/genetics/phylogeny",
+      component: Phylo,
     },
     {
       name: "Posterolateral Corners", /* y */
