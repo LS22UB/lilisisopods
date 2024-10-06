@@ -44,6 +44,7 @@
     list-style: none;
   }
   
+  
   .prev button, .next button{
     color: var(--ourbeige) !important;
     background-color: inherit;
@@ -90,10 +91,13 @@
   }
   
   .days li .active {
+    background-color: var(--accent-dark-light) ;
     cursor: pointer;
-    padding: 5px;
-    background: var(--accent-dark-light) ;
     color: white; 
+  }
+
+  .days li button span {
+    padding: 5px;
   }
   
   /* Add media queries for smaller screens */

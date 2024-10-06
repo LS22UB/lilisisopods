@@ -56,9 +56,9 @@ function generateMonthDays(month: string, year: number, startDay: number, numDay
       if (isActive && cssname) {
           days.push(
               <li key={`${month}-${day}`}>
-                  <a onClick={showEntry(cssname)}>
+                  <button className="active" onClick={showEntry(cssname)}>
                       <span className="active">{day}</span>
-                  </a>
+                  </button>
               </li>
           );
       } else {
