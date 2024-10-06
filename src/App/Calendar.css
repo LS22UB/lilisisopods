@@ -92,7 +92,7 @@
   .days li .active {
     cursor: pointer;
     padding: 5px;
-    background: var(--colour-two) ;
+    background: var(--accent-dark-light) ;
     color: white; 
   }
   
