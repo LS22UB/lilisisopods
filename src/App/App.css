@@ -787,3 +787,25 @@ span{
   border-bottom-right-radius: 0 0;
   place-self: end;
 }
+
+
+
+img{
+  max-width: 100%;
+}
+
+
+
+figure {
+  display: grid;
+  justify-content: center;
+  border: var(--accent-dark) 2px solid;
+}
+
+figcaption {
+  background-color: var(--accent-dark-light);
+  color: white;
+  align-self: center;
+  text-align: center;
+  padding: 5px;
+}
