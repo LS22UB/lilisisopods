@@ -1,5 +1,6 @@
 import "./App.css";
 import "./App.scss";
+import "./Calendar.css"
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Route, Routes, Navigate} from "react-router-dom";
 import { Footer } from "../components/Footer";

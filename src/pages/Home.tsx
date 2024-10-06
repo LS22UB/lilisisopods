@@ -2,6 +2,7 @@ import React from "react";
 import { BoldPara } from "../components/text-types";
 import { SocialRow } from "../components/SocialMedia";
 import { MovingWebsite } from "../components/UnderConstruction";
+import { Calendar } from "../components/Calendar/Calendar";
 
 export function Home() {
 
@@ -19,6 +20,10 @@ export function Home() {
             </div>
             <SocialRow/>
             <MovingWebsite/>
+          </div>
+          <div className="row">
+          <h1>Dynamic Calendar for 2024</h1>
+          <Calendar year={2024} />
           </div>
         </div>
         <div className="row">
