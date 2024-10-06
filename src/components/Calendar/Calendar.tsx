@@ -42,6 +42,7 @@ export function Calendar({ year }: { year: number }) {
           <li>Su</li>
         </ul>
         {months} {/* This will display the months */}
+        <CalTabs /> {/* Render the tabs for information */}
       </div>
     );
   }
@@ -78,11 +79,7 @@ export function Calendar({ year }: { year: number }) {
     return monthComponents;
   }
 
-/* function getMonthInfo(year: number, monthIndex: number) {
-  const daysInMonth = new Date(year, monthIndex + 1, 0).getDate();
-  const startDay = new Date(year, monthIndex, 1).getDay();
-  return { daysInMonth, startDay };
-} */
+
 
 function generateMonthDays(month: string, year: number, startDay: number, numDays: number) {
     let days: JSX.Element[] = [];
@@ -226,22 +223,7 @@ function showEntry(entry: string) {
     };
 }
 
-/* function generateDaysForMonth(daysInMonth: number, startDay: number) {
-    let days: JSX.Element[] = [];
-  
-    const adjustedStartDay = startDay === 0 ? 6 : startDay - 1;
-  
-    for (let i = 0; i < adjustedStartDay; i++) {
-      days.push(<li key={`empty-${i}`}></li>);
-    }
-  
-    for (let day = 1; day <= daysInMonth; day++) {
-      days.push(<li key={day}>{day}</li>);
-    }
-  
-    return days;
-  }
- */
+
 
   function isLeapYear(year: number): boolean {
     return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
