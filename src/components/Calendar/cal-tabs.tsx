@@ -79,6 +79,7 @@ export const tabs = [
             <ul>
                 <li>Added calendar</li>
                 <li>Fixed issues to make already existing pages visible</li>
+                <li>Added calendar entries going back a few months</li>
             </ul>
         </>
     },
