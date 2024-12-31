@@ -54,9 +54,9 @@ export const SupScrollLink : React.FC<SupScrollLinkProps> = ({label }) => {
     };
 
     return (
-       <sup><a onClick={handleClick}>
+       <sup><button onClick={handleClick}>
             {label}
-        </a>
+        </button>
         </sup> 
     );
 };
@@ -102,8 +102,8 @@ export const SupScrollLink : React.FC<SupScrollLinkProps> = ({label }) => {
     };
 
     return (
-        <a onClick={handleClick}>
+        <button onClick={handleClick}>
             {children}
-        </a>
+        </button>
     );
 }; 
