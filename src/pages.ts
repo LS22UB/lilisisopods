@@ -8,7 +8,8 @@ import { About,
   Morphsmorphs, 
   Irido, Lungs, Ligia, 
   LigiaPallasii, FAQ, Shops, Phylo,
-  ArmadillidiumKlugii, Guides } from "./pages/page-list";
+  ArmadillidiumKlugii, Guides, 
+  Websites} from "./pages/page-list";
 
 interface Base {
     name: string | undefined;
@@ -207,6 +208,17 @@ interface Base {
           component: Irido,
         },
       ]
+    },
+    {
+      name: "Further Resources",
+      folder: [
+        {
+          name: "Websites",
+          title: "Websites",
+          path: "/resources/websites",
+          component: Websites,
+        },
+      ]
     }
   ]
 
@@ -319,6 +331,12 @@ interface Base {
       title: "Other",
       path: "/art/other",
       component: artother,
+    },
+    {
+      name: "Websites",
+      title: "Websites",
+      path: "/resources/websites",
+      component: Websites,
     },
     {
       name: "Plushies",
