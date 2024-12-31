@@ -11,7 +11,7 @@ export function Phylo() {
       <div className="col">
         <p>The origin of isopods and how exactly they are related is not yet clear. There are scientists working on it with the help of gene research.</p>
         <h1 id="isopods-in-context-with-other-groups">Isopods in context with other groups</h1>
-        <p>The paper these two trees are from questions the origin of isopods based on new knowledge due to genetic research. <SupScrollLink label="1"/></p>
+        <p>The paper the following two trees are from questions the origin of isopods based on new knowledge due to genetic research<SupScrollLink label="1"/>.</p>
 
         <div className="col">
         <DoubleFigure
@@ -22,8 +22,29 @@ export function Phylo() {
         />
 
         </div>
-        <p>In the next trees, you see two reconstructions of the mitochondrial phylogenetics of isopoda and other crustacea. <i>Zhang, Dong & Zou, Hong & Hua, Congjie & Li, Wenxiang & Mahboob, Shahid & Al-Ghanim, Khalid & Al-Misned, Fahad & Jakovlić, Ivan & Wang, Gui-Tang. (2019). Mitochondrial architecture rearrangements produce asymmetrical nonadaptive mutational pressures that subvert the phylogenetic reconstruction in Isopoda. 10.1101/607960.</i></p>
-        
+        <p>The reconstruction of the isopodal phylogeny is not straight forward and presents challenges. For example, anlysing morphological features leads
+            different conclusions than using DNA analyses. But even the DNA analyses return different results depending on the type of
+            DNA used. 
+        </p>
+        <p>The next trees stem form a paper analysing the effects of different types of data sets and reconstruction methods on the resulting 
+            phylogeentic trees.
+             When comparing 
+            the two trees derived from using two different methods on the same data, slight differences are visible. 
+             <i>Zhang, Dong & Zou, Hong & Hua, Congjie & Li, Wenxiang & Mahboob, Shahid & Al-Ghanim, Khalid & Al-Misned, Fahad & Jakovlić, Ivan & Wang, Gui-Tang. (2019). Mitochondrial architecture rearrangements produce asymmetrical nonadaptive mutational pressures that subvert the phylogenetic reconstruction in Isopoda. 10.1101/607960.</i></p>
+        <DoubleFigure
+        url1="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/gbe/11/7/10.1093_gbe_evz121/4/m_evz121f1.jpeg?Expires=1730523948&Signature=EtLdTmk0r55cYSIDSNN5qiBdDBVAM3u3TsfaSIw149pImQ~dumjCl1Rvx4pGxPGF-UlegdbT8hHOQ3ba7CNTHv0v-Anpv0TGUz9UIH~FiSUSqJv1wlN5pAYNzrmKUiG3nzpA6pVnzdze7oQd6ZGkbgtXZUUmKfWQ5wktwgFAgrquHwjeEixgH4MvYm7mFB4pOUR0Qho7HfghTtLq3WEnkiWczYA5vlO52wylZD6ADNq3Q8d9JL5fSxEtCnD45NxEwGqCD2JKt~FsOshNCpPPfZsbtzohcFPXlqXtvUnJYYMwMygE6taafvLOigALyInPHClTJkS0~~jvx93xXNXTYw__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA"
+        caption1="Phylogram using partitioned nucleotide sequences (concatenated 13 PCGs and 2 rRNA genes)"
+        url2="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/gbe/11/7/10.1093_gbe_evz121/4/m_evz121f2.jpeg?Expires=1730523948&Signature=UYmj8QQybgYRJ32m8rdTmoRynmrD-m-hw7eUL~fPYlttb4-DEfEv2rTiopHVf48g-DibyK2FFhoQPFk57-8LwZ9eBkDkYQdnlPn8p7wTOf7-4ZzdU-27kgUR~2~Jzdm0uNr0og7Oy~VvNzuLChTgwwbm6yte08OqVWhsBU8-Bevkfz6KmJ716kxpdg0FNG7n9q-CQ3TRofeeMoIwCf6C39wZVGo4DxokqbJiBMFgQdRrtIwlrPh65zrxKz4tiq3j51u28fdxozEQdQyAgkIhD1wOXcgPoMk2wRbmywPhjp-tRuQNertaTVDusLJlSxZJ7g-y-5N11Cla2Wifu626pQ__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA"
+        caption2="Phylogram using nonpartitioned nucleotide sequences"
+        />
+        <figure className="size-full">
+  <img src="https://lilisisopods.com/wp-content/uploads/2023/07/Mitochondrial-architecture-rearrangements-produce-asymmetrical-nonadaptive-mutational-pressures-that-subvert-the-phylogenetic-reconstruction-in-Isopoda2.jpg" alt="" />
+</figure>
+
+<figure className="size-full">
+  <img src="https://lilisisopods.com/wp-content/uploads/2023/07/Mitochondrial-architecture-rearrangements-produce-asymmetrical-nonadaptive-mutational-pressures-that-subvert-the-phylogenetic-reconstruction-in-Isopoda.jpg" alt="" />
+</figure>
+
         <h1>References</h1>
         <BibtexParser bibtexSources={bibtexSources} />
       </div>
@@ -32,13 +53,7 @@ export function Phylo() {
 
 
 
-<figure className="size-full">
-  <img src="https://lilisisopods.com/wp-content/uploads/2023/07/Mitochondrial-architecture-rearrangements-produce-asymmetrical-nonadaptive-mutational-pressures-that-subvert-the-phylogenetic-reconstruction-in-Isopoda2.jpg" alt="" />
-</figure>
 
-<figure className="size-full">
-  <img src="https://lilisisopods.com/wp-content/uploads/2023/07/Mitochondrial-architecture-rearrangements-produce-asymmetrical-nonadaptive-mutational-pressures-that-subvert-the-phylogenetic-reconstruction-in-Isopoda.jpg" alt="" />
-</figure>
 
 <p>And from another article but the same author: <i>Zhang, Dong & Zou, Hong & Hua, Congjie & Li, Wenxiang & Mahboob, Shahid & Al-Ghanim, Khalid & Al-Misned, Fahad & Jakovlić, Ivan & Wang, Gui-Tang. (2019). Mitochondrial Architecture Rearrangements Produce Asymmetrical Nonadaptive Mutational Pressures That Subvert the Phylogenetic Reconstruction in Isopoda. Genome biology and evolution. 11. 10.1093/gbe/evz121.</i></p>
 
@@ -181,6 +196,19 @@ export function Phylo() {
   title = {The monophyly and the classification of the terrestrial isopods (Crustacea, Isopoda, Oniscidea)},
   volume = {LIX}
   }
+    `,
+    
+    `
+    @article{article,
+author = {Zhang, Dong and Zou, Hong and Hua, Congjie and Li, Wenxiang and Mahboob, Shahid and Al-Ghanim, Khalid and Al-Misned, Fahad and Jakovlić, Ivan and Wang, Gui-Tang},
+year = {2019},
+month = {06},
+pages = {},
+title = {Mitochondrial Architecture Rearrangements Produce Asymmetrical Nonadaptive Mutational Pressures That Subvert the Phylogenetic Reconstruction in Isopoda},
+volume = {11},
+journal = {Genome biology and evolution},
+doi = {10.1093/gbe/evz121}
+}
     `
   
   ]

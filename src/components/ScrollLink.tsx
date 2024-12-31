@@ -1,5 +1,6 @@
 /* import { openThem } from "../contents";
  */
+import React from "react";
 import { goTo } from "../utils/goto";
 interface ScrollLinkProps {
     targetId: string;

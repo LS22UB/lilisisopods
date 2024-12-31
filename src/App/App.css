@@ -809,3 +809,7 @@ figcaption {
   text-align: center;
   padding: 5px;
 }
+
+a{
+  cursor: pointer;
+}
